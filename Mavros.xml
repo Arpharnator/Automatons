@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
   <RuntimeModule Name="FactionMajorMavros" Type="Extension" Version="0.6.1">
-    <Title>Major Faction - The Mavros</Title>
-    <Description>Adds a new major faction, the Mavros. Complete with new mechanics, ships, quests, and faction traits.</Description>
-    <Author>Captain Cobbs</Author>
+    <Title>Major Faction - The Automatons</Title>
+    <Description>The Automatons come back from ES1</Description>
+    <Author>Arphar</Author>
     <Homepage></Homepage>
     <PreviewImageFile>ModIcon.png</PreviewImageFile>
-    <ReleaseNotes>0.6.1 - More Scrap Abilities, lots of rebalances</ReleaseNotes>
+    <ReleaseNotes>1.0 - Finishing stuff</ReleaseNotes>
     <Tags>MajorFactions</Tags>
-
-    <!-- Art Credits
-Ringworld Dystopian Space Extended - https://www.deviantart.com/n-a-i-m-a/art/Ringworld-Dystopian-Space-Extended-812100207
-Hangar - https://www.artstation.com/artwork/8lLR2w 
-Underground Marketplace - https://www.deviantart.com/fmacmanus/art/Underground-Marketplace-517825825 
-Planetary Defenses - https://www.artstation.com/artwork/L9mAR 
-REPLACE PRINTER WITH THIS https://www.artstation.com/artwork/8KXzx
-Satellite Infiltration - https://www.artstation.com/artwork/qvWZN 
-FIND REPLACEMENT FOR THIS - https://mtgcardsmith.com/view/aetherworks-scrapyard
-Lava Facility - https://www.artstation.com/artwork/1o1yL
-Riot Gear (Hero Quest Guardian 2) - https://dogtoothcg.wordpress.com/
-Make icon for scrap > strategics be StarSystemImprovementIndustry4 but with icons for strategics in the center
-Make icon for production > scrap be StarSystemImprovementIndustryToScience2
-Junkyard Matte - https://www.artstation.com/necipk
-Titan - https://www.artstation.com/artwork/Gw62B
-Old Man and his Son - https://www.artstation.com/artwork/2WwZJ
-Paragon Nerve - https://www.artstation.com/artwork/2abRK
-Space Ship Wreckage 01 - https://www.artstation.com/artwork/AgmgV
-Early Warning Station - https://www.artstation.com/artwork/VRgbN
-Sedghammer & Amplitude Artists -->
     
     <Plugins>
       <!-- Galaxy Generation -->
