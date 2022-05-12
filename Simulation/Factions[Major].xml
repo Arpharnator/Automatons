@@ -10,14 +10,7 @@
     <Trait Name="FactionTraitOptimistic2"/>
     <Trait Name="FactionTraitSkillfulTraders"/>
     <Trait Name="FactionTraitAnarchist"/>
-
-    <!-- Spawn -->
-    <Trait Name="FactionTraitStartWithTitanium"/>
     
-    <!-- Tech -->
-    <Trait Name="FactionTraitTechnologyDefinitionScienceAndExploration2" />
-    <Trait Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Mavros"/>
-
     <!-- AI -->
     <Trait Name="PersonalityCanGetRenegade"/>
     <Trait Name="PersonalityCanGetRestless"/>
@@ -37,6 +30,6 @@
     <Bailiff Name="DefaultEmpirePointBailiff"/>
     <Bailiff Name="DefaultProcessingPowerBailiff"/>
 
-    <MajorPopulation Affinity="AffinityMajorMavros"     Count="2"/>
+    <MajorPopulation Affinity="AffinityAutomatons"     Count="2"/>
   </MajorFaction>
 </Datatable>

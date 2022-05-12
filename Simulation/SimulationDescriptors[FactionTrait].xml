@@ -1,43 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
-  <!-- Used Traits -->
-  <SimulationDescriptor Name="AffinityGameplayMajorMavros" Type="AffinityGameplay">
-    <Modifier TargetProperty="CanUseScrap"      Operation="Force"        Value="1"   Path="ClassEmpire,EmpireTypeMajor"                       TooltipHidden="true" />
-    <Modifier TargetProperty="ScrapPerCP"       Operation="Addition"     Value="1"   Path="../ClassEmpire"                                    TooltipHidden="true" />
-    <Modifier TargetProperty="ScrapPerCP"       Operation="Addition"     Value="1"   Path="../ClassEmpire/ClassGarrisonFleet/ClassShip"       TooltipHidden="true" />
-  </SimulationDescriptor>
-
-  <SimulationDescriptor Name="FactionTraitLuxuryPopulation_Mavros" Type="FactionTrait">
-    <Modifier TargetProperty="RebellionStarSystemIncreasePerTurn" Operation="Multiplication" Value="1.5" Path="ClassEmpire/ClassSenate" TooltipHidden="true" />
-  </SimulationDescriptor>
-
-  <!-- If your ship has 100000 health, you should get 30% extra damage-->
-  <SimulationDescriptor Name="FactionTraitHulkingShips_Mavros" Type="FactionTrait">
-    <BinaryModifier TargetProperty="Damage" Operation="Percent"   Left="$(Health)" BinaryOperation="Multiplication" Right="0.000003" Path="./ClassEmpire/ClassGarrison/ClassShip" SearchValueFromPath="true" TooltipHidden="true" />
-    <Modifier TargetProperty="MaximumHealth"                Operation="Percent"   Value="0.05" Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection,ClassSectionCore" TooltipHidden="true" />
-    <Modifier TargetProperty="ShipProductionCostReduction"	Operation="Addition"  Value="0.15" Path="ClassEmpire/ClassColonizedStarSystem" Priority="-5" />
-  </SimulationDescriptor>
-
-  <!-- 2 movement points restored after combat -->
-  <SimulationDescriptor Name="FactionTraitMoveAfterCombat_Mavros" Type="FactionTrait">
-	<Modifier TargetProperty="BattleMovementGain"      Operation="Addition"   Value="2"  Path="ClassEmpire/ClassGarrison/ClassShip"/>
-  </SimulationDescriptor>
-
-  <SimulationDescriptor Name="FactionTraitEffectiveCombatants_Mavros" Type="FactionTrait">
-    <Modifier TargetProperty="InfantryMinDamages" Operation="Percent" Value="0.2" Path="ClassEmpire" />
-    <Modifier TargetProperty="InfantryMaxDamages" Operation="Percent" Value="0.2" Path="ClassEmpire" />
-    <Modifier TargetProperty="InfantryMaxHealth" Operation="Percent" Value="-0.1" Path="ClassEmpire" />
-  </SimulationDescriptor>
-
-  <SimulationDescriptor Name="FactionTraitMinorMajorMavros" Type="FactionTrait"/>
-
-  <!-- Research -->
-  <SimulationDescriptor Name="FactionTraitTechnologyDefinitionMilitary2Mavros"                  Type="FactionTrait" />
-  <SimulationDescriptor Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Mavros"           Type="FactionTrait" />
-  <SimulationDescriptor Name="FactionTraitTechnologyDefinitionEmpireDevelopment1Mavros"         Type="FactionTrait" />
-  <SimulationDescriptor Name="FactionTraitTechnologyDefinitionMilitary1Mavros"                  Type="FactionTrait" />
-
   <!--Automatons Traits-->
+
+  <SimulationDescriptor Name="FactionTraitMinorAutomatons" Type="FactionTrait"/>
+  
   <SimulationDescriptor Name="FactionTraitAnarchist" Type="FactionTrait">
       <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="-2" Path="ClassEmpire"/>
   </SimulationDescriptor>
