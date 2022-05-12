@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!--Bonus FIDS on Terran-->
+    <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
+        <Modifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Value="1" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
+        <Modifier Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTerran/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran, ClassPopulation" Value="1" Operation="Addition" TargetProperty="BonusPopulationFIDS"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
+        <Modifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Value="1" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
+        <BinaryModifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedPrimaryCustomFood00">
+        <Modifier Path="ClassPopulation" Value="1" Operation="Addition" TargetProperty="BonusPopulationFIDS"/>
+    </SimulationDescriptor>
+
+    <!--Bonus Approval on Terran-->
+    <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitPrimaryCustomFood00">
+        <Modifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Value="2" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
+        <Modifier Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTerran/ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran, ClassPopulation" Value="2" Operation="Addition" TargetProperty="BonusPopulationHappiness"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran">
+        <Modifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Value="2" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
+        <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedPrimaryCustomFood00">
+        <Modifier Path="ClassPopulation" Value="2" Operation="Addition" TargetProperty="BonusPopulationHappiness"/>
+    </SimulationDescriptor>
+
+</Datatable>
