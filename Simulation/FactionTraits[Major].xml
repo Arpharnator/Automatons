@@ -72,4 +72,9 @@
     <SimulationDescriptorReference Name="FactionTraitMinorMajorMavros"/>
     <Prerequisites>!AffinityGameplayVampirilis,!AffinityGameplayUmbralChoir</Prerequisites>
   </FactionTrait>
+
+  <!--Automatons Traits-->
+  <FactionTrait Name="FactionTraitAnarchist"   SubCategory="FactionTrait" Family="FactionTraitFamilyMilitary" Hidden="false" Custom="true" Cost="-50">
+    <SimulationDescriptorReference Name="FactionTraitAnarchist"/>
+  </FactionTrait>
 </Datatable>
