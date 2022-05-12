@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+  <!-- Ship Technologies -->
+  <!-- Efficient Shielding -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique1Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked" TechnologyFlags="Affinity">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyHull2Automatons" />
+    <SimulationDescriptorReference Name="TechnologyHull3Automatons" />
+    <SimulationDescriptorReference Name="TechnologyHull3" />
+    <SimulationDescriptorReference Name="TechnologyHull2" />
+    <SimulationDescriptorReference Name="TechnologyMilitaryGameplay" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>20 * $(TurnVariable) + 5</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Extreme Composites -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique2Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique2Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull1" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull1Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Agri Drugs -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique3Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique3Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull2" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull2Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Applied Cryogenics -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique4Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyHull4" />
+    <SimulationDescriptorReference Name="TechnologyHull4Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Split-second Ablatives -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique5Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyHull5" />
+    <SimulationDescriptorReference Name="TechnologyHull5Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Low Temperature Construction -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique6Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique4ToUnique6Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull3Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>35 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Dependency Algorithms -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique7Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique5ToUnique7Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull4Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>35 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Liquid Composites -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique8Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyHull6" />
+    <SimulationDescriptorReference Name="TechnologyHull6Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>40 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Far Halo Shipyard -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique9Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment5" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage5Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique8ToUnique9Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage5" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull5" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull5Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>40 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Adaptive Colonies -->
+  <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration17" TechnologyStage="TechnologyStageDefinitionScienceAndExploration4" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration9To15'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyFood6" />
+    <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullSophons" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullCravers" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullMajorHisshos" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullLumeris" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUnitedEmpire" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullHoratios" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullTimeLords" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUnfallens" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUmbralChoir" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullVaulters" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullTemplars" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullAutomatons" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology" />
+
+    <HelperVariable Name="FoodPercent" />
+    <HelperVariable Name="OwnedPlanetsCount" />
+    <HelperVariable Name="FoodVariable" />
+    <HelperFormula> $(FoodPercent) * 10 + $(FoodVariable) * $(OwnedPlanetsCount) </HelperFormula>
+  </TechnologyDefinition>
+
+</Datatable>

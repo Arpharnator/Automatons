@@ -6,18 +6,18 @@
 
     <SimulationDescriptorReference Name="AffinityMappingAutomatons" />
 
-    <ShipDesign Abstract="SuperColonizer"   ShipDesign="Mavros_SuperColonizer" />
-    <ShipDesign Abstract="Colonizer"        ShipDesign="Mavros_Colonizer" />
-    <ShipDesign Abstract="Explorer"         ShipDesign="Mavros_Explorer" />
-    <ShipDesign Abstract="Leecher"          ShipDesign="Mavros_Leecher" />
-    <ShipDesign Abstract="RootCreator"      ShipDesign="Mavros_RootCreator" />
-    <ShipDesign Abstract="SmallAttack"      ShipDesign="Mavros_SmallAttack" />
-    <ShipDesign Abstract="SmallSupport"     ShipDesign="Mavros_SmallSupport" />
-    <ShipDesign Abstract="MediumAttack"     ShipDesign="Mavros_MediumAttack" />
-    <ShipDesign Abstract="MediumDefense"    ShipDesign="Mavros_MediumDefense" />
-    <ShipDesign Abstract="Invader"          ShipDesign="Mavros_Invader" />
-    <ShipDesign Abstract="LargeCarrier"     ShipDesign="Mavros_LargeCarrier" />
-    <ShipDesign Abstract="Mothership"       ShipDesign="Mavros_Mothership" />
+    <ShipDesign Abstract="SuperColonizer"   ShipDesign="Automatons_SuperColonizer" />
+    <ShipDesign Abstract="Colonizer"        ShipDesign="Automatons_Colonizer" />
+    <ShipDesign Abstract="Explorer"         ShipDesign="Automatons_Explorer" />
+    <ShipDesign Abstract="Leecher"          ShipDesign="Automatons_Leecher" />
+    <ShipDesign Abstract="RootCreator"      ShipDesign="Automatons_RootCreator" />
+    <ShipDesign Abstract="SmallAttack"      ShipDesign="Automatons_SmallAttack" />
+    <ShipDesign Abstract="SmallSupport"     ShipDesign="Automatons_SmallSupport" />
+    <ShipDesign Abstract="MediumAttack"     ShipDesign="Automatons_MediumAttack" />
+    <ShipDesign Abstract="MediumDefense"    ShipDesign="Automatons_MediumDefense" />
+    <ShipDesign Abstract="Invader"          ShipDesign="Automatons_Invader" />
+    <ShipDesign Abstract="LargeCarrier"     ShipDesign="Automatons_LargeCarrier" />
+    <ShipDesign Abstract="Mothership"       ShipDesign="Automatons_Mothership" />
 
     <ShipDesign Abstract="ScienceJuggernaut"    ShipDesign="Juggernauts_ScienceJuggernaut" />
     <ShipDesign Abstract="MilitaryJuggernaut"   ShipDesign="Juggernauts_MilitaryJuggernaut" />

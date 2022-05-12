@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+  <!-- Ship Hulls -->
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall01Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveHull1Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall01Automatons" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall02Automatons" Category="CategoryHullUpgrade"  SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveHull2Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall02Automatons" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsMedium01Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveHull3Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsMedium01Automatons" />
+  </EmpireImprovementDefinition>
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsMedium02Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveHull4Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsMedium02Automatons" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsLarge01Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveHull5Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsLarge01Automatons" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall04Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+    <TechnologyPrerequisite>TechnologyImproveExplorerHullAutomatons</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall04Automatons" />
+  </EmpireImprovementDefinition>
+
+</Datatable>
