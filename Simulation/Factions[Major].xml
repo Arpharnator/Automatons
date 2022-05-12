@@ -5,11 +5,11 @@
 
     <Trait Name="IsMajorFaction"/>
 
-    <Trait Name="FactionTraitLuxuryPopulation_Mavros"/>
-    <Trait Name="FactionTraitHulkingShips_Mavros"/>
-    <Trait Name="FactionTraitMoveAfterCombat_Mavros"/>
-    <Trait Name="FactionTraitEffectiveCombatants_Mavros"/>
-    <Trait Name="FactionTraitColonizationCapStandard1"/>
+    <Trait Name="FactionTraitOptimalDefense2"/>
+    <Trait Name="FactionTraitCrowdedPlanets2"/>
+    <Trait Name="FactionTraitOptimistic2"/>
+    <Trait Name="FactionTraitSkillfulTraders"/>
+    <Trait Name="FactionTraitAnarchist"/>
 
     <!-- Spawn -->
     <Trait Name="FactionTraitStartWithTitanium"/>
@@ -25,12 +25,12 @@
 
     <TraitStartingSenate Priority="100">
       <Government Name="GovernmentRepublic"/>
-      <PoliticsWeight Politics="Politics01" Weight="6"/>
-      <PoliticsWeight Politics="Politics02" Weight="1"/>
-      <PoliticsWeight Politics="Politics03" Weight="0"/>
-      <PoliticsWeight Politics="Politics04" Weight="0"/>
+      <PoliticsWeight Politics="Politics01" Weight="3"/>
+      <PoliticsWeight Politics="Politics02" Weight="0"/>
+      <PoliticsWeight Politics="Politics03" Weight="2"/>
+      <PoliticsWeight Politics="Politics04" Weight="6"/>
       <PoliticsWeight Politics="Politics05" Weight="0"/>
-      <PoliticsWeight Politics="Politics06" Weight="2"/>
+      <PoliticsWeight Politics="Politics06" Weight="0"/>
     </TraitStartingSenate>
 
     <Bailiff Name="DefaultMoneyBailiff"/>

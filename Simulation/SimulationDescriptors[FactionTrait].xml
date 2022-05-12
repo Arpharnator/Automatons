@@ -36,4 +36,9 @@
   <SimulationDescriptor Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Mavros"           Type="FactionTrait" />
   <SimulationDescriptor Name="FactionTraitTechnologyDefinitionEmpireDevelopment1Mavros"         Type="FactionTrait" />
   <SimulationDescriptor Name="FactionTraitTechnologyDefinitionMilitary1Mavros"                  Type="FactionTrait" />
+
+  <!--Automatons Traits-->
+  <SimulationDescriptor Name="FactionTraitAnarchist" Type="FactionTrait">
+      <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="-2" Path="ClassEmpire"/>
+  </SimulationDescriptor>
 </Datatable>
