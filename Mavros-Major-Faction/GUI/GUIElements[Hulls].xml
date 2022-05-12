@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- HULLS -->
+  <GuiElement Name="HullAutomatedMajorMavros"/>
+
+  <GuiElement Name="HullHero01Mavros">
+    <Title>%HullHero01MavrosTitle</Title>
+    <Description>%HullHero01MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Small" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall01Mavros">
+    <Title>%HullSmall01MavrosTitle</Title>
+    <Description>%HullSmall01MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall02Mavros">
+    <Title>%HullSmall02MavrosTitle</Title>
+    <Description>%HullSmall02MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall03Mavros">
+    <Title>%HullSmall03MavrosTitle</Title>
+    <Description>%HullSmall03MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall04Mavros">
+    <Title>%HullSmall04MavrosTitle</Title>
+    <Description>%HullSmall04MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall04MavrosShipBound">
+    <Title>%HullSmall04SophonsTitle</Title>
+    <Description>%HullSmall04SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall05Mavros">
+    <Title>%HullSmall05MavrosTitle</Title>
+    <Description>%HullSmall05MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall06Mavros">
+    <Title>%HullSmall06MavrosTitle</Title>
+    <Description>%HullSmall06MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium01Mavros">
+    <Title>%HullMedium01MavrosTitle</Title>
+    <Description>%HullMedium01MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium02Mavros">
+    <Title>%HullMedium02MavrosTitle</Title>
+    <Description>%HullMedium02MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium03Mavros">
+    <Title>%HullMedium03MavrosTitle</Title>
+    <Description>%HullMedium03MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Vaulters/ShipHullMedium03VaultersSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Vaulters/ShipHullMedium03VaultersLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullLarge01Mavros">
+    <Title>%HullLarge01MavrosTitle</Title>
+    <Description>%HullLarge01MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsMavrosSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsMavrosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullLarge00Mavros">
+    <Title>%HullLarge00MavrosTitle</Title>
+    <Description>%HullLarge00MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipLarge" />
+    </Icons>
+  </GuiElement>
+</Datatable>

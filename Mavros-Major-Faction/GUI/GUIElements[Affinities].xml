@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <AffinityGuiElement Name="AffinityMappingMajorMavros" PreloadCount="3" >
+    <Title>%AffinityMajorMavrosTitle</Title>
+    <Description>%AffinityMajorMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityMavrosSmall" />
+      <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityMavrosMedium" />
+      <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityMavrosMediumInverted" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityMavrosLarge" />
+      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinitySophonsLeader" />
+      <Icon Size="Mood" Path="Bitmaps/Dynamic/Affinities/AffinityMavrosMood" />
+      <Icon Size="SmallExtended" Path="Textures/GUI/NotificationMajorEmpireMetMavrosSmall.png" />
+      <Icon Size="MediumExtended" Path="Textures/GUI/NotificationMajorEmpireMetMavrosMedium.png" />
+      <Icon Size="Loading" Path="Textures/GUI/LoadingMavros.png" />
+    </Icons>
+    <SymbolString>[mavros]</SymbolString>
+    <Sounds>
+      <Sound EventName="Play_ES2_Voices_OUTRO_Sophon" Type="Outro"/>
+    </Sounds>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <Movies>
+      <Movie Path="Movies/Factions/Mavros_Intro.mp4" Type="Intro" />
+      <Movie Path="Movies/Factions/Mavros_Outro.mp4" Type="Outro" />
+    </Movies>
+    <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitMavros</ModelPath>
+  </AffinityGuiElement>
+
+  <GuiElement Name="PopulationCollectionBonusTraitCustomFactionMavros">
+    <Title>%PopulationCollectionBonusTraitCustomFactionMavrosTitle</Title>
+    <Description>%PopulationCollectionBonusTraitCustomFactionMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesTruceSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PopulationCollectionBonusMajorMavros1">
+    <Title>%PopulationCollectionBonusMajorMavros1</Title>
+  </GuiElement>
+  <GuiElement Name="PopulationCollectionBonusMajorMavros2">
+    <Title>%PopulationCollectionBonusMajorMavros2</Title>
+  </GuiElement>
+  <ExtendedGuiElement Name="PopulationCollectionBonusMajorMavros3">
+    <Title>%PopulationCollectionBonusMajorMavros3</Title>
+    <TooltipElement>
+      <EffectOverride>%ShipCostReductionPerStrategicEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="FactionPactEffectMajorMavros">
+    <Title>%FactionPactEffectMajorMavrosTitle</Title>
+    <Description>%FactionPactEffectMajorMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesFactionPactSmall" />
+    </Icons>
+  </GuiElement>
+</Datatable>

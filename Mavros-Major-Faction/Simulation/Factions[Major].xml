@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/MajorFaction.xsd">
+  <MajorFaction Name="FactionMajorMavros" Standard="true" Author="Captain Cobbs" Priority="10"  Difficulty="Normal" DifficultyAgainst="Advanced">
+    <Affinity Name="AffinityGameplayMajorMavros"/>
+
+    <Trait Name="IsMajorFaction"/>
+
+    <Trait Name="FactionTraitLuxuryPopulation_Mavros"/>
+    <Trait Name="FactionTraitHulkingShips_Mavros"/>
+    <Trait Name="FactionTraitMoveAfterCombat_Mavros"/>
+    <Trait Name="FactionTraitEffectiveCombatants_Mavros"/>
+    <Trait Name="FactionTraitColonizationCapStandard1"/>
+
+    <!-- Spawn -->
+    <Trait Name="FactionTraitStartWithTitanium"/>
+    
+    <!-- Tech -->
+    <Trait Name="FactionTraitTechnologyDefinitionScienceAndExploration2" />
+    <Trait Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Mavros"/>
+
+    <!-- AI -->
+    <Trait Name="PersonalityCanGetRenegade"/>
+    <Trait Name="PersonalityCanGetRestless"/>
+    <Trait Name="PersonalityCanGetIsolationist"/>
+
+    <TraitStartingSenate Priority="100">
+      <Government Name="GovernmentRepublic"/>
+      <PoliticsWeight Politics="Politics01" Weight="6"/>
+      <PoliticsWeight Politics="Politics02" Weight="1"/>
+      <PoliticsWeight Politics="Politics03" Weight="0"/>
+      <PoliticsWeight Politics="Politics04" Weight="0"/>
+      <PoliticsWeight Politics="Politics05" Weight="0"/>
+      <PoliticsWeight Politics="Politics06" Weight="2"/>
+    </TraitStartingSenate>
+
+    <Bailiff Name="DefaultMoneyBailiff"/>
+    <Bailiff Name="DefaultEmpirePointBailiff"/>
+    <Bailiff Name="DefaultProcessingPowerBailiff"/>
+
+    <MajorPopulation Affinity="AffinityMajorMavros"     Count="2"/>
+  </MajorFaction>
+</Datatable>

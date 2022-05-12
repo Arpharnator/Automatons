@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+  <ExtendedGuiElement Name="EmpireScrap">
+    <Title>%ScrapTitle</Title>
+    <Description>%ScrapDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/ScrapIcon.png" />
+      <Icon Size="Large" Path="Textures/GUI/ScrapLarge.png" />
+    </Icons>
+    <SymbolString>[custom07]</SymbolString>
+    <Color Red="255" Green="140" Blue="0" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="SystemScrap">
+    <Title>%ScrapTitle</Title>
+    <Description>%ScrapDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/ScrapIcon.png" />
+      <Icon Size="Large" Path="Textures/GUI/ScrapLarge.png" />
+    </Icons>
+    <SymbolString>[custom07]</SymbolString>
+    <Color Red="255" Green="140" Blue="0" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NetEmpireScrap">
+    <Title>%ScrapTitle</Title>
+    <Description>%ScrapDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/ScrapIcon.png" />
+      <Icon Size="Large" Path="Textures/GUI/ScrapLarge.png" />
+    </Icons>
+    <SymbolString>[custom07]</SymbolString>
+    <Color Red="255" Green="140" Blue="0" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <!-- Test only -->
+  <GuiElement Name="StarSystemImprovementScrapTotal">
+    <Title>%StarSystemImprovementScrapTotalTitle</Title>
+    <Description>%StarSystemImprovementScrapTotalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/ScrapSmall.png" />
+      <Icon Size="Large" Path="Textures/GUI/ScrapLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Scrap Boost - Industry -->
+  <ExtendedGuiElement Name="StarSystemImprovementScrapBoostIndustry">
+    <Title>%StarSystemImprovementScrapBoostIndustryTitle</Title>
+    <Description>%StarSystemImprovementScrapBoostIndustryDescription</Description>
+
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/MavrosGameplayAffinity_IndustrySmall.png" />
+      <Icon Size="Large" Path="Textures/GUI/MavrosGameplayAffinity_IndustryLarge.png" />
+    </Icons>
+    <TemporaryEffectTooltipElement TemporaryEffectName="MavrosIndustryBoost">
+      <EffectOverride>%StarSystemImprovementScrapBoostIndustryTooltipEffect</EffectOverride>
+    </TemporaryEffectTooltipElement>
+  </ExtendedGuiElement>
+  <!-- Scrap Boost - Dust -->
+  <ExtendedGuiElement Name="StarSystemImprovementScrapBoostDust">
+    <Title>%StarSystemImprovementScrapBoostDustTitle</Title>
+    <Description>%StarSystemImprovementScrapBoostDustDescription</Description>
+
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/MavrosGameplayAffinity_DustSmall.png" />
+      <Icon Size="Large" Path="Textures/GUI/MavrosGameplayAffinity_DustLarge.png" />
+    </Icons>
+    <TemporaryEffectTooltipElement TemporaryEffectName="MavrosDustBoost">
+      <EffectOverride>%StarSystemImprovementScrapBoostDustTooltipEffect</EffectOverride>
+    </TemporaryEffectTooltipElement>
+  </ExtendedGuiElement>
+  <!-- Scrap Boost - Science -->
+  <ExtendedGuiElement Name="StarSystemImprovementScrapBoostScience">
+    <Title>%StarSystemImprovementScrapBoostScienceTitle</Title>
+    <Description>%StarSystemImprovementScrapBoostScienceDescription</Description>
+
+    <Icons>
+      <Icon Size="Small" Path="Textures/GUI/MavrosGameplayAffinity_ScienceSmall.png" />
+      <Icon Size="Large" Path="Textures/GUI/MavrosGameplayAffinity_ScienceLarge.png" />
+    </Icons>
+    <TemporaryEffectTooltipElement TemporaryEffectName="MavrosScienceBoost">
+      <EffectOverride>%StarSystemImprovementScrapBoostScienceTooltipEffect</EffectOverride>
+    </TemporaryEffectTooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Scrap Boost - Raw Scrap 1 -->
+  <GuiElement Name="StarSystemImprovementIndustryToScrap1">
+    <Title>%StarSystemImprovementIndustryToScrap1Title</Title>
+    <Description>%StarSystemImprovementIndustryToScrap1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap1Small.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap1Large.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Scrap Boost - Raw Scrap 2 -->
+  <GuiElement Name="StarSystemImprovementIndustryToScrap2">
+    <Title>%StarSystemImprovementIndustryToScrap2Title</Title>
+    <Description>%StarSystemImprovementIndustryToScrap2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap2Small.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap2Large.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Scrap Boost - Raw Scrap 3 -->
+  <GuiElement Name="StarSystemImprovementIndustryToScrap3">
+    <Title>%StarSystemImprovementIndustryToScrap3Title</Title>
+    <Description>%StarSystemImprovementIndustryToScrap3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap3Small.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementIndustryToScrap3Large.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Drudge Control Station -->
+  <ExtendedGuiElement Name="StarSystemImprovementDrudgeFactory">
+    <Title>%StarSystemImprovementDrudgeFactoryTitle</Title>
+    <Description>%StarSystemImprovementDrudgeFactoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementDrudgeFactorySmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementDrudgeFactoryLarge.png" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementDrudgeFactoryEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Drudges Build Action -->
+  <ExtendedGuiElement Name="StarSystemImprovementCreateDrudgeWorker">
+    <Title>%StarSystemImprovementCreateDrudgeWorkerTitle</Title>
+    <Description>%StarSystemImprovementCreateDrudgeWorkerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Population/StarSystemImprovementCreateDrudgeWorkerSmall.png" />
+      <Icon Size="Large" Path="Textures/Population/StarSystemImprovementCreateDrudgeWorkerLarge.png" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementCreateDrudgeWorkerEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Drudges Upgrade Action -->
+  <ExtendedGuiElement Name="StarSystemImprovementDrudgeUpgradeToTitan">
+    <Title>%StarSystemImprovementDrudgeUpgradeToTitanTitle</Title>
+    <Description>%StarSystemImprovementDrudgeUpgradeToTitanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Population/StarSystemImprovementDrudgeUpgradeToTitanSmall.png" />
+      <Icon Size="Large" Path="Textures/Population/StarSystemImprovementDrudgeUpgradeToTitanLarge.png" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementDrudgeUpgradeToTitanEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+</Datatable>

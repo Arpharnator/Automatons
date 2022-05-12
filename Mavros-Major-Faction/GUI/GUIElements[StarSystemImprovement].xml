@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- Big Data Shipyards -->
+  <GuiElement Name="StarSystemImprovementShip1Mavros">
+    <Title>%StarSystemImprovementShip1MavrosTitle</Title>
+    <Description>%StarSystemImprovementShip1MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementShip1MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementShip1MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Xeno-Industrial Infrastructure -->
+  <GuiElement Name="StarSystemImprovementIndustry1Mavros">
+    <Title>%StarSystemImprovementIndustry1MavrosTitle</Title>
+    <Description>%StarSystemImprovementIndustry1MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementIndustry1MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementIndustry1MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Infinite Supermarkets -->
+  <GuiElement Name="StarSystemImprovementApproval1Mavros">
+    <Title>%StarSystemImprovementApproval1MavrosTitle</Title>
+    <Description>%StarSystemImprovementApproval1MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementApproval1MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementApproval1MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Impervious Bunkers -->
+  <GuiElement Name="StarSystemImprovementDefense1Mavros">
+    <Title>%StarSystemImprovementDefense1MavrosTitle</Title>
+    <Description>%StarSystemImprovementDefense1MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementDefense1MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementDefense1MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Tractable Armaments -->
+  <GuiElement Name="StarSystemImprovementDefense2Mavros">
+    <Title>%StarSystemImprovementDefense2MavrosTitle</Title>
+    <Description>%StarSystemImprovementDefense2MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementDefense2MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementDefense2MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- AI Labor -->
+  <GuiElement Name="StarSystemImprovementIndustry4Mavros">
+    <Title>%StarSystemImprovementIndustry4MavrosTitle</Title>
+    <Description>%StarSystemImprovementIndustry4MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementIndustry4MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementIndustry4MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Wellbeing Foundation (Unmodified) -->
+  <GuiElement Name="StarSystemImprovementApproval3Mavros">
+    <Title>%StarSystemImprovementApproval3Title</Title>
+    <Description>%StarSystemImprovementApproval3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementApproval3Small" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementApproval3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Autonomous Administration -->
+  <GuiElement Name="StarSystemImprovementOverExpansion1Mavros">
+    <Title>%StarSystemImprovementOverExpansion1MavrosTitle</Title>
+    <Description>%StarSystemImprovementOverExpansion1MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementOverExpansion1MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementOverExpansion1MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Luxury Lotteries -->
+  <GuiElement Name="StarSystemImprovementApproval5Mavros">
+    <Title>%StarSystemImprovementApproval5MavrosTitle</Title>
+    <Description>%StarSystemImprovementApproval5MavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Constructibles/StarSystemImprovementApproval5MavrosSmall.png" />
+      <Icon Size="Large" Path="Textures/Constructibles/StarSystemImprovementApproval5MavrosLarge.png" />
+    </Icons>
+  </GuiElement>
+</Datatable>

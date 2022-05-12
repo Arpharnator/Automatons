@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/AcademyRolePreference.xsd">
+  <AcademyRolePreference Name="AffinityGameplayMajorMavros" >
+    <RolePreference Name="AcademyRoleLibrarian"     Value="0.01"/>
+    <RolePreference Name="AcademyRoleVaultKeeper"   Value="0.40"/>
+    <RolePreference Name="AcademyRoleMasterOfDust"  Value="0.10"/>
+    <RolePreference Name="AcademyRoleGrandAdmiral"  Value="0.80"/>
+  </AcademyRolePreference>
+</Datatable>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <!-- Mavros -->
+  <SimulationDescriptor Name="ClassPopulationPlanetAffinityMajorMavrosCount" Type="ClassPopulationPlanet">
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityMajorMavrosCount,ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityMajorMavrosCount,!ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationStarSystemAffinityMajorMavrosCount" Type="ClassPopulationStarSystem">
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityMajorMavrosCount" TooltipHidden="true"/>
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityMajorMavrosCount,!ClassPopulationEmpireSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationEmpireAffinityMajorMavrosCount" Type="ClassPopulationEmpire">
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityMajorMavrosCount,ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="!ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityMajorMavrosCount,!ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+  </SimulationDescriptor>
+  
+  <!-- Drudges -->
+  <SimulationDescriptor Name="ClassPopulationPlanetAffinityDrudgeWorkerCount" Type="ClassPopulationPlanet">
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityDrudgeWorkerCount,ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityDrudgeWorkerCount,!ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationStarSystemAffinityDrudgeWorkerCount" Type="ClassPopulationStarSystem">
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityDrudgeWorkerCount" TooltipHidden="true"/>
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityDrudgeWorkerCount,!ClassPopulationEmpireSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationEmpireAffinityDrudgeWorkerCount" Type="ClassPopulationEmpire">
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityDrudgeWorkerCount,ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="!ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityDrudgeWorkerCount,!ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+  </SimulationDescriptor>
+  
+  <!-- Drudge Titans -->
+  <SimulationDescriptor Name="ClassPopulationPlanetAffinityDrudgeTitansCount" Type="ClassPopulationPlanet">
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityDrudgeTitansCount,ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+    <Modifier       TargetProperty="PopulationCount"     Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationPlanetSuperPopulation/../ClassStarSystem/ClassPopulation,ClassPopulationStarSystemAffinityDrudgeTitansCount,!ClassPopulationStarSystemSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationStarSystemAffinityDrudgeTitansCount" Type="ClassPopulationStarSystem">
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityDrudgeTitansCount" TooltipHidden="true"/>
+    <Modifier TargetProperty="PopulationCount" Operation="Addition" Value="$(PopulationCount)" Path="!ClassPopulationStarSystemSuperPopulation/./!ClassExploitedStarSystem,!ColonizedStarSystemStateLost/../ClassEmpire/ClassPopulation,ClassPopulationEmpireAffinityDrudgeTitansCount,!ClassPopulationEmpireSuperPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPopulationEmpireAffinityDrudgeTitansCount" Type="ClassPopulationEmpire">
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityDrudgeTitansCount,ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+    <Modifier TargetProperty="NetPopulationScore" Operation="Multiplication" Value="$(PopulationGrowthScoreModifier)" Path="!ClassPopulationEmpireSuperPopulation/../ClassEmpire/ClassColonizedStarSystem/ClassPopulationStarSystemAffinityDrudgeTitansCount,!ClassPopulationPlanetSuperPopulation" Priority="100" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PopulationIsDrudge" Type="ClassPopulationEmpire"/>
+</Datatable>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <HeroGuiElement Name="HeroMavros01">
+    <Title>%HeroMavros01Title</Title>
+    <Description>%HeroMavros01Description</Description>
+    <Icons>
+      <Icon Size="Medium" Path="Bitmaps/Dynamic/Heroes/QuestHeroEndless02Medium" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Heroes/QuestHeroEndless02Large" />
+    </Icons>
+    <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitQuestHeroEndless02</ModelPath>
+  </HeroGuiElement>
+
+  <ExtendedGuiElement Name="HeroAffinityMajorMavros">
+    <Title>%HeroAffinityMavrosTitle</Title>
+    <Description>%HeroAffinityMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/PopulationIconsOverride04Small" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="HeroSkillTreeMavros">
+    <Title>%HeroSkillTreeMavrosTitle</Title>
+    <Description>%HeroSkillTreeMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/PopulationIconsOverride04Small" />
+    </Icons>
+    <Color Red="231" Green="103" Blue="0" Alpha="255"/>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="CategoryHeroSkillTreeMavros">
+    <Title>%CategoryHeroSkillTreeMavrosTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/PopulationIconsOverride04Small" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CategoryHeroSkillTreeNewBasic">
+    <Title>%CategoryHeroSkillTreeNewBasicTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Hero/HeroesHeroesSmall" />
+    </Icons>
+  </GuiElement>
+</Datatable>

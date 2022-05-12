@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <SimulationDescriptor Name="ModuleSupportCrew1Mavros"    Type="ModuleSupportCrew">
+    <Modifier TargetProperty="SectionHealthBonus"                   Operation="Addition" Value="75"    Path="ClassModule"/>
+    <Modifier TargetProperty="LocalManpower"                        Operation="Addition" Value="50"    Path="ModuleSupportCrew"/>
+    <Modifier TargetProperty="AdditionalGroundBattleManpowerLimit"  Operation="Addition" Value="50"    Path="ModuleSupportCrew"/>
+  </SimulationDescriptor>
+</Datatable>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <!-- Hull Improvements -->
+  <SimulationDescriptor Name="EmpireImprovementSlotsSmall01Mavros" Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull01,ShipSizeSmall" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementSlotsSmall02Mavros" Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull02,ShipSizeSmall" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementSlotsMedium01Mavros"    Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull01" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementSlotsMedium02Mavros"    Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull02" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementSlotsLarge01Mavros" Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeLarge" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementSlotsSmall04Mavros" Type="EmpireImprovement" />
+
+  <SimulationDescriptor Name="EmpireImprovementMavrosUnique" Type="EmpireImprovement">
+    <Modifier TargetProperty="MissileHealth"      Value="200"   Operation="Addition"        Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeaponMissile" TooltipHidden="true" />
+    <Modifier TargetProperty="Cooldown"           Value="3" Operation="Subtraction"     Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeaponMissile" TooltipHidden="true" />
+    <Modifier TargetProperty="ShortRangePenalty"  Value="0.1"   Operation="Subtraction"     Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeaponMissile" TooltipHidden="true" />
+    <Modifier TargetProperty="ProjectileSpeed"    Value="2"     Operation="Multiplication"  Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeaponMissile" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementScrapBoost2" Type="EmpireImprovement" />
+  <SimulationDescriptor Name="EmpireImprovementQuestRewardScrapBoost3" Type="EmpireImprovement" />
+
+  <!-- Technology Pointers -->
+  <SimulationDescriptor Name="TechnologyImproveExplorerHullMavros"  Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull1Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull2Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull2Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull3Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull3Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull4Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull4Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull5Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull5Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull6Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull6Mavros"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyApproval3Mavros"            Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyShip1Mavros"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyIndustry1Mavros"            Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyApproval1Mavros"            Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyDefense1Mavros"             Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyDefense2Mavros"             Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyIndToDustMavros"            Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyApproval5Mavros"            Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyPopulationSlotsMavros"      Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyScrapBoost2"                Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyScrapBoost3"                Type="Technology" IsSerializable="false" />
+
+  <!-- Technology Links -->
+  <SimulationDescriptor Name="TechnologyLinkExclusionUnique2Unique3Mavros"            Type="TechnologyLink" />
+  <SimulationDescriptor Name="TechnologyLinkExclusionUnique6Unique7Mavros"            Type="TechnologyLink" />
+  <SimulationDescriptor Name="TechnologyLinkExclusionMavrosIndustry4"                 Type="TechnologyLink" />
+</Datatable>

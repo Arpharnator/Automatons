@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
+  <!-- For anyone reading this, I found it less buggy to make the star system improvements require a faction specific technlogy than it was to require an affinity / gameplay affinity -->
+  <!-- OQ-3 Shipyards -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementShip1Mavros" SubCategory="SubCategoryShip" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Military" />
+    <Cost ResourceName="SystemProduction">160</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementShip1Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyShip1Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementShip1Mavros" />
+    <SimulationDescriptorReference Name="DefenseConstruction" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage1Weak" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionShip1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Hadeo-Industrial Manufacturing -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry1Mavros" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Industry" />
+    <Cost ResourceName="SystemProduction">280</Cost>
+    <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry1Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndustry1Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementIndustry1Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage1Normal" />
+    <SimulationDescriptorReference Name="IsIndustryBuilding" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Colony Rationing Logistics -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementApproval1Mavros" SubCategory="SubCategoryApproval" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Approval" />
+    <Cost ResourceName="SystemProduction">280</Cost>
+    <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementApproval1Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyApproval1Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementApproval1Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Reinforced Surveillance Stations -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementDefense1Mavros" SubCategory="SubCategoryDefense" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Military" />
+    <Cost ResourceName="SystemProduction">280</Cost>
+    <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefense1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefense1Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyDefense1Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementDefense1Mavros" />
+    <SimulationDescriptorReference Name="DefenseConstruction" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage1Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDefense1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Planetary Defense Cannons -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementDefense2Mavros" SubCategory="SubCategoryDefense" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Military" />
+    <Cost ResourceName="SystemProduction">320</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard,UnlockAvailability" Inverted="false">../ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefense2,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefense2Unfallen,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefense2Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyDefense2Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementDefense2Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Weak" />
+    <SimulationDescriptorReference Name="DefenseConstruction" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDefense1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- AI Labor -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry4" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Industry" />
+    <Cost                   ResourceName="SystemProduction">1120</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <InterpreterPrerequisite                    Flags="Prerequisite,Discard">Path(Context,@ColonizedStarSystemStateColony/PlanetGameplayTypeHot) or Path(Context,@ColonizedStarSystemStateColony/PlanetGameplayTypeMeager)</InterpreterPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry4,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementIndustry4" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal" />
+    <SimulationDescriptorReference Name="IsIndustryBuilding" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Mass-Printing Stations -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry4Mavros" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Industry" />
+    <Cost                   ResourceName="SystemProduction">1120</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <InterpreterPrerequisite                    Flags="Prerequisite,Discard">Path(Context,@ColonizedStarSystemStateColony/PlanetGameplayTypeHot) or Path(Context,@ColonizedStarSystemStateColony/PlanetGameplayTypeMeager)</InterpreterPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry4Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDustMavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementIndustry4Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal" />
+    <SimulationDescriptorReference Name="IsIndustryBuilding" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Wellbeing Foundation -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementApproval3" SubCategory="SubCategoryApproval" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Approval" />
+    <Cost ResourceName="SystemProduction">2240</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementApproval3,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyApproval3</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementApproval3" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage4Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Autonomous Administration -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementOverExpansion1" SubCategory="SubCategoryApproval" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Approval"/>
+    <Cost ResourceName="SystemProduction">2240</Cost>
+    <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">6000 * (1 + Property(StockLocation,@'../ClassEmpire', AutonomousAdministrationCount))  * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementOverExpansion1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyApproval3</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
+    <SimulationDescriptorReference Name="StarSystemImprovementOverExpansion1"/>
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage4Normal"/>
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Autonomous Command -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementOverExpansion1Mavros" SubCategory="SubCategoryMilitary" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Military" />
+    <Cost ResourceName="SystemProduction">2240</Cost>
+    <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">6000 * (1 + Property(StockLocation,@'../ClassEmpire', AutonomousAdministrationCount))  * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementOverExpansion1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementOverExpansion1Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementOverExpansion1Hissho,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="false"     Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyApproval3</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax" />
+    <SimulationDescriptorReference Name="StarSystemImprovementOverExpansion1Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage4Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+
+  <!-- Luxuries Lottery -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementApproval5Mavros" SubCategory="SubCategoryApproval" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Approval"     />
+    <Cost ResourceName="SystemProduction">1120</Cost>
+    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard">ColonizedStarSystemStateColony/ClassPlanet/ResourceTypeStrategic</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementApproval5Horatio,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementApproval5Mavros,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementApproval5,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyApproval5Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementApproval5Mavros" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+  
+  <!-- Arcological Administration -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink_Alt" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Food" Weight="0.25"/>
+    <SupervisorGain Name="Industry" Weight="0.25"/>
+    <SupervisorGain Name="Science" Weight="0.25"/>
+    <SupervisorGain Name="Dust" Weight="0.25"/>
+    <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">2000 * (1 + Property(StockLocation,@'../ClassEmpire', ArcologicalAdministrationCount)) * (1 + Property(StockLocation,@ClassColonizedStarSystem, ArcologicalAdministrationCount))  * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyInfluenceConversion</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="false">../ClassEmpire,!AffinityGameplayCravers,!AffinityGameplayVenetians,!AffinityGameplayVampirilis,!AffinityGameplayTimeLords,!AffinityGameplayUnfallen,!AffinityGameplaySophons,!AffinityGameplayHoratio,!AffinityGameplayVaulters,!AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
+    <SimulationDescriptorReference Name="StarSystemImprovementInfluenceSink_Alt"/>
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+  </StarSystemImprovementDefinition>
+</Datatable>
