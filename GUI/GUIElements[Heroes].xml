@@ -10,7 +10,7 @@
     <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitQuestHeroEndless02</ModelPath>
   </HeroGuiElement>
 
-  <ExtendedGuiElement Name="HeroAffinityMajorAutomatons">
+  <ExtendedGuiElement Name="HeroAffinityAutomatons">
     <Title>%HeroAffinityAutomatonsTitle</Title>
     <Description>%HeroAffinityAutomatonsDescription</Description>
     <Icons>

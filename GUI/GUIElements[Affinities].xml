@@ -34,22 +34,22 @@
     </Icons>
   </GuiElement>
 
-  <GuiElement Name="PopulationCollectionBonusMajorAutomatons1">
-    <Title>%PopulationCollectionBonusMajorAutomatons1</Title>
+  <GuiElement Name="PopulationCollectionBonusAutomatons1">
+    <Title>%PopulationCollectionBonusAutomatons1</Title>
   </GuiElement>
-  <GuiElement Name="PopulationCollectionBonusMajorAutomatons2">
-    <Title>%PopulationCollectionBonusMajorAutomatons2</Title>
+  <GuiElement Name="PopulationCollectionBonusAutomatons2">
+    <Title>%PopulationCollectionBonusAutomatons2</Title>
   </GuiElement>
-  <ExtendedGuiElement Name="PopulationCollectionBonusMajorAutomatons3">
-    <Title>%PopulationCollectionBonusMajorAutomatons3</Title>
+  <ExtendedGuiElement Name="PopulationCollectionBonusAutomatons3">
+    <Title>%PopulationCollectionBonusAutomatons3</Title>
     <TooltipElement>
       <EffectOverride>%ShipCostReductionPerStrategicEffect</EffectOverride>
     </TooltipElement>
   </ExtendedGuiElement>
 
-  <GuiElement Name="FactionPactEffectMajorAutomatons">
-    <Title>%FactionPactEffectMajorAutomatonsTitle</Title>
-    <Description>%FactionPactEffectMajorAutomatonsDescription</Description>
+  <GuiElement Name="FactionPactEffectAutomatons">
+    <Title>%FactionPactEffectAutomatonsTitle</Title>
+    <Description>%FactionPactEffectAutomatonsDescription</Description>
     <Icons>
       <Icon Size="Small" Path="DiplomaticAbilitiesFactionPactSmall" />
     </Icons>

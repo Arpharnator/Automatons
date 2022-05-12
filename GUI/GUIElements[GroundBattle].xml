@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
-  <GuiElement Name="TroopInfantryAffinityGameplayMajorAutomatons">
+  <GuiElement Name="TroopInfantryAffinityGameplayAutomatons">
     <Title>%TroopInfantryTitle</Title>
     <Description>%TroopInfantryDescription</Description>
     <Icons>
@@ -8,7 +8,7 @@
     </Icons>
   </GuiElement>
 
-  <GuiElement Name="TroopTankAffinityGameplayMajorAutomatons">
+  <GuiElement Name="TroopTankAffinityGameplayAutomatons">
     <Title>%TroopTankTitle</Title>
     <Description>%TroopTankDescription</Description>
     <Icons>
@@ -16,7 +16,7 @@
     </Icons>
   </GuiElement>
 
-  <GuiElement Name="TroopPlaneAffinityGameplayMajorAutomatons">
+  <GuiElement Name="TroopPlaneAffinityGameplayAutomatons">
     <Title>%TroopPlaneTitle</Title>
     <Description>%TroopPlaneDescription</Description>
     <Icons>
