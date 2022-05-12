@@ -1,371 +1,358 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipDesignDefinition.xsd">
 
-  <!--*****************-->
-  <!--**** Mavros ****-->
-  <!--*****************-->
-  <!-- Automated ship for migration & population -->
-  <ShipDesignDefinition Name="ShipDesignAutomatedShipMajorMavros" Hidden="true" Editable="false">
-    <HullReference Name="HullAutomatedMajorMavros"/>
-    <ShipRoleReference Name="ShipRoleAutomated"/>
-  </ShipDesignDefinition>
+    <!--*****************-->
+    <!--**** Automatons ****-->
+    <!--*****************-->
+
+    <!-- Automated ship for migration & population -->
+    <ShipDesignDefinition Name="ShipDesignAutomatedShipAutomatons" Hidden="true" Editable="false">
+      <HullReference Name="HullAutomatedAutomatons"/>
+      <ShipRoleReference Name="ShipRoleAutomated"/>
+    </ShipDesignDefinition>
   
-  <!--Super colonizer model-->
-  <ShipDesignDefinition Name="Mavros_SuperColonizer" Editable="true" Hidden="true" InspectionBypass="true">
-    <Tags>HideConstructionCost,Indestructible</Tags>
-    <HullReference Name="HullMedium03Mavros"/>
-    <ShipRoleReference Name="ShipRoleSuperColonizer"/>
-    <SlotBinding SlotName="SectionN.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionSE.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
+    <!--Super colonizer model-->
+    <ShipDesignDefinition Name="Automatons_SuperColonizer" Editable="true" Hidden="true" InspectionBypass="true">
+        <Tags>HideConstructionCost,Indestructible</Tags>
+        <HullReference Name="HullMedium03Automatons"/>
+        <ShipRoleReference Name="ShipRoleSuperColonizer"/>
+        <SlotBinding SlotName="SectionN.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionSE.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
 
-    <PathPrerequisite>../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-  </ShipDesignDefinition>
+        <PathPrerequisite>../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
+    </ShipDesignDefinition>
 
-  <!-- Unarmed Sophon colonizer-->
-  <ShipDesignDefinition Name="Mavros_Colonizer">
-    <HullReference Name="HullSmall03Mavros"/>
-    <ShipRoleReference Name="ShipRoleColonizer"/>
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleSupportColonization1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
+    <!-- Unarmed Sophon colonizer-->
+    <ShipDesignDefinition Name="Automatons_Colonizer">
+        <HullReference Name="HullSmall03Automatons"/>
+        <ShipRoleReference Name="ShipRoleColonizer"/>
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportColonization1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
 
-    <PathPrerequisite Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-    <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-    <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
-    <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-    <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
-  </ShipDesignDefinition>
+        <PathPrerequisite Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
+        <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+        <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+        <PathPrerequisite Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+    </ShipDesignDefinition>
 
-  <ShipDesignDefinition Name="ShipDesignDecolonizationMavros" Editable="false" Hidden="true">
-    <HullReference Name="HullSmall03Mavros"/>
-    <ShipRoleReference Name="ShipRoleColonizer"/>
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleSupportColonization1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-  </ShipDesignDefinition>
+    <ShipDesignDefinition Name="ShipDesignDecolonizationAutomatons" Editable="false" Hidden="true">
+        <HullReference Name="HullSmall03Automatons"/>
+        <ShipRoleReference Name="ShipRoleColonizer"/>
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportColonization1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    
+    
+    <ShipDesignDefinition Name="Automatons_Explorer">
+        <HullReference Name="HullSmall04Automatons"/>
+        <ShipRoleReference Name="ShipRoleExploration"/>
+        <SlotBinding SlotName="CoreSection.Support01">
+          <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportExploration1"/>
+        </SlotBinding>
 
+        <PathPrerequisite>../ClassEmpire,!AffinityGameplayVampirilis</PathPrerequisite>
+    </ShipDesignDefinition>
 
-  <ShipDesignDefinition Name="Mavros_Explorer">
-    <HullReference Name="HullSmall04Mavros"/>
-    <ShipRoleReference Name="ShipRoleExploration"/>
-    <SlotBinding SlotName="CoreSection.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionNE.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportExploration1"/>
-    </SlotBinding>
+    <ShipDesignDefinition Name="Automatons_ExplorerShipBound">
+        <HullReference Name="HullSmall04AutomatonsShipBound"/>
+        <ShipRoleReference Name="ShipRoleExploration"/>
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionNE.Support01">
+            <ModuleReference Name="ModuleGrowthLogistics1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportExploration1"/>
+        </SlotBinding>
 
-    <PathPrerequisite>../ClassEmpire,!AffinityGameplayVampirilis</PathPrerequisite>
-  </ShipDesignDefinition>
+        <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    </ShipDesignDefinition>
 
-  <ShipDesignDefinition Name="Mavros_ExplorerShipBound">
-    <HullReference Name="HullSmall04MavrosShipBound"/>
-    <ShipRoleReference Name="ShipRoleExploration"/>
-    <SlotBinding SlotName="CoreSection.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionNE.Support01">
-      <ModuleReference Name="ModuleGrowthLogistics1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportExploration1"/>
-    </SlotBinding>
+    <ShipDesignDefinition Name="Automatons_Invader">
+        <HullReference Name="HullMedium02Automatons"/>
+        <ShipRoleReference Name="ShipRoleMediumSupport"/>
+        <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportCrew1"/>
+        </SlotBinding>
+        <!--N Section-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--E Section-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--SE Section-->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--S Section-->
 
-    <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-  </ShipDesignDefinition>
-
-  <ShipDesignDefinition Name="Mavros_Invader">
-    <HullReference Name="HullMedium02Mavros"/>
-    <ShipRoleReference Name="ShipRoleMediumSupport"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleSupportCrew1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Weapon01">
-      <ModuleReference Name="ModuleWeaponLaser1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--SE Section-->
-    <SlotBinding SlotName="SectionSE.Weapon01">
-      <ModuleReference Name="ModuleWeaponLaser1"/>
-    </SlotBinding>
-    <!--S Section-->
-
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull5Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
-
-
-  <ShipDesignDefinition Name="Mavros_SmallAttack">
-    <HullReference Name="HullSmall01Mavros"/>
-    <ShipRoleReference Name="ShipRoleSmallAttacker"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionE.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <!--SE Section-->
-
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull2Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
-
-  <ShipDesignDefinition Name="Mavros_SmallSupport">
-    <HullReference Name="HullSmall02Mavros"/>
-    <ShipRoleReference Name="ShipRoleSmallSupport"/>
-    <!--Core Section-->
-
-    <!--N Section-->
-
-    <!--NE Section-->
-
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--SE Section-->
-    <SlotBinding SlotName="SectionSE.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull3Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
-
-  <ShipDesignDefinition Name="Mavros_MediumAttack">
-    <HullReference Name="HullMedium01Mavros"/>
-    <ShipRoleReference Name="ShipRoleMediumAttacker"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Weapon01">
-      <ModuleReference Name="ModuleWeaponMissile1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="CoreSection.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Weapon01">
-      <ModuleReference Name="ModuleWeaponMissile1"/>
-    </SlotBinding>
-    <!--SE Section-->
-    <SlotBinding SlotName="SectionSE.Weapon01">
-      <ModuleReference Name="ModuleWeaponMissile1"/>
-    </SlotBinding>
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull4Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
-
-  <ShipDesignDefinition Name="Mavros_MediumDefense">
-    <HullReference Name="HullMedium02Mavros"/>
-    <ShipRoleReference Name="ShipRoleMediumSupport"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Weapon01">
-      <ModuleReference Name="ModuleWeaponLaser1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--SE Section-->
-    <!--S Section-->
-
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull5Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
-
-  <ShipDesignDefinition Name="Mavros_LargeCarrier">
-    <HullReference Name="HullLarge01Mavros"/>
-    <ShipRoleReference Name="ShipRoleCarrier"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.LargeWeapon01">
-      <ModuleReference Name="ModuleWeaponMissile1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Weapon01">
-      <ModuleReference Name="ModuleWeaponMissile1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <SlotBinding SlotName="SectionE.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <!--SE Section-->
-    <SlotBinding SlotName="SectionSE.Weapon01">
-      <ModuleReference Name="ModuleWeaponKinetic1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionSE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-
-    <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
-    <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull6Mavros</TechnologyPrerequisite>
-  </ShipDesignDefinition>
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+        <!--<TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull5Sophons</TechnologyPrerequisite>-->
+    </ShipDesignDefinition>
 
 
-  <!--CUSTOM FACTIONS SUPPORT-->
-  <ShipDesignDefinition Name="Mavros_Leecher">
-    <HullReference Name="HullSmall05Mavros"/>
-    <ShipRoleReference Name="ShipRoleLeecher"/>
+    <ShipDesignDefinition Name="Automatons_SmallAttack"> 
+        <HullReference Name="HullSmall01Automatons"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+         <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+         <!--N Section--> 
+         <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+          <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+         <!--E Section--> 
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+         <!--SE Section-->
+      <SlotBinding SlotName="SectionSE.Weapon01">
+        <ModuleReference Name="ModuleWeaponKinetic1"/>
+      </SlotBinding>
 
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleGrowthLogistics1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="CoreSection.Weapon01">
-      <ModuleReference Name="ModuleGrowthLogistics1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionN.Support01">
-      <ModuleReference Name="ModuleGrowthLogistics1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleGrowthLogistics1"/>
-    </SlotBinding>
+         <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
 
-    <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-  </ShipDesignDefinition>
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+        <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull2Automatons</TechnologyPrerequisite>
+    </ShipDesignDefinition>
 
-  <ShipDesignDefinition Name="Mavros_RootCreator">
-    <HullReference Name="HullSmall06Mavros"/>
-    <ShipRoleReference Name="ShipRoleRootCreator"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Support01">
-      <ModuleReference Name="ModuleSupportRootCreation1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <SlotBinding SlotName="SectionNE.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <!--E Section-->
-    <!--SE Section-->
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
+    <ShipDesignDefinition Name="Automatons_SmallSupport">
+        <HullReference Name="HullSmall02Automatons"/>
+        <ShipRoleReference Name="ShipRoleSmallSupport"/>
+        <!--Core Section-->
+      <SlotBinding SlotName="CoreSection.Defense01">
+        <ModuleReference Name="ModuleDefenseHullPlating1"/>
+      </SlotBinding>
 
-    <PathPrerequisite>../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-  </ShipDesignDefinition>
+        <!--N Section-->
 
-  <ShipDesignDefinition Name="Mavros_Mothership" Editable="true" Hidden="false">
-    <Tags>NoBuyout,Indestructible</Tags>
-    <HullReference Name="HullLarge00Mavros"/>
-    <ShipRoleReference Name="ShipRoleMothership"/>
-    <!--Core Section-->
-    <SlotBinding SlotName="CoreSection.Defense01">
-      <ModuleReference Name="ModuleDefenseHullPlating1"/>
-    </SlotBinding>
-    <SlotBinding SlotName="CoreSection.SupportDefense01">
-      <ModuleReference Name="ModuleSupportEngine1"/>
-    </SlotBinding>
-    <!--N Section-->
-    <SlotBinding SlotName="SectionN.Support01">
-      <ModuleReference Name="ModuleMothershipScience1"/>
-    </SlotBinding>
-    <!--NE Section-->
-    <!--E Section-->
-    <!--SE Section-->
-    <SlotBinding SlotName="SectionSE.Weapon01">
-      <ModuleReference Name="ModuleWeaponLaser1"/>
-    </SlotBinding>
-    <!--S Section-->
-    <SlotBinding SlotName="SectionS.Support01">
-      <ModuleReference Name="ModuleMothershipLifeforce1"/>
-    </SlotBinding>
+        <!--NE Section-->
 
-    <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-  </ShipDesignDefinition>
+        <!--E Section-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--SE Section-->
+        <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+        <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull3Automatons</TechnologyPrerequisite>
+    </ShipDesignDefinition>
+
+    <ShipDesignDefinition Name="Automatons_MediumAttack">
+        <HullReference Name="HullMedium01Automatons"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!--Core Section-->
+
+        <!--N Section-->
+        <SlotBinding SlotName="SectionN.Defense01">
+          <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionN.Weapon01">
+          <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--E Section-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--SE Section-->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+        <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull4Automatons</TechnologyPrerequisite>
+    </ShipDesignDefinition>
+
+    <ShipDesignDefinition Name="Automatons_MediumDefense">
+        <HullReference Name="HullMedium02Automatons"/>
+        <ShipRoleReference Name="ShipRoleMediumSupport"/>
+        <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--N Section-->
+        <SlotBinding SlotName="SectionN.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--E Section-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionE.Support01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--SE Section-->
+        <!--S Section-->
+
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+        <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull5Automatons</TechnologyPrerequisite>
+    </ShipDesignDefinition>
+
+    <ShipDesignDefinition Name="Automatons_LargeCarrier">
+        <HullReference Name="HullLarge01Automatons"/>
+        <ShipRoleReference Name="ShipRoleCarrier"/>
+        <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+          <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="CoreSection.Weapon01">
+          <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--N Section-->
+        <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!--E Section-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--SE Section-->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionSE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+         <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+
+        <!-- If the ShipDesign is given by the FactionTraits, it will automatically appear in the MilitaryScreen when these prerequisites are validated -->
+       <TechnologyPrerequisite Flags="Prerequisite,Edition,Technology,Discard">TechnologyHull6Automatons</TechnologyPrerequisite>
+    </ShipDesignDefinition>
+    
+    
+    <!--CUSTOM FACTIONS SUPPORT-->
+    <ShipDesignDefinition Name="Automatons_Leecher">
+        <HullReference Name="HullSmall05Automatons"/>
+        <ShipRoleReference Name="ShipRoleLeecher"/>
+
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleGrowthLogistics1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleGrowthLogistics1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionN.Support01">
+            <ModuleReference Name="ModuleGrowthLogistics1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleGrowthLogistics1"/>
+        </SlotBinding>
+
+        <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    </ShipDesignDefinition>
+
+    <ShipDesignDefinition Name="Automatons_RootCreator">
+        <HullReference Name="HullSmall06Automatons"/>
+        <ShipRoleReference Name="ShipRoleRootCreator"/>
+        <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportRootCreation1"/>
+        </SlotBinding>
+        <!--N Section-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--NE Section-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--E Section-->
+        <!--SE Section-->
+        <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        
+        <PathPrerequisite>../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    </ShipDesignDefinition>
+
+    <ShipDesignDefinition Name="Automatons_Mothership" Editable="true" Hidden="false">
+        <Tags>NoBuyout,Indestructible</Tags>
+        <HullReference Name="HullLarge00Automatons"/>
+        <ShipRoleReference Name="ShipRoleMothership"/>
+        <!--Core Section-->
+        <SlotBinding SlotName="CoreSection.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="CoreSection.SupportDefense01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!--N Section-->
+        <SlotBinding SlotName="SectionN.Support01">
+            <ModuleReference Name="ModuleMothershipScience1"/>
+        </SlotBinding>
+        <!--NE Section-->
+        <!--E Section-->
+        <!--SE Section-->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--S Section-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleMothershipLifeforce1"/>
+        </SlotBinding>
+
+        <PathPrerequisite>../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    </ShipDesignDefinition>
 
 </Datatable>

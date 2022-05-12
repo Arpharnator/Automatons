@@ -52,13 +52,13 @@
     <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase" />
 
     <!-- Affinity Descriptors -->
-    <SimulationDescriptorReference Name="AffinityMajorMavros" />
-    <SimulationDescriptorReference Name="AffinityGameplayMajorMavros" />
+    <SimulationDescriptorReference Name="AffinityMajorAutomatons" />
+    <SimulationDescriptorReference Name="AffinityGameplayMajorAutomatons" />
     
     <!-- Ship Designs -->
     <StartingFleet>Explorer,Colonizer</StartingFleet>
     <UnlockedAbstractShipDesigns>Colonizer,Explorer,SmallAttack,SmallSupport,MediumAttack,MediumDefense,LargeCarrier,ScienceJuggernaut,MilitaryJuggernaut,SupportJuggernaut,Battleship,Obliterator</UnlockedAbstractShipDesigns>
-    <DefaultColonizer>ShipDesignDecolonizationMavros</DefaultColonizer>
-    <AutomatedShip>ShipDesignAutomatedShipMajorMavros</AutomatedShip>
+    <DefaultColonizer>ShipDesignDecolonizationAutomatons</DefaultColonizer>
+    <AutomatedShip>ShipDesignAutomatedShipMajorAutomatons</AutomatedShip>
   </FactionAffinity>
 </Datatable>
