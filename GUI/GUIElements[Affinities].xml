@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <AffinityGuiElement Name="AffinityMappingAutomatons" PreloadCount="3" >
+    <Title>%AffinityAutomatonsTitle</Title>
+    <Description>%AffinityAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall" />
+      <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsMedium" />
+      <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityAutomatonsMediumInverted" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLarge" />
+      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinitySophonsLeader" />
+      <Icon Size="Mood" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsMood" />
+      <Icon Size="SmallExtended" Path="Textures/GUI/NotificationMajorEmpireMetAutomatonsSmall.png" />
+      <Icon Size="MediumExtended" Path="Textures/GUI/NotificationMajorEmpireMetAutomatonsMedium.png" />
+      <Icon Size="Loading" Path="Textures/GUI/LoadingAutomatons.png" />
+    </Icons>
+    <SymbolString>[Automatons]</SymbolString>
+    <Sounds>
+      <Sound EventName="Play_ES2_Voices_OUTRO_Sophon" Type="Outro"/>
+    </Sounds>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <Movies>
+      <Movie Path="Movies/Factions/Automatons_Intro.mp4" Type="Intro" />
+      <Movie Path="Movies/Factions/Automatons_Outro.mp4" Type="Outro" />
+    </Movies>
+    <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitAutomatons</ModelPath>
+  </AffinityGuiElement>
+
+  <GuiElement Name="PopulationCollectionBonusTraitCustomFactionAutomatons">
+    <Title>%PopulationCollectionBonusTraitCustomFactionAutomatonsTitle</Title>
+    <Description>%PopulationCollectionBonusTraitCustomFactionAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesTruceSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PopulationCollectionBonusMajorAutomatons1">
+    <Title>%PopulationCollectionBonusMajorAutomatons1</Title>
+  </GuiElement>
+  <GuiElement Name="PopulationCollectionBonusMajorAutomatons2">
+    <Title>%PopulationCollectionBonusMajorAutomatons2</Title>
+  </GuiElement>
+  <ExtendedGuiElement Name="PopulationCollectionBonusMajorAutomatons3">
+    <Title>%PopulationCollectionBonusMajorAutomatons3</Title>
+    <TooltipElement>
+      <EffectOverride>%ShipCostReductionPerStrategicEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="FactionPactEffectMajorAutomatons">
+    <Title>%FactionPactEffectMajorAutomatonsTitle</Title>
+    <Description>%FactionPactEffectMajorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesFactionPactSmall" />
+    </Icons>
+  </GuiElement>
+</Datatable>

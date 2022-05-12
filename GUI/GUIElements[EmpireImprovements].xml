@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- HULL IMPROVEMENT -->
+  <SkinnedGuiElement Name="EmpireImprovementSlotsSmall01Automatons">
+    <Title>%EmpireImprovementSlotsSmall01AutomatonsEra2Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsSmall01AutomatonsEra2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <SkinnedGuiElement Name="EmpireImprovementSlotsSmall02Automatons">
+    <Title>%EmpireImprovementSlotsSmall02AutomatonsEra2Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsSmall02AutomatonsEra2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <SkinnedGuiElement Name="EmpireImprovementSlotsMedium01Automatons">
+    <Title>%EmpireImprovementSlotsMedium01AutomatonsEra3Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsMedium01AutomatonsEra3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <SkinnedGuiElement Name="EmpireImprovementSlotsMedium02Automatons">
+    <Title>%EmpireImprovementSlotsMedium02AutomatonsEra3Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsMedium02AutomatonsEra3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <SkinnedGuiElement Name="EmpireImprovementSlotsLarge01Automatons">
+    <Title>%EmpireImprovementSlotsLarge01AutomatonsEra4Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsLarge01AutomatonsEra4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <SkinnedGuiElement Name="EmpireImprovementSlotsSmall04Automatons">
+    <Title>%EmpireImprovementSlotsSmall04AutomatonsTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementSlotsSmall04AutomatonsTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </SkinnedGuiElement>
+
+  <ExtendedGuiElement Name="EmpireImprovementPortalsAutomatons">
+    <Title>%EmpireImprovementPortalAutomatonsTitle</Title>
+    <Description>%EmpireImprovementPortalAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementWormholeSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementWormholeLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementPortalAutomatonsTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+</Datatable>

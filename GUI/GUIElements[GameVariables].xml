@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <ExtendedGuiElement Name="ClassPopulationEmpireAffinityMajorAutomatons">
+    <Title>%ClassPopulationEmpireAffinityMajorAutomatonsTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationEmpireAffinityMajorAutomatonsCount">
+    <Title>%ClassPopulationEmpireAffinityMajorAutomatonsTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityMajorAutomatons">
+    <Title>%ClassPopulationStarSystemAffinityMajorAutomatonsTitle</Title>
+    <SymbolString>[Automatons]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityMajorAutomatonsCount">
+    <Title>%ClassPopulationStarSystemAffinityMajorAutomatonsTitle</Title>
+    <SymbolString>[Automatons]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityMajorAutomatons">
+    <Title>%PopulationMajorAutomatonsTitle</Title>
+    <Description>%PopulationMajorAutomatonsDescription</Description>
+    <SymbolString>[Automatons]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%PopulationAutomatonsTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityMajorAutomatonsCount">
+    <Title>%PopulationMajorAutomatonsTitle</Title>
+    <Description>%PopulationAutomatonsDescription</Description>
+    <SymbolString>[Automatons]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%PopulationAutomatonsTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AffinityGameplayTechnologyMajorAutomatons">
+    <Title>%AffinityGameplayMajorAutomatonsTitle</Title>
+    <Description>%AffinityGameplayMajorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityGameplaySmall" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="SuperAffinityMajorAutomatons">
+    <Title>%SuperAffinityMajorAutomatonsTitle</Title>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="AffinityMajorAutomatons">
+    <Title>%AffinityMajorAutomatonsTitle</Title>
+    <Description>%AffinityMajorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall" />
+      <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsMedium" />
+      <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityAutomatonsMediumInverted" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLarge" />
+      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinitySophonsLeader" />
+    </Icons>
+    <SymbolString>[Automatons]</SymbolString>
+    <Color Red="255" Green="141" Blue="102" Alpha="255" />
+  </ExtendedGuiElement>
+
+</Datatable>

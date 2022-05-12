@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <ExtendedGuiElement Name="AffinityGameplayMajorAutomatons">
+    <Title>%AffinityGameplayMajorAutomatonsTitle</Title>
+    <Description>%AffinityGameplayMajorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%AffinityGameplayAutomatonsTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <!-- Automatons Population -->
+  <ExtendedGuiElement Name="FactionTraitMinorMajorAutomatons">
+    <Title>%FactionTraitMinorMajorAutomatonsTitle</Title>
+    <Description>%FactionTraitMinorMajorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Traits/Population.png"/>
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitMinorMajorAutomatonsTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+</Datatable>
