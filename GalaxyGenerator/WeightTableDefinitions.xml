@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/GalaxyGeneratorWeightTableDefinition.xsd">
+  <!-- Mavros Homesystem Weight Table -->
+  <GalaxyGeneratorWeightTable Name="UniquePlanetAutomatons">
+    <Entry Tag="PlanetTypeTerran"            Weight="1"/>
+  </GalaxyGeneratorWeightTable>
+
+  <GalaxyGeneratorWeightTable Name="FactionAutomatons_StarTypes">
+    <Entry Tag="StarTypeWhite"  Weight="1"/>
+  </GalaxyGeneratorWeightTable>
+
+  <GalaxyGeneratorWeightTable Name="FactionAutomatons_PlanetTypes">
+    <Entry Tag="PlanetTypeTerran"            Weight="1"/>
+  </GalaxyGeneratorWeightTable>
+</Datatable>

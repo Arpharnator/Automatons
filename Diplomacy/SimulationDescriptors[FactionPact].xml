@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <SimulationDescriptor Name="FactionPactEffectAutomatons" Type="FactionPactEffect">
+    <Property Name="FactionPactBonusValue"  BaseValue="0.005" MaxValue="0.15"/>
+    <Property Name="FactionPactStepValue"   BaseValue="0" />
+    <BinaryModifier TargetProperty="FactionPactStepValue"   Operation="Force"       Left="0.15"                         BinaryOperation="Division"          Right="$(FactionPactDuration)"  Priority="3" TooltipHidden="true" />
+    <BinaryModifier TargetProperty="FactionPactBonusValue"  Operation="Addition"    Left="$(FactionPactCurrentTurn)"    BinaryOperation="Multiplication"    Right="$(FactionPactStepValue)" Priority="4" TooltipHidden="true" />
+    <Modifier TargetProperty="BuildingProductionCostReduction"  Operation="Subtraction" Value="$(FactionPactBonusValue)"    Path="../ClassEmpire/ClassColonizedStarSystem" Priority="9"/>
+  </SimulationDescriptor>
+</Datatable>

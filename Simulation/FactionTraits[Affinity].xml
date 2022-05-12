@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FactionTrait.xsd">
+
+  <FactionAffinity Name="AffinityGameplayAutomatons" SubCategory="MajorFactionAffinity" Hidden="false" Custom="true" Cost="100">
+    <!-- Starting Resources -->
+    <Command Name="TransferResources"               Arguments="EmpireManpower,1000" />
+    <Command Name="TransferResources"               Arguments="EmpireMoney,100" />
+    <Command Name="TransferResources"               Arguments="SystemInfluence,15" />
+
+    <!-- Usable Battle Actions -->
+    <Command Name="UnlockBattleAction"              Arguments="Group_ComputeShipExperience" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDestruction" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMilitaryPower" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_ComputeEndBattleStatus" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_Retreat" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_Retreat_RecoverMovementPoint" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_ReinforcementFlotilla_OnOwnShipDestruction" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDestruction" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMoraleBonus" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyFlotillaDestruction" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_OnFlotillaDestruction" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaDamageAppliedCurrentPhase" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_PhaseRepairShipCoreSection" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_RepairShipCoreSection" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDeactivation" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDeactivation" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_SetShipAliveCount" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_ReduceShipAliveCount" />
+    <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaInvisibilityStatusCurrentPhase" />
+
+    <!-- ??? -->
+    <Command Name="UnlockTechnology"                Arguments="TechnologyDefinitionTerransStartingShipDesigns" />
+    <Command Name="SetHomeSystemManpowerPercentage" Arguments="1" Priority="-1" />
+    <Command Name="SetFleetsManpowerPercentage"     Arguments="1" Priority="-1" />
+
+    <!-- Home System Starting Buildings -->
+    <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementHomeSystem" />
+    <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementColonyBase" />
+
+    <!-- Starting Tactics Cards -->
+    <Command Name="UnlockPlay"                      Arguments="PlayDefensiveShortHullPlatingIncrease" Priority="0" />
+    <Command Name="UnlockPlay"                      Arguments="PlayDefensiveLongShieldIncrease" Priority="-1" />
+    <Command Name="UnlockPlay"                      Arguments="PlayPostBalancedOpponentRecycling" Priority="-5" />
+    <Command Name="UnlockPlay"                      Arguments="PlayOffensiveMediumProjectilePenertrationIncrease" Priority="-5" />
+    <Command Name="UnlockPlay"                      Arguments="PlayOffensiveBalancedShieldPenetrationIncrease" Priority="-5" />
+
+    <!-- Start with Drudges -->
+    <Command Name="AddMinorPopulation" Arguments="AffinityDrudgeWorker,1" Priority="100"/>
+    <Command Name="CreateHomeSystemImprovement" Arguments="StarSystemImprovementDrudgeFactory"/>
+
+    <!-- Colony Building -->
+    <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase" />
+
+    <!-- Affinity Descriptors -->
+    <SimulationDescriptorReference Name="AffinityMajorMavros" />
+    <SimulationDescriptorReference Name="AffinityGameplayMajorMavros" />
+    
+    <!-- Ship Designs -->
+    <StartingFleet>Explorer,Colonizer</StartingFleet>
+    <UnlockedAbstractShipDesigns>Colonizer,Explorer,SmallAttack,SmallSupport,MediumAttack,MediumDefense,LargeCarrier,ScienceJuggernaut,MilitaryJuggernaut,SupportJuggernaut,Battleship,Obliterator</UnlockedAbstractShipDesigns>
+    <DefaultColonizer>ShipDesignDecolonizationMavros</DefaultColonizer>
+    <AutomatedShip>ShipDesignAutomatedShipMajorMavros</AutomatedShip>
+  </FactionAffinity>
+</Datatable>

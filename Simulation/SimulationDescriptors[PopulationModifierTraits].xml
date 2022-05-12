@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <!-- Drudges -->
+  <SimulationDescriptor Name="ClassPopulationPlanetModifiersTraitPrimaryDrudgeWorkerBonus" Type="ClassPopulationPlanet">
+    
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WithPopulationPlanetModifiersTraitPrimaryDrudgeWorkerBonus" Type="WithPopulationPlanet"/>
+  
+  <!-- Drudge Titans -->
+  <SimulationDescriptor Name="ClassPopulationPlanetModifiersTraitPrimaryDrudgeTitansBonus" Type="ClassPopulationPlanet">
+    
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WithPopulationPlanetModifiersTraitPrimaryDrudgeTitansBonus" Type="WithPopulationPlanet"/>
+
+  <!-- Neutral Happiness -->
+  <SimulationDescriptor Name="ClassPopulationPlanetModifiersTraitSecondaryDrudgeBonus" Type="ClassPopulationPlanet">
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsMonsoon)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsSteppes)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsVeldt)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTropical)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTundra)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(PlanetIsArctic)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(PlanetIsSnow)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(PlanetIsArid)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(PlanetIsDesert)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsAsh)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsIce)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(PlanetIsSwamp)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(PlanetIsBarren)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(PlanetIsLava)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasFrozen)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasCold)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasTemperate)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasWarm)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasHot)" Path="ClassPopulation" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(PlanetIsGasBurning)" Path="ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="WithPopulationPlanetModifiersTraitSecondaryDrudgeBonus" Type="WithPopulationPlanet"/>
+  
+  <!-- Political Trait -->
+  <SimulationDescriptor Name="PopulationPoliticalTraitAntiPolitical" Type="PopulationPoliticalTrait">
+    <Property Name="Politics01ToPolitics01"/>
+    <Property Name="Politics02ToPolitics02"/>
+    <Property Name="Politics03ToPolitics03"/>
+    <Property Name="Politics04ToPolitics04"/>
+    <Property Name="Politics05ToPolitics05"/>
+    <Property Name="Politics06ToPolitics06"/>
+    <Modifier TargetProperty="Politics01ToPolitics01" Operation="Force" Value="0"/>
+    <Modifier TargetProperty="Politics02ToPolitics02" Operation="Force" Value="0"/>
+    <Modifier TargetProperty="Politics03ToPolitics03" Operation="Force" Value="0"/>
+    <Modifier TargetProperty="Politics04ToPolitics04" Operation="Force" Value="0"/>
+    <Modifier TargetProperty="Politics05ToPolitics05" Operation="Force" Value="0"/>
+    <Modifier TargetProperty="Politics06ToPolitics06" Operation="Force" Value="0"/>
+  </SimulationDescriptor>
+</Datatable>
