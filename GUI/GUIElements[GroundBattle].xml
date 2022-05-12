@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
-  <GuiElement Name="TroopInfantryAffinityGameplayMajorMavros">
+  <GuiElement Name="TroopInfantryAffinityGameplayMajorAutomatons">
     <Title>%TroopInfantryTitle</Title>
     <Description>%TroopInfantryDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/GroundBattle/MinorFaction/MavrosInfantrySmall" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/GroundBattle/MinorFaction/AutomatonsInfantrySmall" />
     </Icons>
   </GuiElement>
 
-  <GuiElement Name="TroopTankAffinityGameplayMajorMavros">
+  <GuiElement Name="TroopTankAffinityGameplayMajorAutomatons">
     <Title>%TroopTankTitle</Title>
     <Description>%TroopTankDescription</Description>
     <Icons>
@@ -16,7 +16,7 @@
     </Icons>
   </GuiElement>
 
-  <GuiElement Name="TroopPlaneAffinityGameplayMajorMavros">
+  <GuiElement Name="TroopPlaneAffinityGameplayMajorAutomatons">
     <Title>%TroopPlaneTitle</Title>
     <Description>%TroopPlaneDescription</Description>
     <Icons>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
-  <ExtendedGuiElement Name="UniquePlanetMajorMavros">
-    <Title>%UniquePlanetMavrosTitle</Title>
-    <Description>%UniquePlanetMavrosDescription</Description>
+  <ExtendedGuiElement Name="UniquePlanetMajorAutomatons">
+    <Title>%UniquePlanetAutomatonsTitle</Title>
+    <Description>%UniquePlanetAutomatonsDescription</Description>
     <Icons>
       <Icon Size="Small" Path="PlanetType" />
       <Icon Size="Medium" Path="Bitmaps/Dynamic/Notifications/UniquePlanetVampirilisMedium" />
@@ -12,7 +12,7 @@
     </Icons>
   </ExtendedGuiElement>
 
-  <GuiPlanetTypeBaseStats Name="PlanetTypeMajorMavros">
+  <GuiPlanetTypeBaseStats Name="PlanetTypeMajorAutomatons">
     <Stat Name="MeanRadius" Min="6000" Max="7000" />
     <Stat Name="Mass" Min="5" Max="9" />
     <Stat Name="SurfaceGravity" Min="9" Max="12" />

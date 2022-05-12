@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- HULLS -->
+  <GuiElement Name="HullAutomatedMajorAutomatons"/>
+
+  <GuiElement Name="HullHero01Automatons">
+    <Title>%HullHero01AutomatonsTitle</Title>
+    <Description>%HullHero01AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Small" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall01Automatons">
+    <Title>%HullSmall01AutomatonsTitle</Title>
+    <Description>%HullSmall01AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall02Automatons">
+    <Title>%HullSmall02AutomatonsTitle</Title>
+    <Description>%HullSmall02AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall03Automatons">
+    <Title>%HullSmall03AutomatonsTitle</Title>
+    <Description>%HullSmall03AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall04Automatons">
+    <Title>%HullSmall04AutomatonsTitle</Title>
+    <Description>%HullSmall04AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall04AutomatonsShipBound">
+    <Title>%HullSmall04SophonsTitle</Title>
+    <Description>%HullSmall04SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall05Automatons">
+    <Title>%HullSmall05AutomatonsTitle</Title>
+    <Description>%HullSmall05AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullSmall06Automatons">
+    <Title>%HullSmall06AutomatonsTitle</Title>
+    <Description>%HullSmall06AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium01Automatons">
+    <Title>%HullMedium01AutomatonsTitle</Title>
+    <Description>%HullMedium01AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium02Automatons">
+    <Title>%HullMedium02AutomatonsTitle</Title>
+    <Description>%HullMedium02AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullMedium03Automatons">
+    <Title>%HullMedium03AutomatonsTitle</Title>
+    <Description>%HullMedium03AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Vaulters/ShipHullMedium03VaultersSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Vaulters/ShipHullMedium03VaultersLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullLarge01Automatons">
+    <Title>%HullLarge01AutomatonsTitle</Title>
+    <Description>%HullLarge01AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="HullLarge00Automatons">
+    <Title>%HullLarge00AutomatonsTitle</Title>
+    <Description>%HullLarge00AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipLarge" />
+    </Icons>
+  </GuiElement>
+</Datatable>

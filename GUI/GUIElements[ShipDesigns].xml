@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- SHIP DESIGNS -->
+  <GuiElement Name="Automatons_Hero">
+    <Title>%ShipDesignHeroAutomatonsTitle</Title>
+    <Description>%ShipDesignHeroAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Small" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/HeroesPathfinder/ShipHullHeroesPathfinder02Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_Colonizer">
+    <Title>%ShipDesignSmall03ColonizerAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall03ColonizerAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ShipDesignDecolonizationAutomatons">
+    <Title>%ShipDesignSmall03ColonizerAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall03ColonizerAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_Explorer">
+    <Title>%ShipDesignSmall03ExplorerAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall03ExplorerAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_Invader">
+    <Title>%ShipDesignMedium02InvaderAutomatonsTitle</Title>
+    <Description>%ShipDesignMedium02InvaderAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_SmallAttack">
+    <Title>%ShipDesignSmall01AttackerAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall01AttackerAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_SmallSupport">
+    <Title>%ShipDesignSmall02SupporterAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall02SupporterAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_Leecher">
+    <Title>%ShipDesignSmall05LeecherAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall05LeecherAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_RootCreator">
+    <Title>%ShipDesignSmall06RootCreatorAutomatonsTitle</Title>
+    <Description>%ShipDesignSmall06RootCreatorAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_MediumAttack">
+    <Title>%ShipDesignMedium01AttackerAutomatonsTitle</Title>
+    <Description>%ShipDesignMedium01AttackerAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_MediumDefense">
+    <Title>%ShipDesignMedium02DefenderAutomatonsTitle</Title>
+    <Description>%ShipDesignMedium02DefenderAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_SuperColonizer">
+    <Title>%ShipDesignMedium03SuperColonizerVaultersTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_LargeCarrier">
+    <Title>%ShipDesignLarge01CarrierAutomatonsTitle</Title>
+    <Description>%ShipDesignLarge01CarrierAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Automatons_Mothership">
+    <Title>%ShipDesignLarge00MothershipAutomatonsTitle</Title>
+    <Description>%ShipDesignLarge00MothershipAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Vampirilis/ShipHullVampirilisMothershipLarge" />
+    </Icons>
+  </GuiElement>
+</Datatable>
