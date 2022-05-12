@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+  <RuntimeModule Name="FactionMajorMavros" Type="Extension" Version="0.6.1">
+    <Title>Major Faction - The Mavros</Title>
+    <Description>Adds a new major faction, the Mavros. Complete with new mechanics, ships, quests, and faction traits.</Description>
+    <Author>Captain Cobbs</Author>
+    <Homepage></Homepage>
+    <PreviewImageFile>ModIcon.png</PreviewImageFile>
+    <ReleaseNotes>0.6.1 - More Scrap Abilities, lots of rebalances</ReleaseNotes>
+    <Tags>MajorFactions</Tags>
+
+    <!-- Art Credits
+Ringworld Dystopian Space Extended - https://www.deviantart.com/n-a-i-m-a/art/Ringworld-Dystopian-Space-Extended-812100207
+Hangar - https://www.artstation.com/artwork/8lLR2w 
+Underground Marketplace - https://www.deviantart.com/fmacmanus/art/Underground-Marketplace-517825825 
+Planetary Defenses - https://www.artstation.com/artwork/L9mAR 
+REPLACE PRINTER WITH THIS https://www.artstation.com/artwork/8KXzx
+Satellite Infiltration - https://www.artstation.com/artwork/qvWZN 
+FIND REPLACEMENT FOR THIS - https://mtgcardsmith.com/view/aetherworks-scrapyard
+Lava Facility - https://www.artstation.com/artwork/1o1yL
+Riot Gear (Hero Quest Guardian 2) - https://dogtoothcg.wordpress.com/
+Make icon for scrap > strategics be StarSystemImprovementIndustry4 but with icons for strategics in the center
+Make icon for production > scrap be StarSystemImprovementIndustryToScience2
+Junkyard Matte - https://www.artstation.com/necipk
+Titan - https://www.artstation.com/artwork/Gw62B
+Old Man and his Son - https://www.artstation.com/artwork/2WwZJ
+Paragon Nerve - https://www.artstation.com/artwork/2abRK
+Space Ship Wreckage 01 - https://www.artstation.com/artwork/AgmgV
+Early Warning Station - https://www.artstation.com/artwork/VRgbN
+Sedghammer & Amplitude Artists -->
+    
+    <Plugins>
+      <!-- Galaxy Generation -->
+      <DatabasePlugin DataType="GalaxyGeneratorWeightTableDefinition, Assembly-CSharp">
+        <FilePath>GalaxyGenerator/WeightTableDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Diplomacy -->
+      <DatabasePlugin DataType="DiplomaticFactionPactEffectDefinition, Assembly-CSharp">
+        <FilePath>Diplomacy/DiplomaticFactionPactEffectDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Simulation -->
+      <DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/SimulationDescriptors[*].xml</FilePath>
+        <FilePath>Simulation/Battles/SimulationDescriptors[*].xml</FilePath>
+        <FilePath>Diplomacy/SimulationDescriptors[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ResourceDefinition, Assembly-CSharp">
+        <FilePath>Simulation/ResourceDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Populations -->
+      <DatabasePlugin DataType="PopulationDefinition, Assembly-CSharp">
+        <FilePath>Simulation/PopulationDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="HappinessStatusSetDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HappinessStatusSetDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationTrait, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="PopulationModifiersTrait, Assembly-CSharp"/>
+          <ExtraType DataType="PopulationPoliticalTraitDefinition, Assembly-CSharp"/>
+          <ExtraType DataType="PopulationCollectionBonusTrait, Assembly-CSharp"/>
+        </ExtraTypes>
+        <FilePath>Simulation/PopulationModifiersTraits.xml</FilePath>
+        <FilePath>Simulation/PopulationModifiersTraits[*].xml</FilePath>
+        <FilePath>Simulation/PopulationPoliticalTraits.xml</FilePath>
+        <FilePath>Simulation/PopulationCollectionBonusTraits.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationPoliticalTraitDefinition, Assembly-CSharp">
+        <FilePath>Simulation/PopulationPoliticalTraits.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationModifiersTrait, Assembly-CSharp">
+        <FilePath>Simulation/PopulationModifiersTraits.xml</FilePath>
+        <FilePath>Simulation/PopulationModifiersTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationCollectionBonusTrait, Assembly-CSharp">
+        <FilePath>Simulation/PopulationCollectionBonusTraits.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Ship Designs -->
+      <DatabasePlugin DataType="ShipDesignDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/ShipDesignDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="HullDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/HullDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ModuleDefinition, Assembly-CSharp" Priority="10">
+        <ExtraTypes>
+          <ExtraType DataType="WeaponModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DefenseModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="SupportModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="LogisticsModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="BridgeModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="MothershipModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DestructionModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="SquadronModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="SystemSupportModuleDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/Battles/ModuleDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Constructibles -->
+      <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="StarSystemImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemPopulationTransformImprovementDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Technologies -->
+      <DatabasePlugin DataType="ScienceConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/ConstructibleElement_Science[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="TechnologyLinkDefinition, Assembly-CSharp">
+        <FilePath>Simulation/TechnologyLinkDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="EmpireImprovementDefinition, Assembly-CSharp">
+        <FilePath>Simulation/EmpireImprovements[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Temporary Effects -->
+      <DatabasePlugin DataType="TemporaryEffectDefinition, Assembly-CSharp">
+        <FilePath>Simulation/TemporaryEffectDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- GUI -->
+      <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+        <ExtraTypes>
+          <ExtraType  DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+          <ExtraType DataType="AffinityGuiElement, Assembly-CSharp" />
+          <!--<ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
+          <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />-->
+          <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
+          <!--<ExtraType DataType="QuestGuiElement, Assembly-CSharp" />-->
+          <ExtraType DataType="SkinnedGuiElement, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>GUI/GUIElements[*].xml</FilePath>
+      </DatabasePlugin>
+      
+      <!-- Mapping -->
+      <DatabasePlugin DataType="Amplitude.Unity.View.Mapping.Xml.XmlMapping, Assembly-CSharp-firstpass">
+        <FilePath>Mapping/Mapping.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Faction Traits -->
+      <DatabasePlugin DataType="FactionTrait, Assembly-CSharp" Priority="20">
+        <ExtraTypes>
+          <ExtraType  DataType="FactionAffinity, Assembly-CSharp" />
+          <ExtraType  DataType="FactionAffinityMapping, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/FactionTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="FactionAffinity, Assembly-CSharp">
+        <FilePath>Simulation/FactionTraits[Affinity].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="FactionAffinityMapping, Assembly-CSharp">
+        <FilePath>Simulation/FactionTraits[AffinityMapping].xml</FilePath>
+      </DatabasePlugin>
+      
+      <!-- Personalities -->
+      <DatabasePlugin DataType="PersonalityDefinition, Assembly-CSharp">
+        <FilePath>Simulation/PersonalityDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Factions -->
+      <DatabasePlugin DataType="Faction, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="MajorFaction, Assembly-CSharp"/>
+        </ExtraTypes>
+        <FilePath>Simulation/Factions[Major].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="MajorFaction, Assembly-CSharp">
+        <FilePath>Simulation/Factions[Major].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Academy Role Preference -->
+      <DatabasePlugin DataType="AcademyRolePreference, Assembly-CSharp">
+        <FilePath>Simulation/AcademyRolePreferences.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Encounter -->
+      <DatabasePlugin DataType="BattleActionDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/BattleActionDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="BattleEffectDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="BattleEffectDefinition_EmpireReward_Resource, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/Battles/BattleEffectDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Fleet Names -->
+      <DatabasePlugin DataType="FleetNameMappingDefinition, Assembly-CSharp">
+        <FilePath>Mapping/FleetNameMappingDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Ground Battles -->
+      <DatabasePlugin DataType="GroundBattleUnitConfig, Assembly-CSharp">
+        <FilePath>Simulation/Battles/GroundBattleUnitConfigs.xml</FilePath>
+      </DatabasePlugin>
+
+      <LocalizationPlugin DefaultLanguage="english">
+        <Directory>Localization</Directory>
+      </LocalizationPlugin>
+    </Plugins>
+  </RuntimeModule>
+</Datatable>

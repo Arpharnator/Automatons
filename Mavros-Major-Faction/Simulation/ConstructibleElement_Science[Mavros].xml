@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+  <!-- Ship Technologies -->
+  <!-- Efficient Shielding -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique1Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked" TechnologyFlags="Affinity">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyHull2Mavros" />
+    <SimulationDescriptorReference Name="TechnologyHull3Mavros" />
+    <SimulationDescriptorReference Name="TechnologyHull3" />
+    <SimulationDescriptorReference Name="TechnologyHull2" />
+    <SimulationDescriptorReference Name="TechnologyMilitaryGameplay" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>20 * $(TurnVariable) + 5</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Extreme Composites -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique2Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique2Mavros'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull1" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull1Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Agri Drugs -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique3Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique3Mavros'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull2" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull2Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Applied Cryogenics -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique4Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyHull4" />
+    <SimulationDescriptorReference Name="TechnologyHull4Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Split-second Ablatives -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique5Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyHull5" />
+    <SimulationDescriptorReference Name="TechnologyHull5Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>30 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Low Temperature Construction -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique6Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique4ToUnique6Mavros'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull3" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull3Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>35 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Dependency Algorithms -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique7Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique5ToUnique7Mavros'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull4" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull4Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>35 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Liquid Composites -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique8Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyHull6" />
+    <SimulationDescriptorReference Name="TechnologyHull6Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>40 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Far Halo Shipyard -->
+  <TechnologyDefinition Name="TechnologyDefinitionUnique9Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment5" Category="CategoryTechnologyFactionMajorMavros"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <Tags>NoOmniscience</Tags>
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage5Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique8ToUnique9Mavros'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityMajorMavros">ClassEmpire,AffinityMappingMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage5" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull5" />
+    <SimulationDescriptorReference Name="TechnologyImproveHull5Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperFormula>40 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Adaptive Colonies -->
+  <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration17" TechnologyStage="TechnologyStageDefinitionScienceAndExploration4" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration9To15'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyFood6" />
+    <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullSophons" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullCravers" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullMajorHisshos" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullLumeris" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUnitedEmpire" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullHoratios" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullTimeLords" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUnfallens" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullUmbralChoir" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullVaulters" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullTemplars" />
+    <SimulationDescriptorReference Name="TechnologyImproveExplorerHullMavros" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology" />
+
+    <HelperVariable Name="FoodPercent" />
+    <HelperVariable Name="OwnedPlanetsCount" />
+    <HelperVariable Name="FoodVariable" />
+    <HelperFormula> $(FoodPercent) * 10 + $(FoodVariable) * $(OwnedPlanetsCount) </HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Gameplay Affinity Specific Techs -->
+  <!-- Era 1 -->
+  <!-- Ubiquitous Surveillance -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary2" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyMilitary"  SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyShip1" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 10 + 10 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Ubiquitous Surveillance - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary2Mavros" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyMilitary"  SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyShip1Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 10 + 10 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Xenolinguistics -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade1" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade1" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">AffinityGameplaySophons</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyIndustry1" />
+    <SimulationDescriptorReference Name="TechnologyStrategicDeposit1" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology" />
+
+    <HelperVariable Name="AvailableDepositStrategic1" />
+    <HelperVariable Name="AvailablePlanets" />
+    <HelperVariable Name="AvailableTeemingPlanets" />
+    <HelperVariable Name="AvailableTemperatePlanets" />
+    <HelperFormula>$(AvailableDepositStrategic1) * 5 + 2 * $(AvailablePlanets) + 1 * $(AvailableTeemingPlanets) + 1 * $(AvailableTemperatePlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Xenolinguistics - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade1Mavros" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade1" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyIndustry1Mavros" />
+    <SimulationDescriptorReference Name="TechnologyStrategicDeposit1" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology" />
+
+    <HelperVariable Name="AvailableDepositStrategic1" />
+    <HelperVariable Name="AvailablePlanets" />
+    <HelperVariable Name="AvailableTeemingPlanets" />
+    <HelperVariable Name="AvailableTemperatePlanets" />
+    <HelperFormula>$(AvailableDepositStrategic1) * 5 + 2 * $(AvailablePlanets) + 1 * $(AvailableTeemingPlanets) + 1 * $(AvailableTemperatePlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Off-world Agribusiness -->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment1" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplay" />
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplayCommon" />
+    <SimulationDescriptorReference Name="TechnologyLinkFrom1Unfallen" />
+    <SimulationDescriptorReference Name="TechnologyLinkFrom1TimeLords" />
+    <SimulationDescriptorReference Name="TechnologyApproval1" />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology" />
+
+    <HelperVariable Name="MinorEmpiresDiplomacyVariable" />
+    <HelperVariable Name="HappinessVariable" />
+    <HelperFormula>10 * $(MinorEmpiresDiplomacyVariable) + 10 * $(HappinessVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Off-world Agribusiness - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment1Mavros" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplay" />
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplayCommon" />
+    <SimulationDescriptorReference Name="TechnologyApproval1Mavros" />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology" />
+
+    <HelperVariable Name="MinorEmpiresDiplomacyVariable" />
+    <HelperVariable Name="HappinessVariable" />
+    <HelperFormula>15 * $(MinorEmpiresDiplomacyVariable) + 10 * $(HappinessVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- N-Way Fusion -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary1" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyMilitary"  SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayMajorMavros</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyDefense1" />
+    <SimulationDescriptorReference Name="TechnologyDefense1NonVampirilis" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 10 + 20 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- N-Way Fusion - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary1Mavros" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyMilitary"  SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyDefense1Mavros" />
+    <SimulationDescriptorReference Name="TechnologyDefense1NonVampirilis" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage1" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 15 + 20 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Era 2 -->
+  <!-- High-Energy Magnetics -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary6" TechnologyStage="TechnologyStageDefinitionMilitary2" Category="CategoryTechnologyMilitary" SubCategoryInQuests="TechnoMilitary" SubCategory="YoplaitFraise" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityMappingUnfallen</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyDefense2" />
+    <SimulationDescriptorReference Name="TechnologyDefense2Common" />
+    <SimulationDescriptorReference Name="TechnologyMilitaryGameplay" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 15 + 30 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- High-Energy Magnetics - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionMilitary6Mavros" TechnologyStage="TechnologyStageDefinitionMilitary2" Category="CategoryTechnologyMilitary" SubCategoryInQuests="TechnoMilitary" SubCategory="YoplaitFraise" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyDefense2" />
+    <SimulationDescriptorReference Name="TechnologyDefense2Mavros" />
+    <SimulationDescriptorReference Name="TechnologyMilitaryGameplay" />
+    <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology" />
+
+    <HelperVariable Name="TurnVariable" />
+    <HelperVariable Name="EnemyEmpires" />
+    <HelperFormula>$(TurnVariable) * 20 + 40 * $(EnemyEmpires)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Atmospheric Filtration -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade25" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade2" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayTimeLords</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayUnfallen</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayVaulters</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayMajorHisshos</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyColonization11" />
+    <SimulationDescriptorReference Name="TechnologyColonization11Common" />
+    <SimulationDescriptorReference Name="TechnologyApproval5" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventPacifistTechnology" />
+    <HelperVariable Name="AvailableDepositStrategic3" />
+    <HelperVariable Name="AvailableAshPlanets" />
+    <HelperVariable Name="HappinessVariable" />
+    <HelperFormula>$(AvailableAshPlanets) * 1 + 5 * $(AvailableDepositStrategic3) + 20 * $(HappinessVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Atmospheric Filtration - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade25Mavros" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade2" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyColonization11" />
+    <SimulationDescriptorReference Name="TechnologyApproval5Mavros" />
+    <SimulationDescriptorReference Name="TechnologyScrapBoost2" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage2" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventPacifistTechnology" />
+    <HelperVariable Name="AvailableMonsoonPlanets" />
+    <HelperVariable Name="AvailableForestPlanets" />
+    <HelperVariable Name="AvailableDepositStrategic3" />
+    <HelperVariable Name="HappinessVariable" />
+    <HelperFormula>$(AvailableMonsoonPlanets) * 1 + $(AvailableForestPlanets) * 1 + 5 * $(AvailableDepositStrategic3) + 20 * $(HappinessVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Era 3 -->
+  <!-- Maximized Exploitaiton -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade8" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade3" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEconomyAndTrade25To8')))</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction" Inverted="true">AffinityGameplayTimeLords</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction" Inverted="true">AffinityGameplayUnfallen</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction" Inverted="true">AffinityGameplayHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction" Inverted="true">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyIndToDust" />
+    <SimulationDescriptorReference Name="TechnologyColonization13" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology" />
+
+    <HelperVariable Name="DustVariable" />
+    <HelperVariable Name="ImprovementsVariable" />
+    <HelperVariable Name="AvailableLavaPlanets" />
+    <HelperFormula>$(AvailableLavaPlanets) * 1 + 5 * $(ImprovementsVariable) * $(DustVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Maximized Exploitation - Mavros -->
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade8Mavros" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade3" Category="CategoryTechnologyEconomyAndTrade" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEconomyAndTrade25To8')))</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyMajorMavros" Inverted="false">AffinityGameplayMajorMavros</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyIndToDust" />
+    <SimulationDescriptorReference Name="TechnologyIndToDustMavros" />
+    <SimulationDescriptorReference Name="TechnologyColonization13" />
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage3" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology" />
+
+    <HelperVariable Name="DustVariable" />
+    <HelperVariable Name="ImprovementsVariable" />
+    <HelperVariable Name="AvailableLavaPlanets" />
+    <HelperFormula>$(AvailableLavaPlanets) * 1 + 5 * $(ImprovementsVariable) * $(DustVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <!-- Era 4 -->
+  <!-- Cultural Invertics -->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment11" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyApproval3" />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology" />
+
+    <HelperVariable Name="HappinessVariable" />
+    <HelperFormula>30 * $(HappinessVariable)</HelperFormula>
+  </TechnologyDefinition>
+</Datatable>

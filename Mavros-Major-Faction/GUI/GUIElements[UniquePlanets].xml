@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <ExtendedGuiElement Name="UniquePlanetMajorMavros">
+    <Title>%UniquePlanetMavrosTitle</Title>
+    <Description>%UniquePlanetMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="PlanetType" />
+      <Icon Size="Medium" Path="Bitmaps/Dynamic/Notifications/UniquePlanetVampirilisMedium" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeUniqueSykagojaLarge" />
+      <Icon Size="Mood" Path="Bitmaps/Dynamic/Notifications/NotificationUniquePlanetSykagojaLarge" />
+      <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeHomeWorldHoratioPlanetoid" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <GuiPlanetTypeBaseStats Name="PlanetTypeMajorMavros">
+    <Stat Name="MeanRadius" Min="6000" Max="7000" />
+    <Stat Name="Mass" Min="5" Max="9" />
+    <Stat Name="SurfaceGravity" Min="9" Max="12" />
+    <Stat Name="OrbitalPeriod" Min="120" Max="350" />
+    <Stat Name="RotationPeriod" Min="0.2" Max="0.9" />
+    <Stat Name="AtmosphereComposition">
+      <StatDetail Name="N₂" Min="60" Max="90" />
+      <StatDetail Name="O₂" Min="15" Max="25" />
+      <StatDetail Name="Ar" Min="1" Max="2" />
+      <StatDetail Name="H₂" Min="0" Max="1" />
+      <StatDetail Name="H₂O" Min="2" Max="5" />
+      <StatDetail Name="CO₂" Min="2" Max="4" />
+      <StatDetail Name="SO₂" Min="0" Max="1" />
+      <StatDetail Name="CH₄" Min="1" Max="2" />
+    </Stat>
+    <Stat Name="AtmospherePressure" Min="0.9" Max="1.1" />
+    <Stat Name="AtmosphereTemperature" Min="290" Max="295" />
+    <Stat Name="PlanetMainElements">
+      <StatDetail Name="Fe" Min="30" Max="40" />
+      <StatDetail Name="O" Min="25" Max="35" />
+      <StatDetail Name="Si" Min="25" Max="35" />
+      <StatDetail Name="Mg" Min="10" Max="20" />
+      <StatDetail Name="S" Min="1" Max="3" />
+      <StatDetail Name="Ni" Min="1" Max="3" />
+      <StatDetail Name="Ca" Min="1" Max="2" />
+      <StatDetail Name="Al" Min="1" Max="2" />
+    </Stat>
+    <Stat Name="CoreType" Value="%PlanetCoreTypeMetallicTitle" />
+  </GuiPlanetTypeBaseStats>
+</Datatable>

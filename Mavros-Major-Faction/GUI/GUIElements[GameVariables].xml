@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <ExtendedGuiElement Name="ClassPopulationEmpireAffinityMajorMavros">
+    <Title>%ClassPopulationEmpireAffinityMajorMavrosTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationEmpireAffinityMajorMavrosCount">
+    <Title>%ClassPopulationEmpireAffinityMajorMavrosTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityMajorMavros">
+    <Title>%ClassPopulationStarSystemAffinityMajorMavrosTitle</Title>
+    <SymbolString>[mavros]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityMajorMavrosCount">
+    <Title>%ClassPopulationStarSystemAffinityMajorMavrosTitle</Title>
+    <SymbolString>[mavros]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityMajorMavros">
+    <Title>%PopulationMajorMavrosTitle</Title>
+    <Description>%PopulationMajorMavrosDescription</Description>
+    <SymbolString>[mavros]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%PopulationMavrosTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityMajorMavrosCount">
+    <Title>%PopulationMajorMavrosTitle</Title>
+    <Description>%PopulationMavrosDescription</Description>
+    <SymbolString>[mavros]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%PopulationMavrosTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AffinityGameplayTechnologyMajorMavros">
+    <Title>%AffinityGameplayMajorMavrosTitle</Title>
+    <Description>%AffinityGameplayMajorMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityGameplaySmall" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="SuperAffinityMajorMavros">
+    <Title>%SuperAffinityMajorMavrosTitle</Title>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="AffinityMajorMavros">
+    <Title>%AffinityMajorMavrosTitle</Title>
+    <Description>%AffinityMajorMavrosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityMavrosSmall" />
+      <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityMavrosMedium" />
+      <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityMavrosMediumInverted" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityMavrosLarge" />
+      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinitySophonsLeader" />
+    </Icons>
+    <SymbolString>[mavros]</SymbolString>
+    <Color Red="255" Green="141" Blue="102" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <!-- Drudge Worker -->
+  <ExtendedGuiElement Name="AffinityDrudgeWorker">
+    <Title>%AffinityDrudgeWorkerTitle</Title>
+    <Description>%AffinityDrudgeWorkerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Population/AffinityDrudgeWorkersSmall.png" />
+      <Icon Size="Medium" Path="Textures/Population/AffinityDrudgeWorkersMedium.png" />
+      <Icon Size="MediumInverted" Path="Textures/Population/AffinityDrudgeWorkersMediumInverted.png" />
+      <Icon Size="Large" Path="Textures/Population/AffinityDrudgeWorkersLarge.png" />
+    </Icons>
+    <SymbolString></SymbolString>
+    <Color Red="255" Green="141" Blue="141" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityDrudgeWorkerCount">
+    <Title>%AffinityDrudgeWorkerTitle</Title>
+    <Description>%AffinityDrudgeWorkerDescription</Description>
+    <SymbolString></SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%AffinityDrudgeWorkerAltTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <!-- Drudge Titans -->
+  <ExtendedGuiElement Name="AffinityDrudgeTitans">
+    <Title>%AffinityDrudgeTitansTitle</Title>
+    <Description>%AffinityDrudgeTitansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Population/AffinityDrudgeTitansSmall.png" />
+      <Icon Size="Medium" Path="Textures/Population/AffinityDrudgeTitansMedium.png" />
+      <Icon Size="MediumInverted" Path="Textures/Population/AffinityDrudgeTitansMediumInverted.png" />
+      <Icon Size="Large" Path="Textures/Population/AffinityDrudgeTitansLarge.png" />
+    </Icons>
+    <SymbolString></SymbolString>
+    <Color Red="255" Green="141" Blue="141" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetAffinityDrudgeTitansCount">
+    <Title>%AffinityDrudgeTitansTitle</Title>
+    <Description>%AffinityDrudgeTitansDescription</Description>
+    <SymbolString></SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <AltTitle>%AffinityDrudgeTitansAltTitle</AltTitle>
+  </ExtendedGuiElement>
+
+  <!-- Drudges Population Bonus -->
+  <ExtendedGuiElement Name="ClassPopulationPlanetModifiersTraitPrimaryDrudgeWorkerBonus">
+    <Title>%PopulationModifiersTraitPrimaryDrudgesTitle</Title>
+    <TooltipElement>
+      <EffectOverride>%PopulationModifiersTraitDrudgeWorkerBonusOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetModifiersTraitPrimaryDrudgeTitansBonus">
+    <Title>%PopulationModifiersTraitPrimaryDrudgesTitle</Title>
+    <TooltipElement>
+      <EffectOverride>%PopulationModifiersTraitDrudgeTitansBonusOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ClassPopulationPlanetModifiersTraitSecondaryDrudgeBonus">
+    <Title>%PopulationModifiersTraitSecondaryDrudgeTitle</Title>
+    <TooltipElement>
+      <EffectOverride>%PopulationModifiersTraitSecondaryDrudgeBonusOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Drudges Political Trait -->
+  <ExtendedGuiElement Name="PopulationPoliticalTraitAntiPolitical">
+    <Title>%PopulationPoliticalTraitAntiPoliticalTitle</Title>
+    <Description>%PopulationPoliticalTraitAntiPoliticalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="StarSystemPopulation" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PopulationPoliticalTraitAntiPoliticalTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Variables -->
+  <GuiElement Name="MissileHealth">
+    <Title>%PanelFeatureModuleEffectsMissileHealthTitle</Title>
+  </GuiElement>
+</Datatable>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/TechnologyLinkDefinition.xsd">
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopmentUnique1ToUnique3Mavros" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyHull2Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyImproveHull2Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionUnique2Unique3Mavros"/>
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopmentUnique1ToUnique2Mavros" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyHull2Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyImproveHull1Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionUnique2Unique3Mavros"/>
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopmentUnique4ToUnique7Mavros" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyHull4Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyImproveHull3Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionUnique6Unique7Mavros"/>
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopmentUnique3ToUnique6Mavros" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyHull5Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyImproveHull4Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionUnique6Unique7Mavros"/>
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopmentUnique8ToUnique9Mavros" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyHull6Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyImproveHull5Mavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionUnique6Unique7Mavros"/>
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEconomyMavrosIndustry4" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyApproval5Mavros</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyIndToDustMavros</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyLinkExclusionMavrosIndustry4"/>
+  </TechnologyLinkDefinition>
+</Datatable>
