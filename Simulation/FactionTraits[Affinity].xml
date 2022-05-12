@@ -44,10 +44,6 @@
     <Command Name="UnlockPlay"                      Arguments="PlayOffensiveMediumProjectilePenertrationIncrease" Priority="-5" />
     <Command Name="UnlockPlay"                      Arguments="PlayOffensiveBalancedShieldPenetrationIncrease" Priority="-5" />
 
-    <!-- Start with Drudges -->
-    <Command Name="AddMinorPopulation" Arguments="AffinityDrudgeWorker,1" Priority="100"/>
-    <Command Name="CreateHomeSystemImprovement" Arguments="StarSystemImprovementDrudgeFactory"/>
-
     <!-- Colony Building -->
     <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase" />
 

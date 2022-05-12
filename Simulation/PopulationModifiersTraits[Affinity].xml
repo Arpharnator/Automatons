@@ -1,49 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationModifiersTrait.xsd">
-  <!-- Mavros -->
-  <PopulationModifiersTrait Name="PopulationModifiersTraitMajorMavros" SubCategory="Affinity" ShowInCustom="true">
+  <!-- Automatons -->
+  <PopulationModifiersTrait Name="PopulationModifiersTraitMajorAutomatons" SubCategory="Affinity" ShowInCustom="true">
     <Modifiers>
       <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityMajorMavros"/>
+        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityMajorAutomatons"/>
       </Modifier>
       <Modifier Class="ClassPopulationStarSystem">
         <SimulationDescriptorReference Name="ClassPopulationStarSystemGrowthTypeFood"/>
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityMajorMavros"/>
+        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityMajorAutomatons"/>
       </Modifier>
     </Modifiers>
 
     <AssimilatedModifiers>
       <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationAssimilatedEmpireAffinityMajorMavros"/>
+        <SimulationDescriptorReference Name="ClassPopulationAssimilatedEmpireAffinityMajorAutomatons"/>
       </Modifier>
     </AssimilatedModifiers>
   </PopulationModifiersTrait>
-  
-  <!-- Drudges -->
-  <PopulationModifiersTrait Name="PopulationModifiersTraitDrudgeWorker" SubCategory="Affinity" ShowInCustom="false">
-    <Modifiers>
-      <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityDrudgeWorker"/>
-        <SimulationDescriptorReference Name="PopulationIsDrudge"/>
-      </Modifier>
-      <Modifier Class="ClassPopulationStarSystem">
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemGrowthTypeIndustry"/>
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityDrudgeWorker"/>
-      </Modifier>
-    </Modifiers>
-  </PopulationModifiersTrait>
-  
-  <!-- Drudge Titans -->
-  <PopulationModifiersTrait Name="PopulationModifiersTraitDrudgeTitans" SubCategory="Affinity" ShowInCustom="false">
-    <Modifiers>
-      <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityDrudgeTitans"/>
-        <SimulationDescriptorReference Name="PopulationIsDrudge"/>
-      </Modifier>
-      <Modifier Class="ClassPopulationStarSystem">
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemGrowthTypeIndustry"/>
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityDrudgeTitans"/>
-      </Modifier>
-    </Modifiers>
-  </PopulationModifiersTrait>
+
 </Datatable>

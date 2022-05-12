@@ -9,13 +9,13 @@
     <Trait Name="PopulationPoliticalTraitAntiEcologist"/>
     <Trait Name="PopulationPoliticalTraitSagacious"/>
 
-    <Trait Name="PopulationModifiersTraitMajorMavrosCount"/>
-    <Trait Name="PopulationModifiersTraitMajorMavros"/>
+    <Trait Name="PopulationModifiersTraitAutomatonsCount"/>
+    <Trait Name="PopulationModifiersTraitAutomatons"/>
 
     <Trait Name="PopulationModifiersTraitPrimaryCustomIndustry01"/>
     <Trait Name="PopulationModifiersTraitSecondaryCustomDefenseOnStrategic00" />
 
-    <Trait Name="PopulationCollectionBonusTraitMajorMavros" />
+    <Trait Name="PopulationCollectionBonusTraitAutomatons" />
 
     <Desires/>
     <Wills/>
