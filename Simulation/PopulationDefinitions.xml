@@ -5,15 +5,15 @@
       <Politics PoliticsReference="Politics01" BaseScore="1" BaseTrend="0"/>
     </DefaultPolitics>
 
-    <Trait Name="PopulationPoliticalTraitIndustrialist"/>
+    <Trait Name="PopulationPoliticalTraitEcologist"/>
     <Trait Name="PopulationPoliticalTraitAntiEcologist"/>
     <Trait Name="PopulationPoliticalTraitSagacious"/>
 
     <Trait Name="PopulationModifiersTraitAutomatonsCount"/>
     <Trait Name="PopulationModifiersTraitAutomatons"/>
 
-    <Trait Name="PopulationModifiersTraitPrimaryCustomIndustry01"/>
-    <Trait Name="PopulationModifiersTraitSecondaryCustomDefenseOnStrategic00" />
+    <Trait Name="PopulationModifiersTraitPrimaryFIDSOnTerran"/>
+    <Trait Name="PopulationModifiersTraitSecondaryApprovalOnTerran" />
 
     <Trait Name="PopulationCollectionBonusTraitAutomatons" />
 
