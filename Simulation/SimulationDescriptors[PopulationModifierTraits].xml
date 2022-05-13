@@ -5,7 +5,7 @@
     <!--Bonus FIDS on Terran-->
     <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
         <Modifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Value="1" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
-        <Modifier Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTerran/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran, ClassPopulation" Value="1" Operation="Addition" TargetProperty="BonusPopulationFIDS"/>
+        <BinaryModifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran, ClassPopulation" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
@@ -13,14 +13,14 @@
         <BinaryModifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" TooltipHidden="true"/>
     </SimulationDescriptor>
 
-    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedPrimaryCustomFood00">
+    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedFIDSOnTerran">
         <Modifier Path="ClassPopulation" Value="1" Operation="Addition" TargetProperty="BonusPopulationFIDS"/>
     </SimulationDescriptor>
 
     <!--Bonus Approval on Terran-->
-    <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitPrimaryCustomFood00">
+    <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitSecondaryApprovalOnTerran">
         <Modifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Value="2" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
-        <Modifier Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTerran/ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran, ClassPopulation" Value="2" Operation="Addition" TargetProperty="BonusPopulationHappiness"/>
+        <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran, ClassPopulation" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran">
@@ -28,7 +28,7 @@
         <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" TooltipHidden="true"/>
     </SimulationDescriptor>
 
-    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedPrimaryCustomFood00">
+    <SimulationDescriptor Type="ClassPopulationAssimilated" Name="ClassPopulationAssimilatedApprovalOnTerran">
         <Modifier Path="ClassPopulation" Value="2" Operation="Addition" TargetProperty="BonusPopulationHappiness"/>
     </SimulationDescriptor>
 

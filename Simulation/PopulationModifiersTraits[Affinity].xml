@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationModifiersTrait.xsd">
   <!-- Automatons -->
-  <PopulationModifiersTrait Name="PopulationModifiersTraitMajorAutomatons" SubCategory="Affinity" ShowInCustom="true">
+  <PopulationModifiersTrait Name="PopulationModifiersTraitAutomatons" SubCategory="Affinity" ShowInCustom="true">
     <Modifiers>
       <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityMajorAutomatons"/>
+        <SimulationDescriptorReference Name="ClassPopulationEmpireAffinityAutomatons"/>
       </Modifier>
       <Modifier Class="ClassPopulationStarSystem">
         <SimulationDescriptorReference Name="ClassPopulationStarSystemGrowthTypeFood"/>
-        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityMajorAutomatons"/>
+        <SimulationDescriptorReference Name="ClassPopulationStarSystemAffinityAutomatons"/>
       </Modifier>
     </Modifiers>
 
     <AssimilatedModifiers>
       <Modifier Class="ClassPopulationEmpire">
-        <SimulationDescriptorReference Name="ClassPopulationAssimilatedEmpireAffinityMajorAutomatons"/>
+        <SimulationDescriptorReference Name="ClassPopulationAssimilatedEmpireAffinityAutomatons"/>
       </Modifier>
     </AssimilatedModifiers>
   </PopulationModifiersTrait>
