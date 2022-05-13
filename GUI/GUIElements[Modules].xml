@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsFIDSPercent">
+        <Title>%ModuleSupportAutomatonsFIDSPercentTitle</Title>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+</Datatable>
