@@ -5,7 +5,7 @@
     <!--Bonus FIDS on Terran-->
     <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
         <Modifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Value="1" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
-        <BinaryModifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran, ClassPopulation" />
+        <Modifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Value="1" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetTypeTerran/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran">
@@ -20,7 +20,7 @@
     <!--Bonus Approval on Terran-->
     <SimulationDescriptor Type="WithPopulationPlanet" Name="WithPopulationPlanetModifiersTraitSecondaryApprovalOnTerran">
         <Modifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Value="2" Path="FAKEFORGUI/./PlanetGameplayTypeTerran"/>
-        <BinaryModifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran, ClassPopulation" />
+        <Modifier TargetProperty="BonusPopulationHappiness" Operation="Addition" Value="2" Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetTypeTerran/ClassPopulationPlanetModifiersTraitPrimaryFIDSOnTerran" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Type="ClassPopulationPlanet" Name="ClassPopulationPlanetModifiersTraitSecondaryApprovalOnTerran">
