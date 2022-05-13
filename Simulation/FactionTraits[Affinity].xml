@@ -48,8 +48,8 @@
     <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase" />
 
     <!-- Affinity Descriptors -->
-    <SimulationDescriptorReference Name="AffinityMajorAutomatons" />
-    <SimulationDescriptorReference Name="AffinityGameplayMajorAutomatons" />
+    <SimulationDescriptorReference Name="AffinityAutomatons" />
+    <SimulationDescriptorReference Name="AffinityGameplayAutomatons" />
     
     <!-- Ship Designs -->
     <StartingFleet>Explorer,Colonizer</StartingFleet>

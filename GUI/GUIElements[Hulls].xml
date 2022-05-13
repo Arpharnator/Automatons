@@ -16,8 +16,8 @@
     <Title>%HullSmall01AutomatonsTitle</Title>
     <Description>%HullSmall01AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -25,8 +25,8 @@
     <Title>%HullSmall02AutomatonsTitle</Title>
     <Description>%HullSmall02AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall02TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall02TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -34,8 +34,8 @@
     <Title>%HullSmall03AutomatonsTitle</Title>
     <Description>%HullSmall03AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -43,8 +43,8 @@
     <Title>%HullSmall04AutomatonsTitle</Title>
     <Description>%HullSmall04AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -52,8 +52,8 @@
     <Title>%HullSmall04SophonsTitle</Title>
     <Description>%HullSmall04SophonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -61,8 +61,8 @@
     <Title>%HullSmall05AutomatonsTitle</Title>
     <Description>%HullSmall05AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -70,8 +70,8 @@
     <Title>%HullSmall06AutomatonsTitle</Title>
     <Description>%HullSmall06AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall03SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall03TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -79,8 +79,8 @@
     <Title>%HullMedium01AutomatonsTitle</Title>
     <Description>%HullMedium01AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium01TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -88,8 +88,8 @@
     <Title>%HullMedium02AutomatonsTitle</Title>
     <Description>%HullMedium02AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium02TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium02TemplarsLarge" />
     </Icons>
   </GuiElement>
 
@@ -106,8 +106,8 @@
     <Title>%HullLarge01AutomatonsTitle</Title>
     <Description>%HullLarge01AutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullLarge01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullLarge01TemplarsLarge" />
     </Icons>
   </GuiElement>
 

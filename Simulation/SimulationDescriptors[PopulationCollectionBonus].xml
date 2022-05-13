@@ -4,7 +4,7 @@
   <!-- 1 -->
   <SimulationDescriptor Name="PopulationCollectionBonusAutomatons1" Type="PopulationCollectionBonus">
     <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="false"   TooltipOverride="%TooltipOverridePositivePolitics04"/>
-    <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="PopulationCollectionBonusAutomatons1,ClassPopulationEmpireAffinityMajorAutomatonsCount" TooltipHidden="true"   />
+    <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="PopulationCollectionBonusAutomatons1,ClassPopulationEmpireAffinityAutomatonsCount" TooltipHidden="true"   />
     <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="PopulationCollectionBonusAutomatons1,ClassPopulationEmpireAffinityCustom0Count"     TooltipHidden="true"   />
     <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="PopulationCollectionBonusAutomatons1,ClassPopulationEmpireAffinityCustom1Count"     TooltipHidden="true"   />
     <Modifier TargetProperty="Politics04ToPolitics04" Operation="Addition" Value="1" Path="PopulationCollectionBonusAutomatons1,ClassPopulationEmpireAffinityCustom2Count"     TooltipHidden="true"   />
@@ -21,7 +21,7 @@
   
   <!-- 2 -->
   <SimulationDescriptor Name="PopulationCollectionBonusAutomatons2" Type="PopulationCollectionBonus">
-    <Modifier TargetProperty="SystemGrowthBonusFromCollection" Operation="Addition" Value="0.15" Path="../ClassEmpire/ClassStarSystem/ClassPopulationStarSystemAffinityMajorAutomatons" SearchValueFromPath="true"/>
+    <Modifier TargetProperty="SystemGrowthBonusFromCollection" Operation="Addition" Value="0.15" Path="../ClassEmpire/ClassStarSystem/ClassPopulationStarSystemAffinityAutomatons" SearchValueFromPath="true"/>
   </SimulationDescriptor>
   <SimulationDescriptor Name="PopulationCollectionBonusCustomFactionAutomatons2" Type="PopulationCollectionBonus">
     <Modifier TargetProperty="SystemGrowthBonusFromCollection" Operation="Addition" Value="0.15" Path="PopulationCollectionBonusFood2,ClassPopulationEmpireAffinityCustom0Count/./ClassEmpire/ClassStarSystem/ClassPopulationStarSystemAffinityCustom0Count" SearchValueFromPath="true" TooltipHidden="true"/>

@@ -4,8 +4,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsSmall01Automatons">
     <Title>%EmpireImprovementSlotsSmall01AutomatonsEra2Title</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsSmall01AutomatonsEra2TooltipEffect</EffectOverride>
@@ -15,8 +15,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsSmall02Automatons">
     <Title>%EmpireImprovementSlotsSmall02AutomatonsEra2Title</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall02SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall02TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall02TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsSmall02AutomatonsEra2TooltipEffect</EffectOverride>
@@ -26,8 +26,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsMedium01Automatons">
     <Title>%EmpireImprovementSlotsMedium01AutomatonsEra3Title</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium01TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsMedium01AutomatonsEra3TooltipEffect</EffectOverride>
@@ -37,8 +37,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsMedium02Automatons">
     <Title>%EmpireImprovementSlotsMedium02AutomatonsEra3Title</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullMedium02SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium02TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullMedium02TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsMedium02AutomatonsEra3TooltipEffect</EffectOverride>
@@ -48,8 +48,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsLarge01Automatons">
     <Title>%EmpireImprovementSlotsLarge01AutomatonsEra4Title</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullLarge01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullLarge01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullLarge01TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsLarge01AutomatonsEra4TooltipEffect</EffectOverride>
@@ -59,8 +59,8 @@
   <SkinnedGuiElement Name="EmpireImprovementSlotsSmall04Automatons">
     <Title>%EmpireImprovementSlotsSmall04AutomatonsTitle</Title>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsSmall" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Sophons/ShipHullSmall01SophonsAutomatonsLarge" />
+      <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%EmpireImprovementSlotsSmall04AutomatonsTooltipEffect</EffectOverride>

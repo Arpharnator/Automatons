@@ -3,7 +3,7 @@
   <!-- Mischevious Collection -->
   <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitCustomFactionAutomatons" Cost="10" ShowInCustom="true">
     <CollectionBonus Threshold="10">
-      <SimulationDescriptorReference Name="PopulationCollectionBonusMajorAutomatons1"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusAutomatons1"/>
       <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
     </CollectionBonus>
 
@@ -13,25 +13,25 @@
     </CollectionBonus>
 
     <CollectionBonus Threshold="50">
-      <SimulationDescriptorReference Name="PopulationCollectionBonusMajorAutomatons3"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusAutomatons3"/>
       <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
     </CollectionBonus>
   </PopulationCollectionBonusTrait>
 
   <!-- Automatons -->
-  <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitMajorAutomatons" Cost="0" ShowInCustom="false" CustomEquivalent="PopulationCollectionBonusTraitCustomFactionAutomatons" >
+  <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitAutomatons" Cost="0" ShowInCustom="false" CustomEquivalent="PopulationCollectionBonusTraitCustomFactionAutomatons" >
     <CollectionBonus Threshold="10">
-      <SimulationDescriptorReference Name="PopulationCollectionBonusMajorAutomatons1"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusAutomatons1"/>
       <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
     </CollectionBonus>
 
     <CollectionBonus Threshold="20">
-      <SimulationDescriptorReference Name="PopulationCollectionBonusMajorAutomatons2"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusAutomatons2"/>
       <SimulationDescriptorReference Name="PopulationCollectionBonusLevel2"/>
     </CollectionBonus>
 
     <CollectionBonus Threshold="50">
-      <SimulationDescriptorReference Name="PopulationCollectionBonusMajorAutomatons3"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusAutomatons3"/>
       <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
     </CollectionBonus>
   </PopulationCollectionBonusTrait>

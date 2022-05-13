@@ -56,7 +56,7 @@
       <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsMedium" />
       <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityAutomatonsMediumInverted" />
       <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLarge" />
-      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinitySophonsLeader" />
+      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLeader" />
     </Icons>
     <SymbolString>[Automatons]</SymbolString>
     <Color Red="255" Green="141" Blue="102" Alpha="255" />

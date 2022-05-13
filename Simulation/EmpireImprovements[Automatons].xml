@@ -27,7 +27,7 @@
 
   <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall04Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
     <TechnologyPrerequisite>TechnologyImproveExplorerHullAutomatons</TechnologyPrerequisite>
-    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityMajorAutomatons">ClassEmpire,AffinityMappingMajorAutomatons</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
     <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall04Automatons" />
   </EmpireImprovementDefinition>
 
