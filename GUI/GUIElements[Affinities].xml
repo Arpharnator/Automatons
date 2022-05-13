@@ -4,12 +4,12 @@
     <Title>%AffinityAutomatonsTitle</Title>
     <Description>%AffinityAutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall.png" />
-      <Icon Size="Medium" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsMedium.png" />
-      <Icon Size="MediumInverted" Path="Bitmaps/Dynamic/Affinities/MediumInverted/AffinityAutomatonsMediumInverted.png" />
-      <Icon Size="Large" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLarge.png" />
-      <Icon Size="Leader" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsLeader.png" />
-      <Icon Size="Mood" Path="Bitmaps/Dynamic/Affinities/AffinityAutomatonsMood.png" />
+      <Icon Size="Small" Path="Textures/GUI/AffinityAutomatonsSmall.png" />
+      <Icon Size="Medium" Path="Textures/GUI/AffinityAutomatonsMedium.png" />
+      <Icon Size="MediumInverted" Path="Textures/GUI/MediumInverted/AffinityAutomatonsMediumInverted.png" />
+      <Icon Size="Large" Path="Textures/GUI/AffinityAutomatonsLarge.png" />
+      <Icon Size="Leader" Path="Textures/GUI/AffinityAutomatonsLeader.png" />
+      <Icon Size="Mood" Path="Textures/GUI/AffinityAutomatonsMood.png" />
       <Icon Size="SmallExtended" Path="Textures/GUI/NotificationMajorEmpireMetAutomatonsSmall.png" />
       <Icon Size="MediumExtended" Path="Textures/GUI/NotificationMajorEmpireMetAutomatonsMedium.png" />
       <Icon Size="Loading" Path="Textures/GUI/LoadingAutomatons.png" />
