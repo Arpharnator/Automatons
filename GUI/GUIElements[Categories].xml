@@ -3,7 +3,7 @@
 	<GuiElement Name="CategoryFactionAutomatons">
 		<Title>%PopulationAutomatonsTitle</Title>
 		<Icons>
-      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall" />
+      <Icon Size="Small" Path="Textures/GUI/AffinityAutomatonsSmall" />
 		</Icons>
 	</GuiElement>
 </Datatable>

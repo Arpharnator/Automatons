@@ -4,7 +4,7 @@
     <Title>%AffinityGameplayAutomatonsTitle</Title>
     <Description>%AffinityGameplayAutomatonsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityAutomatonsSmall" />
+      <Icon Size="Small" Path="Textures/GUI/AffinityAutomatonsSmall" />
     </Icons>
     <TooltipElement>
       <EffectOverride>%AffinityGameplayAutomatonsTooltipEffect</EffectOverride>
