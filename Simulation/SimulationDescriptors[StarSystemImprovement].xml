@@ -6,4 +6,6 @@
   <SimulationDescriptor Name="StarSystemImprovementDenseOrbitals" Type="StarSystemImprovement">
     <Modifier TargetProperty="RawMaximumPopulation" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassPlanet"/>
   </SimulationDescriptor>
+
+  <SimulationDescriptor Name="StarSystemImprovementIndustryTotal" Type="StarSystemImprovement"/>
 </Datatable>

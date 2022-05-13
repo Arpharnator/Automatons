@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
 
     <StarSystemImprovementDefinition Name="StarSystemImprovementDenseOrbitals" SubCategory="SubCategoryPopulation" ScoreProvider="StarSystemImprovementBuilt">
         <SupervisorGain Name="Food" Weight="0.25" />
@@ -9,8 +10,8 @@
         <SupervisorGain Name="Approval" Weight="0.25" />
         <Tags>NoBuyout</Tags>
         <Cost ResourceName="SystemTurnBased">2</Cost>
-        <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDenseOrbitals,!FastForwardedImprovement</PathPrerequisite>
-        <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDenseOrbitals,!FastForwardedImprovement</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUnique10Automatons</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="StarSystemImprovementDenseOrbitals" />
@@ -18,5 +19,12 @@
         <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionPopulationSlot1"/>
     </StarSystemImprovementDefinition>
 
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryTotal">
+        <CustomCost ResourceName="SystemProduction">Property(StockLocation,@ClassColonizedStarSystem, SystemProductionStock) / Property(StockLocation, @../ClassEmpire, GameSpeedMultiplier, true)</CustomCost>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Disable">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryTotal" />
+    </StarSystemImprovementDefinition>
 
 </Datatable>

@@ -14,4 +14,13 @@
         </TooltipElement>
     </ExtendedGuiElement>
 
+    <GuiElement Name="StarSystemImprovementIndustryTotal">
+        <Title>%StarSystemImprovementIndustryTotalTitle</Title>
+        <Description>%StarSystemImprovementIndustryTotalDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/GUI/IndustrySmall.png" />
+            <Icon Size="Large" Path="Textures/GUI/IndustryLarge.png" />
+        </Icons>
+    </GuiElement>
+
 </Datatable>
