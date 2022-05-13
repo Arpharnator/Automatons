@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
   <ExtendedGuiElement Name="CategoryTechnologyFactionAutomatons">
     <Title>%CategoryTechnologyFactionAutomatonsTitle</Title>
     <Icons>
@@ -88,5 +89,23 @@
       <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
     </Icons>
   </TechnologyGuiElement2>
+
+  <!--Automaton's unique technology-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Automatons" X="4.75" Y="0">
+    <Title>%TechnologyDefinitionUnique10AutomatonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique10AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10HoratioSmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration8Automatons" X="2.10" Y="0">
+    <Title>%TechnologyDefinition8AutomatonsTitle</Title>
+    <Description>%TechnologyDefinition8AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
 
 </Datatable>

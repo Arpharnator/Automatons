@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
   <!-- Ship Hulls -->
   <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall01Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
     <TechnologyPrerequisite>TechnologyImproveHull1Automatons</TechnologyPrerequisite>
     <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall01Automatons" />
   </EmpireImprovementDefinition>
 
-  <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall02Automatons" Category="CategoryHullUpgrade"  SubCategory="SubCategoryHullMilitary">
+  <EmpireImprovementDefinition Name="EmpireImprovementSlotsSmall02Automatons" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
     <TechnologyPrerequisite>TechnologyImproveHull2Automatons</TechnologyPrerequisite>
     <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall02Automatons" />
   </EmpireImprovementDefinition>
@@ -29,6 +30,12 @@
     <TechnologyPrerequisite>TechnologyImproveExplorerHullAutomatons</TechnologyPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
     <SimulationDescriptorReference Name="EmpireImprovementSlotsSmall04Automatons" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementLimitedTeleportation" Category="CategoryEmpireImprovement" SubCategory="SubCategoryExploration">
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
+    <TechnologyPrerequisite>TechnologyLimitedTeleportation</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementLimitedTeleportation" />
   </EmpireImprovementDefinition>
 
 </Datatable>

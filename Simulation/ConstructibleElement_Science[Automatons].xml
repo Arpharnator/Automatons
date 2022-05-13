@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
   <!-- Ship Technologies -->
   <!-- Efficient Shielding -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique1Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked" TechnologyFlags="Affinity">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique1Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked" TechnologyFlags="Affinity">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -20,7 +21,7 @@
   </TechnologyDefinition>
 
   <!-- Extreme Composites -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique2Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique2Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique2Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -35,7 +36,7 @@
   </TechnologyDefinition>
 
   <!-- Agri Drugs -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique3Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique3Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique1ToUnique3Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -50,7 +51,7 @@
   </TechnologyDefinition>
 
   <!-- Applied Cryogenics -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique4Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique4Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -65,7 +66,7 @@
   </TechnologyDefinition>
 
   <!-- Split-second Ablatives -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique5Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique5Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -80,7 +81,7 @@
   </TechnologyDefinition>
 
   <!-- Low Temperature Construction -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique6Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique6Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique4ToUnique6Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -95,7 +96,7 @@
   </TechnologyDefinition>
 
   <!-- Dependency Algorithms -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique7Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique7Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique5ToUnique7Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -110,7 +111,7 @@
   </TechnologyDefinition>
 
   <!-- Liquid Composites -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique8Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique8Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -125,7 +126,7 @@
   </TechnologyDefinition>
 
   <!-- Far Halo Shipyard -->
-  <TechnologyDefinition Name="TechnologyDefinitionUnique9Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment5" Category="CategoryTechnologyFactionMajorAutomatons"  SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+  <TechnologyDefinition Name="TechnologyDefinitionUnique9Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment5" Category="CategoryTechnologyFactionMajorAutomatons" SubCategoryInQuests="TechnoEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
     <Tags>NoOmniscience</Tags>
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage5Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopmentUnique8ToUnique9Automatons'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityMappingAutomatons</PathPrerequisite>
@@ -137,6 +138,37 @@
 
     <HelperVariable Name="TurnVariable" />
     <HelperFormula>40 * $(TurnVariable) + 10</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionUnique10Automatons" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment4" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To12'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyUnique10Automatons" />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage4" />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>
+
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>50 * $(TurnVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration8Automatons" TechnologyStage="TechnologyStageDefinitionScienceAndExploration3" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier)   * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyMoonExploration"/>
+    <SimulationDescriptorReference Name="TechnologyPopulation1"/>
+    <SimulationDescriptorReference Name="TechnologyLimitedTeleportation"/>
+    <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage3"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>
+
+    <HelperVariable Name="PopulationVariable"/>
+    <HelperVariable Name="AvailableMeagerPlanets"/>
+    <HelperVariable Name="AvailableMoonAnomaly"/>
+    <HelperFormula>$(PopulationVariable) * $(AvailableMeagerPlanets) + $(AvailableMoonAnomaly) * 20</HelperFormula>
   </TechnologyDefinition>
 
   <!-- Adaptive Colonies -->

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <ExtendedGuiElement Name="StarSystemImprovementDenseOrbitals">
+        <Title>%StarSystemImprovementDenseOrbitals</Title>
+        <Description>%StarSystemImprovementDenseOrbitals</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDenseOrbitals" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDenseOrbitals" />
+        </Icons>
+        <TooltipElement>
+            <EffectOverride>%StarSystemImprovementDenseOrbitalsEffectOverride</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
 
 </Datatable>
