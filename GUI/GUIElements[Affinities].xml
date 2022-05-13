@@ -6,7 +6,7 @@
     <Icons>
       <Icon Size="Small" Path="Textures/GUI/AffinityAutomatonsSmall.png" />
       <Icon Size="Medium" Path="Textures/GUI/AffinityAutomatonsMedium.png" />
-      <Icon Size="MediumInverted" Path="Textures/GUI/MediumInverted/AffinityAutomatonsMediumInverted.png" />
+      <Icon Size="MediumInverted" Path="Textures/GUI/AffinityAutomatonsMediumInverted.png" />
       <Icon Size="Large" Path="Textures/GUI/AffinityAutomatonsLarge.png" />
       <Icon Size="Leader" Path="Textures/GUI/AffinityAutomatonsLeader.png" />
       <Icon Size="Mood" Path="Textures/GUI/AffinityAutomatonsMood.png" />
