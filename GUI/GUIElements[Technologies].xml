@@ -106,6 +106,14 @@
       <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration8Small" />
     </Icons>
   </TechnologyGuiElement2>
-  
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade26Automatons" X="-4.45" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade26AutomatonsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade26AutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade26Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
 
 </Datatable>
