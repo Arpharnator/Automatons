@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportFIDSAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Modifier TargetProperty="SystemFIDSPercent" Operation="Addition" Value="0.01"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SystemSupportModuleEffectFIDSAutomatons" Type="SystemSupportModuleEffect">
+        <Modifier TargetProperty="BonusFromOrbitalPlatforms" Operation="Addition" Value="0.01" Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="90" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+</Datatable>

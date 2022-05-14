@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
   <!-- Hull Improvements -->
   <SimulationDescriptor Name="EmpireImprovementSlotsSmall01Automatons" Type="EmpireImprovement">
-    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull01,ShipSizeSmall" TooltipHidden="true" />
+    <Modifier TargetProperty="ShipStage" Value="1" Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull01,ShipSizeSmall" TooltipHidden="true" />
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EmpireImprovementSlotsSmall02Automatons" Type="EmpireImprovement">
-    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull02,ShipSizeSmall" TooltipHidden="true" />
+    <Modifier TargetProperty="ShipStage" Value="1" Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipHull02,ShipSizeSmall" TooltipHidden="true" />
   </SimulationDescriptor>
 
-  <SimulationDescriptor Name="EmpireImprovementSlotsMedium01Automatons"    Type="EmpireImprovement">
-    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull01" TooltipHidden="true" />
+  <SimulationDescriptor Name="EmpireImprovementSlotsMedium01Automatons" Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage" Value="1" Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull01" TooltipHidden="true" />
   </SimulationDescriptor>
 
-  <SimulationDescriptor Name="EmpireImprovementSlotsMedium02Automatons"    Type="EmpireImprovement">
-    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull02" TooltipHidden="true" />
+  <SimulationDescriptor Name="EmpireImprovementSlotsMedium02Automatons" Type="EmpireImprovement">
+    <Modifier TargetProperty="ShipStage" Value="1" Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeMedium,ShipHull02" TooltipHidden="true" />
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EmpireImprovementSlotsLarge01Automatons" Type="EmpireImprovement">
-    <Modifier TargetProperty="ShipStage"      Value="1"  Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeLarge" TooltipHidden="true" />
+    <Modifier TargetProperty="ShipStage" Value="1" Operation="Addition" Path="ClassEmpire//ClassGarrison/ClassShip,ShipSizeLarge" TooltipHidden="true" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementLimitedTeleportation" Type="EmpireImprovement">
+    <Modifier TargetProperty="EnableTeleportation" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="EmpireImprovementSlotsSmall04Automatons" Type="EmpireImprovement" />
 
   <!-- Technology Pointers -->
-  <SimulationDescriptor Name="TechnologyImproveExplorerHullAutomatons"  Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull1Automatons"         Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyHull2Automatons"                Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull2Automatons"         Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyHull3Automatons"                Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull3Automatons"         Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyHull4Automatons"                Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull4Automatons"         Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyHull5Automatons"                Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull5Automatons"         Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyHull6Automatons"                Type="Technology" IsSerializable="false" />
-  <SimulationDescriptor Name="TechnologyImproveHull6Automatons"         Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveExplorerHullAutomatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull1Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull2Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull2Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull3Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull3Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull4Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull4Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull5Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull5Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyHull6Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyImproveHull6Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyLimitedTeleportation" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyUnique10Automatons" Type="Technology" IsSerializable="false" />
 
 </Datatable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!--Automatons jugg module-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsFIDSPercent" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">90</Cost>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautFactionModule</TechnologyPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleCarrierJuggernautBattleshipOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportFIDSAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSAutomatons"/>
+    </SystemSupportModule>
+
+</Datatable>

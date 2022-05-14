@@ -67,6 +67,20 @@
     </TooltipElement>
   </SkinnedGuiElement>
 
+   <ExtendedGuiElement Name="EmpireImprovementLimitedTeleportation">
+    <Title>%EmpireImprovementLimitedTeleportationTitle</Title>
+    <Description>%EmpireImprovementLimitedTeleportationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementWormholeSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementWormholeLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%EmpireImprovementLimitedTeleportationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!--I don't know what this is-->
+
   <ExtendedGuiElement Name="EmpireImprovementPortalsAutomatons">
     <Title>%EmpireImprovementPortalAutomatonsTitle</Title>
     <Description>%EmpireImprovementPortalAutomatonsDescription</Description>
@@ -78,4 +92,5 @@
       <EffectOverride>%EmpireImprovementPortalAutomatonsTooltipEffect</EffectOverride>
     </TooltipElement>
   </ExtendedGuiElement>
+ 
 </Datatable>
