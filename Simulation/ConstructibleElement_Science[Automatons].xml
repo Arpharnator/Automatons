@@ -198,4 +198,16 @@
     <HelperFormula> $(FoodPercent) * 10 + $(FoodVariable) * $(OwnedPlanetsCount) </HelperFormula>
   </TechnologyDefinition>
 
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade26Automatons" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade4" Category="CategoryTechnologyEconomyAndTrade" SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <SimulationDescriptorReference Name="TechnologyIndustry6Automatons"/>
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage4"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventPacifistTechnology"/>
+
+    <HelperVariable Name="TurnVariable"/>
+    <HelperVariable Name="IndustryVariable"/>
+    <HelperFormula>10 * $(IndustryVariable) + 10 * $(TurnVariable)</HelperFormula>
+  </TechnologyDefinition>
+
 </Datatable>
