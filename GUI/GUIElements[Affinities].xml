@@ -14,7 +14,7 @@
       <Icon Size="MediumExtended" Path="Textures/GUI/NotificationMajorEmpireMetAutomatonsMedium.png" />
       <Icon Size="Loading" Path="Textures/GUI/LoadingAutomatons.png" />
     </Icons>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Sounds>
       <Sound EventName="Play_ES2_Voices_OUTRO_Sophon" Type="Outro"/>
     </Sounds>

@@ -66,7 +66,7 @@ Named for the number of guns it can mount.</LocalizationPair>
   <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionTitle">Automatons INTRODUCTION TITLE</LocalizationPair>
   <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionDescription">TO BE WRITTEN</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
-  <LocalizationPair Name="%AffinityAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%AffinityAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%CategoryTechnologyFactionAutomatonsTitle">Automatons Technology</LocalizationPair>
   <LocalizationPair Name="%AffinityGameplayAutomatonsTooltipEffect">You are able to store industry [industrycolored], to reuse it later, and gain interest on stored industry.
 Industry storage is equal to 4 times your industry. Gain an additional 1 time your industry storage for each system level development on the system.
@@ -78,9 +78,9 @@ Stored industry gains interest at a rate of 5% interest per turn (it will be add
   <LocalizationPair Name="%SuperAffinityAutomatonsTitle">Automatons Shadows</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsTitle">Covetous Collection</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsDescription">This collection focuses on Industry and Military production.</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons1">[automatons] Collection Bonus I</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons2">[automatons] Collection Bonus II</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons3">[automatons] Collection Bonus III</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons1">Automatons Collection Bonus I</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons2">Automatons Collection Bonus II</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons3">Automatons Collection Bonus III</LocalizationPair>
   <LocalizationPair Name="%ShipCostReductionPerStrategicEffect">-5% Ship [industrycolored] cost per Strategic Deposit on Systems</LocalizationPair>
   <LocalizationPair Name="%PopulationPoliticalFlatAffinityAutomatonsTitle">Automatons Population</LocalizationPair>
 
@@ -107,13 +107,13 @@ Stored industry gains interest at a rate of 5% interest per turn (it will be add
 
   <!-- Empire Improvements -->
   <LocalizationPair Name="%EmpireImprovementLimitedTeleportationTitle">Limited Teleportation</LocalizationPair>
-  <LocalizationPair Name="%EmpireImprovementLimitedTeleportationDescription">To maximize effiency, the Automatons se a level a limited teleportation  to improve logistic services and industry. Since the gain in efficiency doesn't impact the Automatons lives, it is perceived positively.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementLimitedTeleportationDescription">To maximize effiency, the Automatons use a level of limited teleportation to improve logistic services and industry. Since the gain in efficiency doesn't impact the Automatons lives, it is perceived positively.</LocalizationPair>
   <LocalizationPair Name="%EmpireImprovementLimitedTeleportationTooltipEffect">+33% [fidsi] - (Owned System - (Overcolonisation Capacity / 2) / (Galaxy Nodes * 0.33))</LocalizationPair>
 
   <!-- Unique Planet -->
   <!-- Name of the planet  -->
-  <LocalizationPair Name="%UniquePlanetAutomatonsTitle">AA</LocalizationPair>
-  <LocalizationPair Name="%UniquePlanetAutomatonsDescription">Nobody really cares rn</LocalizationPair>
+  <LocalizationPair Name="%UniquePlanetAutomatonsTitle">Haven</LocalizationPair>
+  <LocalizationPair Name="%UniquePlanetAutomatonsDescription">The home of the Automatons and their creators, the Reyans. The Automatons were created by the Reyans as their planet was dying to leave a legacy to their civilisation.</LocalizationPair>
   
   <!-- Fleet Names -->
   <!-- Fleet name will be Numeration + Adjective + Title, so 1st Automated Apparatus is one possibility -->
@@ -132,12 +132,12 @@ Stored industry gains interest at a rate of 5% interest per turn (it will be add
   <!-- Faction Trait -->
   <!-- Anarchists -->
   <LocalizationPair Name="%FactionTraitAnarchistTitle">Anarchists</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitAnarchistDescription">This society is unused to live under a centralized structure, leading to fleets being disorganized and harder to manoeuver.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitAnarchistDescription">This society is unused to living under a centralized structure, leading to fleets being disorganized and harder to manoeuver.</LocalizationPair>
 
   <!-- Starting Automatons Population -->
   <LocalizationPair Name="%FactionTraitMinorAutomatonsTitle">Automatons Citizens</LocalizationPair>
   <LocalizationPair Name="%FactionTraitMinorAutomatonsDescription">The faction starts with Automatons population on their home planet</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitMinorAutomatonsTooltipEffect">+1 [automatons] on your home system</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorAutomatonsTooltipEffect">+1 Automatons on your home system</LocalizationPair>
 
   
 
@@ -152,19 +152,8 @@ If any of these do not appear, it is because they are 0.</LocalizationPair>
   <LocalizationPair Name="%StarSystemImprovementIndustry6AutomatonsTitle">Industrial Refining Operation</LocalizationPair>
   <LocalizationPair Name="%StarSystemImprovementIndustry6AutomatonsDescription">An Automaton factory has to abide by many rules in order to emit as little polluants as possible, and has to have excess space in order to accomodate for the unique "stored industry" of the Automatons. This improvement helps refine the methods used in the factory and to refine the stored industry in a more compact form alongside to reuse it in order to accrue more interest on it.</LocalizationPair>
 
-  <!-- > Minor Faction Automatons --><!--
-  <LocalizationPair Name="%MinorFactionAutomatonsTitle">Savrons</LocalizationPair>
-  <LocalizationPair Name="%MinorFactionAutomatonsDescription">Though some view the Savrons as mere Sophon renegades, they are a different society with a  different mentality, even if they share much of their genetic code. While both enjoy tinkering, technology, and discovery, the Savrons have a tendency to use these things to plunder, pirate, and conquer. They are adventurers and scavengers who, while not being as smart, have double the attitude. A common epithet of their bounty-hunting society is, "Unbreakable toys can be used to break other toys."</LocalizationPair>
-  <LocalizationPair Name="%AffinityAutomatonsTitle">Savrons</LocalizationPair>
-  <LocalizationPair Name="%AffinityAutomatonsDescription">Often found as mercenaries and enforcers; the Savron's small size is compensated with technology and belligerence.</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitMinorAutomatonsTitle">Savron Citizens</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons1">#DF8269#[Automatons]#REVERT# Collection Bonus I</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons2">#DF8269#[Automatons]#REVERT# Collection Bonus II</LocalizationPair>
-  <LocalizationPair Name="%PopulationCollectionBonusAutomatons3">#DF8269#[Automatons]#REVERT# Collection Bonus III</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitMinorAutomatonsTooltipEffect">+1 #DF8269#[Automatons]#REVERT# on your home system</LocalizationPair>
-  <LocalizationPair Name="%ClassPopulationEmpireAffinityAutomatonsTitle">#DF8269#[Automatons]#REVERT#</LocalizationPair>
-  <LocalizationPair Name="%ClassPopulationStarSystemAffinityAutomatonsTitle">Systems with #DF8269#[Automatons]#REVERT#</LocalizationPair>
-  <LocalizationPair Name="%PopulationAutomatonsTitle">#DF8269#[Automatons]#REVERT#</LocalizationPair>
-  <LocalizationPair Name="%MinorPopulationQuest04-Choice03Objective">Search the Curiosity on the Planet $AutomatonsPlanetLocationName if you're ready to sacrifice one [sophons] Sophon and one #DF8269#[Automatons]#REVERT# Automatons population.</LocalizationPair>
-    -->
+  <!-- > Minor Faction Automatons -->
+  <LocalizationPair Name="%MinorFactionAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%MinorFactionAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
+  <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
 </Datatable>
