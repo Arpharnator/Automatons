@@ -200,6 +200,7 @@
 
   <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade26Automatons" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade4" Category="CategoryTechnologyEconomyAndTrade" SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityAutomatons">ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
     <SimulationDescriptorReference Name="TechnologyIndustry6Automatons"/>
     <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage4"/>
     <SimulationDescriptorReference Name="TechnologyCounter"/>
