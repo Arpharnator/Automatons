@@ -6,8 +6,8 @@
     </DefaultPolitics>
 
     <Trait Name="PopulationPoliticalTraitEcologist"/>
-    <Trait Name="PopulationPoliticalTraitAntiEcologist"/>
-    <Trait Name="PopulationPoliticalTraitSagacious"/>
+    <Trait Name="PopulationPoliticalTraitAntiMilitarist"/>
+    <Trait Name="PopulationPoliticalTraitEcologistToIndustrialist"/>
 
     <Trait Name="PopulationModifiersTraitAutomatonsCount"/>
     <Trait Name="PopulationModifiersTraitAutomatons"/>

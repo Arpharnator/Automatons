@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- This file contains names, tooltips, and descriptions -->
+  <!-- Hull -->
+  <LocalizationPair Name="%HullSmall01AutomatonsTitle">[attacker] Cutter-class</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01AutomatonsDescription">Role: Attack
+When accused of being unscrupulous, the Automatons will reply that no, they have a great many scruples.</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02AutomatonsTitle">[support] Mower-class</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02AutomatonsDescription">Role: Support
+Named for the temporary organization formed between aggressively-independant Automatons ships.</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03AutomatonsTitle">[colonizer] Lawnbuilder-class</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03AutomatonsDescription">Role: Colonization
+Vital for setting foot on new planets.</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04AutomatonsTitle">[explorer] Sepherd-class</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04AutomatonsDescription">Role: Exploration
+Used for fathoming out the mysteries of the universe.</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05AutomatonsTitle">[lifeforce] Leecher-class</LocalizationPair> <!--I couldn't care less how this one is named-->
+  <LocalizationPair Name="%HullSmall05AutomatonsDescription">Role: Leecher
+Allows raiding of systems for Essence.</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06AutomatonsTitle">[unfallen] Landmaker-class</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06AutomatonsDescription">Role: Entwiner
+Enables colonization of other systems via the Vine network.</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01AutomatonsTitle">[duel] Sawyer-class</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01AutomatonsDescription">Role: Attack
+Named, bluntly, for what it does to opposing ships.</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02AutomatonsTitle">[plating] Thresher-class</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02AutomatonsDescription">Role: Defense
+A tough one to undo.</LocalizationPair>
+  <LocalizationPair Name="%HullLarge00AutomatonsTitle">[vampirilis] Mothership</LocalizationPair>
+  <LocalizationPair Name="%HullLarge00AutomatonsDescription">Role: Ark
+Mothership on which ship-bound populations live.</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01AutomatonsTitle">[carrier] Reaper-class</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01AutomatonsDescription">Role: Carrier
+Named for the number of guns it can mount.</LocalizationPair>
+
+  <!-- Ship Design -->
+  <!-- Names are all double- or triple-meanings, and I'm going for short, one syllable words where possible. -->
+  <LocalizationPair Name="%ShipDesignSmall01AttackerAutomatonsTitle">Cutter</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall01AttackerAutomatonsDescription">Role: Attacker</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall02SupporterAutomatonsTitle">Mower</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall02SupporterAutomatonsDescription">Role: Support</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall03ColonizerAutomatonsTitle">Lawnbuilder</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall03ColonizerAutomatonsDescription">Role: Colonization</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall03ExplorerAutomatonsTitle">Sepherd</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall03ExplorerAutomatonsDescription">Role: Exploration</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall05LeecherAutomatonsTitle">Leecher</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall05LeecherAutomatonsDescription">Role: Leecher</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall06RootCreatorAutomatonsTitle">Vineship</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignSmall06RootCreatorAutomatonsDescription">Role: Entwiner</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium01AttackerAutomatonsTitle">Sawyer</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium01AttackerAutomatonsDescription">Role: Attacker</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium02DefenderAutomatonsTitle">Thresher</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium02DefenderAutomatonsDescription">Role: Defender</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium02InvaderAutomatonsTitle">Rack</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignMedium02InvaderAutomatonsDescription">Role: Invader</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignLarge00MothershipAutomatonsTitle">Ark</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignLarge00MothershipAutomatonsDescription">Role: Ark</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignLarge01CarrierAutomatonsTitle">Reaper</LocalizationPair>
+  <LocalizationPair Name="%ShipDesignLarge01CarrierAutomatonsDescription">Role: Carrier</LocalizationPair>
+
+  <!-- Affinity -->
+  <LocalizationPair Name="%FactionAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%FactionAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsTitle">Reasoned Builders</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionTitle">Automatons INTRODUCTION TITLE</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%AffinityAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
+  <LocalizationPair Name="%CategoryTechnologyFactionAutomatonsTitle">Automatons Technology</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsTooltipEffect">You are able to store industry [industrycolored], to reuse it later, and gain interest on stored industry.
+Industry storage is equal to 4 times your industry. Gain an additional 1 time your industry storage for each system level development on the system.
+Stored industry gains interest at a rate of 5% interest per turn (it will be added directly to the system's industry production).</LocalizationPair>
+  <LocalizationPair Name="%ClassPopulationEmpireAffinityAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%ClassPopulationStarSystemAffinityAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%PopulationAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%PopulationAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%SuperAffinityAutomatonsTitle">Automatons Shadows</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsTitle">Covetous Collection</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsDescription">This collection focuses on Industry and Military production.</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons1">Automatons Collection Bonus I</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons2">Automatons Collection Bonus II</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusAutomatons3">Automatons Collection Bonus III</LocalizationPair>
+  <LocalizationPair Name="%ShipCostReductionPerStrategicEffect">-5% Ship [industrycolored] cost per Strategic Deposit on Systems</LocalizationPair>
+  <LocalizationPair Name="%PopulationPoliticalFlatAffinityAutomatonsTitle">Automatons Population</LocalizationPair>
+
+  <!-- Research -->
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall01AutomatonsEra2Title">Enhanced Cutter-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall01AutomatonsEra2TooltipEffect">Unlocks additional [Strat01titaniumColored] module slots for Cutter-class hulls
++50% [shipCrewColored] Crew Capacity</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall02AutomatonsEra2Title">Enhanced Mower-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall02AutomatonsEra2TooltipEffect">Unlocks additional [Strat02hyperiumColored] module slots for Mower-class hulls
++50% [shipCrewColored] Crew Capacity</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall04AutomatonsTitle">Enhanced Sepherd-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsSmall04AutomatonsTooltipEffect">Unlocks an additional support module slot for Sepherd-class hulls</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementSlotsMedium01AutomatonsEra3Title">Enhanced Sawyer-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsMedium01AutomatonsEra3TooltipEffect">Unlocks additional [Strat03adamantianColored] module slots for Sawyer-class hulls
++50% [shipCrewColored] Crew Capacity</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsMedium02AutomatonsEra3Title">Enhanced Thresher-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsMedium02AutomatonsEra3TooltipEffect">Unlocks additional [Strat04anti-matterColored] module slots for Thresher-class hulls
++50% [shipCrewColored] Crew Capacity</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsLarge01AutomatonsEra4Title">Enhanced Reaper-Class Hull</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementSlotsLarge01AutomatonsEra4TooltipEffect">Unlocks additional [Strat05orichalcixColored] / [Strat06quadrinixColored] module slots for Reaper-class hulls
++50% [shipCrewColored] Crew Capacity</LocalizationPair>
+
+  <!-- Empire Improvements -->
+  <LocalizationPair Name="%EmpireImprovementLimitedTeleportationTitle">Limited Teleportation</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementLimitedTeleportationDescription">To maximize effiency, the Automatons use a level of limited teleportation to improve logistic services and industry. Since the gain in efficiency doesn't impact the Automatons lives, it is perceived positively.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementLimitedTeleportationTooltipEffect">+33% [fidsi] - (Owned System - (Overcolonisation Capacity / 2) / (Galaxy Nodes * 0.33))</LocalizationPair>
+
+  <!-- Unique Planet -->
+  <!-- Name of the planet  -->
+  <LocalizationPair Name="%UniquePlanetAutomatonsTitle">Haven</LocalizationPair>
+  <LocalizationPair Name="%UniquePlanetAutomatonsDescription">The home of the Automatons and their creators, the Reyans. The Automatons were created by the Reyans as their planet was dying to leave a legacy to their civilisation.</LocalizationPair>
+  
+  <!-- Fleet Names -->
+  <!-- Fleet name will be Numeration + Adjective + Title, so 1st Automated Apparatus is one possibility -->
+  <!--<LocalizationPair Name="%FleetNameTitleApparatus">Apparatus</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus00">Automated</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus01">Derelict</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus02">Hydraulic</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus03">Clockwork</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus04">Complicated</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus05">Motorized</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus06">Contracticle</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus07">Rusting</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus08">Wrecked</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveApparatus09">Shambolic</LocalizationPair>-->
+  
+  <!-- Faction Trait -->
+  <!-- Anarchists -->
+  <LocalizationPair Name="%FactionTraitAnarchistTitle">Anarchists</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitAnarchistDescription">This society is unused to living under a centralized structure, leading to fleets being disorganized and harder to manoeuver.</LocalizationPair>
+
+  <!-- Starting Automatons Population -->
+  <LocalizationPair Name="%FactionTraitMinorAutomatonsTitle">Automatons Citizens</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorAutomatonsDescription">The faction starts with Automatons population on their home planet</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorAutomatonsTooltipEffect">+1 Automatons on your home system</LocalizationPair>
+
+  
+
+  <LocalizationPair Name="%StarSystemImprovementIndustryTotalTitle">Industry Storage Denominator</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustryTotalDescription">The total amount of [industrycolored] you have is listed as the cost in industry for this improvement.
+The Maximum storable industry is listed as the cost in [dustcolored]
+
+If any of these do not appear, it is because they are 0.</LocalizationPair>
+  
+  <!-- System Improvements -->
+  <!-- Fabrication License Replacement, adds +15% interest bonus and the base bonuses -->
+  <LocalizationPair Name="%StarSystemImprovementIndustry6AutomatonsTitle">Industrial Refining Operation</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry6AutomatonsDescription">An Automaton factory has to abide by many rules in order to emit as little polluants as possible, and has to have excess space in order to accomodate for the unique "stored industry" of the Automatons. This improvement helps refine the methods used in the factory and to refine the stored industry in a more compact form alongside to reuse it in order to accrue more interest on it.</LocalizationPair>
+
+  <!-- > Minor Faction Automatons -->
+  <LocalizationPair Name="%MinorFactionAutomatonsTitle">Automatons</LocalizationPair>
+  <LocalizationPair Name="%MinorFactionAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
+  <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
+</Datatable>
