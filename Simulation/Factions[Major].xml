@@ -10,6 +10,9 @@
     <Trait Name="FactionTraitOptimistic2"/>
     <Trait Name="FactionTraitSkillfulTraders"/>
     <Trait Name="FactionTraitAnarchist"/>
+    <Trait Name="FactionTraitMinorSowers"/>
+    <Trait Name="FactionTraitTechnologyDefinitionScienceAndExploration1"/>
+    
     
     <!-- AI -->
     <Trait Name="PersonalityCanGetRenegade"/>
