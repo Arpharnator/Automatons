@@ -41,4 +41,103 @@
         <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
     </StarSystemImprovementDefinition>
 
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromOceanToTerran" SubCategory="PlanetTerraformationDust">
+
+        <AIGain RessourceName="IndustryGain"/>
+        <SupervisorGain Name="Food" Weight="1"/>
+        <SupervisorGain Name="Industry" Weight="1"/>
+        <SupervisorGain Name="Science" Weight="1"/>
+        <SupervisorGain Name="Dust" Weight="1"/>
+        <SupervisorGain Name="Approval" Weight="0"/>
+
+        <Tags>PlanetTerraformationOnlyViaSystem</Tags>
+        <CustomCost ResourceName="SystemProduction">560 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * (1 - Property(StockLocation, @ClassColonizedStarSystem, BuildingProductionCostReduction)) * (1 - Property(StockLocation, @ClassColonizedStarSystem, GameSpeedProductionCostReduction))</CustomCost>
+
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">PlanetTypeOcean</PathPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation1</PathPrerequisite>
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation2TimeLords</PathPrerequisite>
+        </MetaPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation1</TechnologyPrerequisite>
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation2TimeLords</TechnologyPrerequisite>
+        </MetaPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromForestToTerran" SubCategory="PlanetTerraformationDust">
+
+        <AIGain RessourceName="IndustryGain"/>
+        <SupervisorGain Name="Food" Weight="1"/>
+        <SupervisorGain Name="Industry" Weight="1"/>
+        <SupervisorGain Name="Science" Weight="1"/>
+        <SupervisorGain Name="Dust" Weight="1"/>
+        <SupervisorGain Name="Approval" Weight="0"/>
+
+        <Tags>PlanetTerraformationOnlyViaSystem</Tags>
+        <CustomCost ResourceName="SystemProduction">560 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * (1 - Property(StockLocation, @ClassColonizedStarSystem, BuildingProductionCostReduction)) * (1 - Property(StockLocation, @ClassColonizedStarSystem, GameSpeedProductionCostReduction))</CustomCost>
+
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">PlanetTypeForest</PathPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation1</PathPrerequisite>
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation2TimeLords</PathPrerequisite>
+        </MetaPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation1</TechnologyPrerequisite>
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation2TimeLords</TechnologyPrerequisite>
+        </MetaPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromAtollToTerran" SubCategory="PlanetTerraformationDust">
+
+        <AIGain RessourceName="IndustryGain"/>
+        <SupervisorGain Name="Food" Weight="1"/>
+        <SupervisorGain Name="Industry" Weight="1"/>
+        <SupervisorGain Name="Science" Weight="1"/>
+        <SupervisorGain Name="Dust" Weight="1"/>
+        <SupervisorGain Name="Approval" Weight="0"/>
+
+        <Tags>PlanetTerraformationOnlyViaSystem</Tags>
+        <CustomCost ResourceName="SystemProduction">560 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * (1 - Property(StockLocation, @ClassColonizedStarSystem, BuildingProductionCostReduction)) * (1 - Property(StockLocation, @ClassColonizedStarSystem, GameSpeedProductionCostReduction))</CustomCost>
+
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">PlanetTypeAtoll</PathPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation1</PathPrerequisite>
+            <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementTerraformation2TimeLords</PathPrerequisite>
+        </MetaPrerequisite>
+        <MetaPrerequisite Operator="Or">
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation1</TechnologyPrerequisite>
+            <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation2TimeLords</TechnologyPrerequisite>
+        </MetaPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
 </Datatable>

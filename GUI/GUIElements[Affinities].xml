@@ -20,8 +20,8 @@
     </Sounds>
     <Color Red="255" Green="255" Blue="255" Alpha="255" />
     <Movies>
-      <Movie Path="Movies/Factions/Automatons_Intro.mp4" Type="Intro" />
-      <Movie Path="Movies/Factions/Automatons_Outro.mp4" Type="Outro" />
+      <Movie Path="Textures/GUI/AutomatonsIntro.mp4" Type="Intro" />
+      <Movie Path="Textures/GUI/AutomatonsIntro.mp4" Type="Outro" />
     </Movies>
     <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitAutomatons</ModelPath>
   </AffinityGuiElement>
@@ -43,7 +43,7 @@
   <ExtendedGuiElement Name="PopulationCollectionBonusAutomatons3">
     <Title>%PopulationCollectionBonusAutomatons3</Title>
     <TooltipElement>
-      <EffectOverride>%ShipCostReductionPerStrategicEffect</EffectOverride>
+      <EffectOverride>%BonusFIDSOnTerranEffect</EffectOverride>
     </TooltipElement>
   </ExtendedGuiElement>
 

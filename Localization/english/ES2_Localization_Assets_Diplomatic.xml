@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <!-- This file contains all diplomatic lines and Mavros leader names -->
-  <!-- Mavros Names-->
-  <!--
-  <LocalizationPair Name= "%AILeaderAffinityMappingAutomatons0">Mect "Wrench" Vak</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons1">Dol "Thermo" Brek</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons2">Xat "Breaker" Ktol</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons3">The Gnarly Fist of Justice</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons4">Tev "Nitro" Pliq</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons5">Crank "Bogey" Kruge</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons6">"Old Man" Alek</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons7">Jeka "Dart" Rult</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons8">Akrodt "Vestal" Mendrit</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons9">Sicopus "Iron" Alov</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons10">Trekker "Clear Eye" Junior</LocalizationPair>
-  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons11">Grendelox the Greatest, Ever</LocalizationPair>-->
+  <!-- This file contains all diplomatic lines and Automatons leader names -->
+  <!-- Automatons Names-->
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons0">Memn Uru-Esi</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons1">Meze Iks-Zeb</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons2">Muya Jes-Esi</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons3">M'Gekt Mep-Hun</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons4">Mohp Ras-Varia</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons5">Mnom Gru-Ler</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons6">Mqin Far-Bikos</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons7">Mban Tan-Magnis</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons8">Malg Zar-Disti</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons9">Moqe Far-Sigh</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons10">Mang Sec-Tie</LocalizationPair>
+  <LocalizationPair Name="%AILeaderAffinityMappingAutomatons11">Mold Gas-Inhal</LocalizationPair>
   
   <!-- Faction Pact -->
   <LocalizationPair Name="%FactionPactEffectAutomatonsTitle">Faction Pact</LocalizationPair>
-  <LocalizationPair Name="%FactionPactEffectAutomatonsDescription">This is an agreement to share faction advantages with the Mavros.
-Your faction will gain -0.5% System Improvement [industryColored] Cost on Systems per Turn [turn] (Max: -15%), increase scales with game speed.</LocalizationPair>
+  <LocalizationPair Name="%FactionPactEffectAutomatonsDescription">This is an agreement to share faction advantages with the Automatons.
+Your faction will gain +0.5% Maximum Health on Ships Turn [turn] (Max: -15%), increase scales with game speed.</LocalizationPair>
 
   <!-- Diplomatic -->
   <LocalizationPair Name="%DiplomaticInteractionForcedPeaceRelationSenderSignedAutomatons">The Automatons can be friends to any, so long we choose it.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionForcedPeaceRelationReceiverSignedAutomatons">The Automatons believe this to be a very particular way of anouncing your frienship, but we will accept it, for now.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionGreetingsAutomatons">We are the Automatons. Our only wish is for you to leave us alone so we may uphold our mission, or you will have to face consequences.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarSenderSignedMavrosWinning">The Automatons believe this truce to be for both of our best interests.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarReceiverSignedMavrosWinning">The Automatons recognize the intellect that lay latent in you, and accept the truce.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarSenderSignedMavrosLosing">The Automatons admit defeat, for this would allow us to continue our mission without interference.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarReceiverSignedMavrosLosing">The Automatons know that winning is impossible. Let us go back to our homes.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarSenderSignedAutomatonsWinning">The Automatons believe this truce to be for both of our best interests.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarReceiverSignedAutomatonsWinning">The Automatons recognize the intellect that lay latent in you, and accept the truce.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarSenderSignedAutomatonsLosing">The Automatons admit defeat, for this would allow us to continue our mission without interference.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionTruceFromWarReceiverSignedAutomatonsLosing">The Automatons know that winning is impossible. Let us go back to our homes.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionColdWarRelationFromPeaceSenderSignedAutomatons">The Automatons do not believe this peace to be acceptable for the continuation of our mission.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionColdWarRelationFromPeaceReceiverSignedAutomatons">The Automatons are saddened by the end of our privileged relationship.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionColdWarRelationFromAllianceSenderSignedAutomatons">The Automatons believe this alliance to not be for our best interests, and do not want to be involved in such affairs anymore.</LocalizationPair>
@@ -79,7 +78,7 @@ Your faction will gain -0.5% System Improvement [industryColored] Cost on System
   <LocalizationPair Name="%DiplomaticInteractionScienceAgreementReceiverSignedAutomatons">The Automatons recognize the gains of such a treaty and agree.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionScienceAgreementReceiverRefusedAutomatons">The Automatons do not believe your intelligence to be able to benefit ours.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionScienceAgreementSenderRefusedAutomatons">The Automatons do not believe your intelligence to be able to benefit ours.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionDeclareWarFromColdWarReceiverSignedMavrosPrepareWar">The Automatons were already ready, and will be even more so when the time comes.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionDeclareWarFromColdWarReceiverSignedAutomatonsPrepareWar">The Automatons were already ready, and will be even more so when the time comes.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionTruceWarToWarAcknowledgedAutomatons">The Automatons are disgusted by your disregard of treaties.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionCloseBordersReceiverSignedAutomatons">The Automatons return to isolationism for the time being.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionOpenBordersReceiverSignedAutomatons">The Automatons appreciate the trust granted by you.</LocalizationPair>

@@ -10,20 +10,20 @@
 
   <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityAutomatons">
     <Title>%ClassPopulationStarSystemAffinityAutomatonsTitle</Title>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Color Red="255" Green="255" Blue="255" Alpha="255" />
   </ExtendedGuiElement>
 
   <ExtendedGuiElement Name="ClassPopulationStarSystemAffinityAutomatonsCount">
     <Title>%ClassPopulationStarSystemAffinityAutomatonsTitle</Title>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Color Red="255" Green="255" Blue="255" Alpha="255" />
   </ExtendedGuiElement>
 
   <ExtendedGuiElement Name="ClassPopulationPlanetAffinityAutomatons">
     <Title>%PopulationAutomatonsTitle</Title>
     <Description>%PopulationAutomatonsDescription</Description>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Color Red="255" Green="255" Blue="255" Alpha="255" />
     <AltTitle>%PopulationAutomatonsTitle</AltTitle>
   </ExtendedGuiElement>
@@ -31,7 +31,7 @@
   <ExtendedGuiElement Name="ClassPopulationPlanetAffinityAutomatonsCount">
     <Title>%PopulationAutomatonsTitle</Title>
     <Description>%PopulationAutomatonsDescription</Description>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Color Red="255" Green="255" Blue="255" Alpha="255" />
     <AltTitle>%PopulationAutomatonsTitle</AltTitle>
   </ExtendedGuiElement>
@@ -58,8 +58,17 @@
       <Icon Size="Large" Path="Textures/GUI/AffinityAutomatonsLarge" />
       <Icon Size="Leader" Path="Textures/GUI/AffinityAutomatonsLeader" />
     </Icons>
-    <SymbolString>[Automatons]</SymbolString>
+    <SymbolString>[Technologists]</SymbolString>
     <Color Red="255" Green="141" Blue="102" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <GuiElement Name="ImVerySmart">
+    <Title>%ImVerySmartTitle</Title>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="InterestRate">
+    <Title>%ImVerySmartTitle</Title>
+    <TooltipElement Percent="true"/>
   </ExtendedGuiElement>
 
 </Datatable>

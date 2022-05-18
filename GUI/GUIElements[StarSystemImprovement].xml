@@ -3,15 +3,12 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
 
     <ExtendedGuiElement Name="StarSystemImprovementDenseOrbitals">
-        <Title>%StarSystemImprovementDenseOrbitals</Title>
-        <Description>%StarSystemImprovementDenseOrbitals</Description>
+        <Title>%StarSystemImprovementDenseOrbitalsTitle</Title>
+        <Description>%StarSystemImprovementDenseOrbitalsDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDenseOrbitals" />
-            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDenseOrbitals" />
+            <Icon Size="Small" Path="Textures/GUI/StarSystemImprovementDenseOrbitalsSmall" />
+            <Icon Size="Large" Path="Textures/GUI/StarSystemImprovementDenseOrbitalsLarge" />
         </Icons>
-        <TooltipElement>
-            <EffectOverride>%StarSystemImprovementDenseOrbitalsEffectOverride</EffectOverride>
-        </TooltipElement>
     </ExtendedGuiElement>
 
     <GuiElement Name="StarSystemImprovementIndustryTotal">
