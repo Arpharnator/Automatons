@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
+
+	<HeroSkillDefinition Name="AutomatonSkill">
+		<SkillLevel Name="HeroSkillAutomaton">
+			<ShipSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="ErboSkill01">
+		<SkillLevel Name="HeroSkill01Erbo">
+			<ShipSimulationDescriptorReference Name="HeroSkillSystem2_BuildingCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="YurSkill01">
+		<SkillLevel Name="HeroSkill01Yur">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip24_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="YurSkill02">
+		<SkillLevel Name="HeroSkill02Yur">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="OmnisSkill01">
+		<SkillLevel Name="HeroSkill01Omnis">
+			<ShipSimulationDescriptorReference Name="HeroSkillSystem57_Approval_PerSystemLevel_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="OmnisSkill02">
+		<SkillLevel Name="HeroSkill02Omnis">
+			<ShipSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+</Datatable>
+

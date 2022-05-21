@@ -139,7 +139,7 @@ Your faction will gain +0.5% Maximum Health on Ships Turn [turn] (Max: -15%), in
   <LocalizationPair Name="%DiplomaticInteractionNeutralManagedToCloseBordersAutomatons">The Automatons want you to stay in your lands, or at least far from ours.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionWarForSlightNoClosedBordersAutomatons">The Automatons see your few ships, and we raise you our industrial capabilities.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionEscalationAttackedUnitsAutomatons">The Automatons see that you behave very offensively, but we remind you that losses can easily be replaced.</LocalizationPair>
-  <LocalizationPair Name="%DiplomaticInteractionNeutralNoBribeParagonAutomatons"The Automatons integrity will not be so easily bribed.</LocalizationPair>
+  <LocalizationPair Name="%DiplomaticInteractionNeutralNoBribeParagonAutomatons">The Automatons integrity will not be so easily bribed.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionWarLongPeaceBetrayedAutomatons">The Automatons are surprised by such a turn of events, but we believe that we will come out on top.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionNeutralThinkingAboutScienceAgreementAutomatons">The Automatons have recognized your intelligence and we want to give you the opportunity to recognize ours.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionNeutralThinkingAboutTradeAgreementAutomatons">The Automatons see your copious trade, and we believe the best course of action is for us to demonstrate ours.</LocalizationPair>

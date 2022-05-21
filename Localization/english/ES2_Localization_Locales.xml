@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Documentation/Schemas/Amplitude.Unity.Localization.LocalizationDatatableElement.xsd">
+
+  <LocalizationPair Name="%ErboTitle">M'gual Tan-Erbo</LocalizationPair>
+  <LocalizationPair Name="%ErboDescription">The Automatons take their role as caretakers so seriously, that certain horticulturalists gave their wards the capacity for self defense. Tan-Erbo went the farthest, developing a race of carnivorous and partially mobile giant orange plants that were set free to act as guardians of certain zones. However, the Automaton was unaware that these plants would assault anything foreign -- including Automatons. It was attacked during a routine inspection, and though it escaped the plants did manage to rip its head off. Fortunately, this did not result in decommission as its neural system had a wireless back-up. Tan-Erbo now travels with its head removed from its body, a solemn reminder of the risks of playing at god.</LocalizationPair>
+
+  <LocalizationPair Name="%YurTitle">Mizn Ora-Yur</LocalizationPair>
+  <LocalizationPair Name="%YurDescription">An Automaton pilot, Ora-Yur was damaged by an artificial gravity machine during a scientific mission. Reduced to the level of a barely self-aware machine tool, it was possessed by a Virtual Endless and turned into an Automaton superman. When the Endless retreated back to its own android body, the power to manipulate Dust remained.</LocalizationPair>
+
+  <LocalizationPair Name="%OmnisTitle">Mani Dar-Omnis</LocalizationPair>
+  <LocalizationPair Name="%OmnisDescription">Though a member of a society known for industrial efficiency, Dar-Omnis' interests lay in the psychology and motivation of sentient beings – whether animated by blood or circuitry. This Automaton studied social structures and networks in order to discover the secrets of leadership, motivation, and the development of sentient relations. Studying Dust networks in the lab one day in search of greater understanding of resilient interactions, Dar-Omnis was exposed to a high concentration of dispersed Dust. Now its advanced emotional intelligence is combined with an ability to make faultless decisions, making it an extremely efficient leader.</LocalizationPair>
+
+</Datatable>

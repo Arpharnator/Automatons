@@ -23,7 +23,7 @@
       <Movie Path="Textures/GUI/AutomatonsIntro.mp4" Type="Intro" />
       <Movie Path="Textures/GUI/AutomatonsIntro.mp4" Type="Outro" />
     </Movies>
-    <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitAutomatons</ModelPath>
+    <ModelPath>Prefabs/Gui/AnimatedPortrait/AnimatedPortraitSowers01</ModelPath>
   </AffinityGuiElement>
 
   <GuiElement Name="PopulationCollectionBonusTraitCustomFactionAutomatons">

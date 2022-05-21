@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
-  <RuntimeModule Name="FactionMajorMavros" Type="Extension" Version="0.6.1">
+  <RuntimeModule Name="FactionMajorMavros" Type="Extension" Version="1.0.0">
     <Title>Major Faction - The Automatons</Title>
-    <Description>The Automatons come back from ES1</Description>
+    <Description>The Automatons come back from ES1. ESG required. DLC4 (Awakening) required.
+
+    Faction Specifics : 
+    - Store Industry and receive Interest on it.
+    - Multiple techs that have similar effects to ES1 Automatons' techs.
+    - Minor bugs (eyyy)
+    - Automatons heroes (made by Tat and generously gifted by him).
+    - G0d3l Builder.87 as the temporary faction leader until the actual Automatons' leader finds that annoying bug preventing him from existing (if it's possible to fix).
+    - Bonuses on Terran as the pop boon.
+    - Special terraformation to allow an Atoll/Forest/Ocean planet to be converted to Terran, after all we wouldn't want to miss on the bonuses.
+    - Starting Sowers minor for the joint venture.
+    - Almost full English localisation for the faction.
+
+    Coming :
+    - Unique Automaton Skill Tree.
+    - Automatons' quest.
+    - More balance and a refinement of the faction's mechanics.
+    - Less bugs.
+    - Compat with Endless References.
+    - More unique modules and building I believe.
+
+    Credits :
+    - Captain Cobbs for making me learn ES2 modding and being helpful. Also being a gigachad.
+    - Wakystuff for being a great person in general.
+    - Tat011
+    - Mermixer
+    - Chad Mermixer
+    - Kwishkalqualmo
+    - Globglogabgalab
+    - PieLinux
+    - DEFINITELY NOT THE IMPOSTER
+    - Provolonage
+    - Zlngybird
+    - Forge10 for giving me motivation
+    - 8CP vodyani arks
+    - Velorace
+    - Tut011
+    - Fluffiest
+    - :busta:
+    - ES2's schemas
+    - CockBallTortureLord
+    - Horatio
+    - Activate Windows, Mark Of The Beast
+
+
+    Note : The % FIDS Module unlocked at juggernaut tech can give up to 20% FIDS on a single ssytem. Attempting to stack more will do nothing.
+
+    https://github.com/Arpharnator/Automatons
+    </Description>
     <Author>Arphar</Author>
     <Homepage></Homepage>
     <PreviewImageFile>ModIcon.png</PreviewImageFile>
@@ -93,6 +141,7 @@
       <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
         <ExtraTypes>
           <ExtraType DataType="StarSystemImprovementDefinition, Assembly-CSharp" />
+		  <ExtraType DataType="PlanetTerraformationDefinition, Assembly-CSharp" />
           <ExtraType DataType="StarSystemPopulationTransformImprovementDefinition, Assembly-CSharp" />
         </ExtraTypes>
         <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
@@ -124,6 +173,8 @@
         <ExtraTypes>
           <ExtraType  DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
           <ExtraType DataType="AffinityGuiElement, Assembly-CSharp" />
+		  <ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
+		  <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />
           <!--<ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
           <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />-->
           <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
@@ -188,6 +239,48 @@
         </ExtraTypes>
         <FilePath>Simulation/Battles/BattleEffectDefinitions.xml</FilePath>
       </DatabasePlugin>
+	  
+	  
+	  <DatabasePlugin DataType="HeroAffinityDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroAffinityDefinitions.xml</FilePath>
+                <FilePath>Simulation/HeroAffinityDefinitions[*].xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroClassDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroClassDefinitions.xml</FilePath>
+                <FilePath>Simulation/HeroClassDefinitions[*].xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroPoliticsDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroPoliticsDefinitions.xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroSkillTreeDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroSkillTreeDefinitions.xml</FilePath>
+                <FilePath>Simulation/HeroSkillTreeDefinitions[*].xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroSkillDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroSkillDefinitions.xml</FilePath>
+                <FilePath>Simulation/HeroSkillDefinitions[*].xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroMasteryDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroMasteryDefinitions.xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroUnlockGaugeDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroUnlockGaugeDefinitions.xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="ScoreProviderListDefinition, Assembly-CSharp">
+                <FilePath>Simulation/ScoreProviderListDefinitions.xml</FilePath>
+            </DatabasePlugin>
+
+            <DatabasePlugin DataType="HeroDefinition, Assembly-CSharp">
+                <FilePath>Simulation/HeroDefinitions.xml</FilePath>
+                <FilePath>Simulation/HeroDefinitions[*].xml</FilePath>
+            </DatabasePlugin>
 
       <!-- Fleet Names -->
       <DatabasePlugin DataType="FleetNameMappingDefinition, Assembly-CSharp">

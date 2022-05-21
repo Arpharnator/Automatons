@@ -4,9 +4,9 @@
 
 
     <SimulationDescriptor Name="AffinityGameplayAutomatons" Type="AffinityGameplay">
-        <Modifier TargetProperty="TotalMult" Operation="Addition"  Value="3" Path="ClassEmpire/ClassColonizedStarSystem"/>
-        <BinaryModifier TargetProperty="TotalMult" Operation="Addition" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="1" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
-        <Modifier TargetProperty="InterestRate" Operation="Addition" Value="0.05" Path="ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="TotalMult" Operation="Addition"  Value="3" Path="ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalMult" Operation="Addition" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="1" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
+        <Modifier TargetProperty="InterestRate" Operation="Addition" Value="0.05" Path="ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
         
 
         <Modifier TargetProperty="PlanetInitialFIDSPenalty" Operation="Force" Value="0" Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeForest" TooltipHidden="true"/>

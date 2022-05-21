@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <ExtendedGuiElement Name="PlanetTerraformationFromAtollToTerran">
+        <Title>%PlanetTerraformationToTerranTitle</Title>
+        <Description>%PlanetTerraformationToTerranDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+        </Icons>
+        <AltTitle>%PlanetTypeTerranTitle</AltTitle>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="PlanetTerraformationFromForestToTerran">
+        <Title>%PlanetTerraformationToTerranTitle</Title>
+        <Description>%PlanetTerraformationToTerranDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+        </Icons>
+        <AltTitle>%PlanetTypeTerranTitle</AltTitle>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="PlanetTerraformationFromOceanToTerran">
+        <Title>%PlanetTerraformationToTerranTitle</Title>
+        <Description>%PlanetTerraformationToTerranDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+        </Icons>
+        <AltTitle>%PlanetTypeTerranTitle</AltTitle>
+    </ExtendedGuiElement>
+
+</Datatable>

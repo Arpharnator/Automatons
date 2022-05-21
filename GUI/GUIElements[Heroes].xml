@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
   <HeroGuiElement Name="HeroAutomatons01">
     <Title>%HeroAutomatons01Title</Title>
     <Description>%HeroAutomatons01Description</Description>
@@ -34,11 +35,44 @@
     </Icons>
   </GuiElement>
 
-<!-- Will have to see what this does
+  <!-- Will have to see what this does
   <GuiElement Name="CategoryHeroSkillTreeNewBasic">
     <Title>%CategoryHeroSkillTreeNewBasicTitle</Title>
     <Icons>
       <Icon Size="Small" Path="Bitmaps/Atlased/Hero/HeroesHeroesSmall" />
     </Icons>
   </GuiElement>-->
+
+  <HeroGuiElement Name="Erbo">
+    <Title>%ErboTitle</Title>
+    <Description>%ErboDescription</Description>
+    <Icons>
+      <!-- These textures are used in tooltips, and in the notification if the animated model fails to load. -->
+      <Icon Size="Medium" Path="Textures/GUI/ErboMedium.png"/>
+      <Icon Size="Large" Path="Textures/GUI/ErboLarge.png"/>
+       <Icon Size="Mood" Path="Textures/GUI/ErboLarge.png"/>
+    </Icons>
+  </HeroGuiElement>
+
+  <HeroGuiElement Name="Yur">
+    <Title>%YurTitle</Title>
+    <Description>%YurDescription</Description>
+    <Icons>
+      <!-- These textures are used in tooltips, and in the notification if the animated model fails to load. -->
+      <Icon Size="Medium" Path="Textures/GUI/YurMedium.png"/>
+      <Icon Size="Large" Path="Textures/GUI/YurLarge.png"/>
+       <Icon Size="Mood" Path="Textures/GUI/YurLarge.png"/>
+    </Icons>
+  </HeroGuiElement>
+
+  <HeroGuiElement Name="Omnis">
+    <Title>%OmnisTitle</Title>
+    <Description>%OmnisDescription</Description>
+    <Icons>
+      <!-- These textures are used in tooltips, and in the notification if the animated model fails to load. -->
+      <Icon Size="Medium" Path="Textures/GUI/OmnisMedium.png"/>
+      <Icon Size="Large" Path="Textures/GUI/OmnisLarge.png"/>
+      <Icon Size="Mood" Path="Textures/GUI/OmnisLarge.png"/>
+    </Icons>
+  </HeroGuiElement>
 </Datatable>
