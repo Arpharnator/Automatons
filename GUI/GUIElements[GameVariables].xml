@@ -62,12 +62,12 @@
     <Color Red="255" Green="141" Blue="102" Alpha="255" />
   </ExtendedGuiElement>
 
-  <GuiElement Name="ImVerySmart">
-    <Title>%ImVerySmartTitle</Title>
+  <GuiElement Name="IndustryInterest">
+    <Title>%IndustryInterestTitle</Title>
   </GuiElement>
 
   <ExtendedGuiElement Name="InterestRate">
-    <Title>%ImVerySmartTitle</Title>
+    <Title>%IndustryInterestTitle</Title>
     <TooltipElement Percent="true"/>
   </ExtendedGuiElement>
 

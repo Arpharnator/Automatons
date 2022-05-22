@@ -211,4 +211,35 @@
     <HelperFormula>10 * $(IndustryVariable) + 10 * $(TurnVariable)</HelperFormula>
   </TechnologyDefinition>
 
+
+  <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration8" TechnologyStage="TechnologyStageDefinitionScienceAndExploration3" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier)   * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyMoonExploration"/>
+    <SimulationDescriptorReference Name="TechnologyPopulation1"/>
+    <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage3"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>
+
+    <HelperVariable Name="PopulationVariable"/>
+    <HelperVariable Name="AvailableMeagerPlanets"/>
+    <HelperVariable Name="AvailableMoonAnomaly"/>
+    <HelperFormula>$(PopulationVariable) * $(AvailableMeagerPlanets) + $(AvailableMoonAnomaly) * 20</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade26" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade4" Category="CategoryTechnologyEconomyAndTrade" SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage4Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityAutomatons</PathPrerequisite>
+    <SimulationDescriptorReference Name="TechnologyIndustry6"/>
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage4"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventPacifistTechnology"/>
+
+    <HelperVariable Name="TurnVariable"/>
+    <HelperVariable Name="IndustryVariable"/>
+    <HelperFormula>10 * $(IndustryVariable) + 10 * $(TurnVariable)</HelperFormula>
+  </TechnologyDefinition>
+
 </Datatable>

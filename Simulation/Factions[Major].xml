@@ -15,8 +15,8 @@
     
     
     <!-- AI -->
-    <Trait Name="PersonalityCanGetRenegade"/>
-    <Trait Name="PersonalityCanGetRestless"/>
+    <Trait Name="PersonalityCanGetPacifist"/>
+    <Trait Name="PersonalityCanGetParagon"/>
     <Trait Name="PersonalityCanGetIsolationist"/>
 
     <TraitStartingSenate Priority="100">

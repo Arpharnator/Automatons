@@ -55,6 +55,6 @@
     <StartingFleet>Explorer,Colonizer</StartingFleet>
     <UnlockedAbstractShipDesigns>Colonizer,Explorer,SmallAttack,SmallSupport,MediumAttack,MediumDefense,LargeCarrier,ScienceJuggernaut,MilitaryJuggernaut,SupportJuggernaut,Battleship,Obliterator</UnlockedAbstractShipDesigns>
     <DefaultColonizer>ShipDesignDecolonizationAutomatons</DefaultColonizer>
-    <AutomatedShip>ShipDesignAutomatedShipMajorAutomatons</AutomatedShip>
+    <AutomatedShip>ShipDesignAutomatedShipAutomatons</AutomatedShip>
   </FactionAffinity>
 </Datatable>

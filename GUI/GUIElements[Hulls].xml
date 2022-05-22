@@ -49,8 +49,8 @@
   </GuiElement>
 
   <GuiElement Name="HullSmall04AutomatonsShipBound">
-    <Title>%HullSmall04SophonsTitle</Title>
-    <Description>%HullSmall04SophonsDescription</Description>
+    <Title>%HullSmall04AutomatonsTitle</Title>
+    <Description>%HullSmall04AutomatonsDescription</Description>
     <Icons>
       <Icon Size="Small" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsSmall" />
       <Icon Size="Large" Path="Bitmaps/Dynamic/ShipHulls/Templars/ShipHullSmall01TemplarsLarge" />

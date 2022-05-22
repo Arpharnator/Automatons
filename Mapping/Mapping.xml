@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.View.Mapping.Xml.XmlMapping.xsd">
+  <XmlMapping Name="EncounterShip">
+    <!-- Added for the Mavros etc. ships-->
+    <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Format('Prefabs/Game/SpaceShips/SS_{0}_{1}_0{2}', Descriptor(Ship, ShipFactionForModel), Descriptor(Ship, ShipSize), Property(Ship, ShipHullIndex))"/>
+    <Fallback>
+      <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Format('Prefabs/Game/SpaceShips/SS_{0}{1}_{2}_0{3}', Descriptor(Ship, ShipFaction), $(SpecialType), Descriptor(Ship, ShipSize), Property(Ship, ShipHullIndex))"/>
+      <Fallback>
+        <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Format('Prefabs/Game/SpaceShips/SS_{0}_{1}_0{2}', Descriptor(Ship, ShipFaction), Descriptor(Ship, ShipSize), Property(Ship, ShipHullIndex))"/>
+        <Fallback>
+          <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Format('Prefabs/Game/SpaceShips/SS_{0}_{1}_01', Descriptor(Ship, ShipFaction), Descriptor(Ship, ShipSize))"/>
+          <Fallback>
+            <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Format('Prefabs/Game/SpaceShips/SS_Sophons_{0}_01', Descriptor(Ship, ShipSize))"/>
+            <Fallback>
+              <GameObject Name="Format('Ship({0})', Descriptor(Ship, ShipSize))" Prefab="Prefabs/Game/SpaceShips/SS_Sophons_Medium_01"/>
+            </Fallback>
+          </Fallback>
+        </Fallback>
+      </Fallback>
+    </Fallback>
+  </XmlMapping>
+</Datatable>

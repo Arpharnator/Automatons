@@ -151,7 +151,7 @@ The Maximum storable industry is listed as the cost in [dustcolored]
 
 If any of these do not appear, it is because they are 0.</LocalizationPair>
 
-  <LocalizationPair Name="%ImVerySmartTitle">Industry Interest</LocalizationPair>
+  <LocalizationPair Name="%IndustryInterestTitle">Industry Interest</LocalizationPair>
 
   <LocalizationPair Name="%ModuleSupportAutomatonsFIDSPercentTitle">Megascale Orbital Platforms</LocalizationPair>
 
