@@ -12,4 +12,14 @@
   <FactionTrait Name="FactionTraitAnarchist"   SubCategory="FactionTrait" Family="FactionTraitFamilyMilitary" Hidden="false" Custom="true" Cost="-50">
     <SimulationDescriptorReference Name="FactionTraitAnarchist"/>
   </FactionTrait>
+
+  <FactionTrait Name="FactionTraitVerticalTrading"   SubCategory="FactionTrait" Family="FactionTraitFamilyEconomy" Hidden="false" Custom="true" Cost="-15">
+    <SimulationDescriptorReference Name="FactionTraitVerticalTrading"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitStartingAnomalyInfernalScourges"   SubCategory="FactionTrait" TraitCategory="TraitCategoryAnomaly" Family="FactionTraitFamilyStartingAnomaly" TraitSubCategory="FactionTraitStartingAnomalyInfernalScourges" Hidden="false" Custom="true" Cost="5">
+    <SimulationDescriptorReference Name="FactionTraitStartingAnomalyInfernalScourges"/>
+    <Prerequisites>!FactionTraitManualHomeSystem,!AffinityGameplayVampirilis</Prerequisites>
+  </FactionTrait>
+  
 </Datatable>

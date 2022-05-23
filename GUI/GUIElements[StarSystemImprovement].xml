@@ -29,4 +29,13 @@
         </Icons>
     </GuiElement>
 
+    <GuiElement Name="StarSystemImprovementIndustry3Automatons">
+        <Title>%StarSystemImprovementIndustry3Title</Title>
+        <Description>%StarSystemImprovementIndustry3Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustry3Small" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustry3Large" />
+        </Icons>
+    </GuiElement>
+
 </Datatable>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/AnomalyReductionDefinition.xsd">
+
+    <AnomalyReductionDefinition Name="AnomalyReductionInfernalScourges" Category="CategoryAnomalyReduction">
+        <Cost ResourceName="SystemProduction">240</Cost>
+        <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyAnomalyReduction1</TechnologyPrerequisite>
+        <BaseAnomaly Name="PlanetAnomalyInfernalScourges"/>
+        <ResultAnomaly Name="PlanetAnomalyInfernalScourgesReduced"/>
+    </AnomalyReductionDefinition>
+
+</Datatable>

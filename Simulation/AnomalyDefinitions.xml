@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/AnomalyDefinition.xsd">
+
+
+    <AnomalyDefinition Name="PlanetAnomalyInfernalScourges" Quality="Mixed">
+        <SimulationDescriptorReference Name="PlanetAnomalyInfernalScourges"/>
+        <SimulationDescriptorReference Name="PlanetAnomalyMixed"/>
+        <GeneratorInfo>
+            <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+            <PlanetFilterNot>PlanetGameplayTypeGas</PlanetFilterNot>
+            <PlanetFilterNot>PlanetTypeFake</PlanetFilterNot>
+            <PlanetFilterNot>PlanetTypeMeager</PlanetFilterNot>
+        </GeneratorInfo>
+    </AnomalyDefinition>
+    <AnomalyDefinition Name="PlanetAnomalyInfernalScourgesReduced" Quality="Reduced">
+        <SimulationDescriptorReference Name="PlanetAnomalyInfernalScourgesReduced"/>
+        <SimulationDescriptorReference Name="PlanetAnomalyReduced"/>
+        <GeneratorInfo/>
+    </AnomalyDefinition>
+</Datatable>

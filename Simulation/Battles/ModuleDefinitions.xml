@@ -21,4 +21,58 @@
         <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSAutomatons"/>
     </SystemSupportModule>
 
+    <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockFlat" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectMaximumSystemProductionStockAutomatons"/>
+    </SystemSupportModule>
+
+    <!--We need to hide this one behind tech-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercent" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">200</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectMaximumSystemProductionStockAdvancedAutomatons"/>
+    </SystemSupportModule>
+
+    <!--No % version of the FIDSI modules-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlat" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemProductionAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemProductionAutomatons"/>
+    </SystemSupportModule>
+
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlat" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemGrowthAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemGrowthAutomatons"/>
+    </SystemSupportModule>
+
 </Datatable>

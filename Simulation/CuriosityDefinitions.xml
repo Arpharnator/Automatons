@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/CuriosityDefinition.xsd">
+
+    <CuriosityDefinition Name="Curiosity_PlanetAnomalyInfernalScourges" SubCategory="PlanetAnomaly" DisplayedType="CuriosityTypeAtmospheric" Difficulty="1" DiscoverOnColonization="true" ScoreProvider="CuriosityDiscovered">
+        <VisibilityPrerequisites>
+            <InterpreterPrerequisite Flags="Visibility">Property(Context, DetectionLevel) ge 1</InterpreterPrerequisite>
+        </VisibilityPrerequisites>
+        <PlanetAnomalyEffect>
+            <Anomaly Name="PlanetAnomalyInfernalScourges"/>
+        </PlanetAnomalyEffect>
+        <DroplistEffect>
+            <Droplist Name="CuriosityDroplist_Loot_Atmospheric_Era1"/>
+        </DroplistEffect>
+        <PopulationEvent Name="PopulationPoliticalEventCuriosityTypeAtmospheric"/>
+    </CuriosityDefinition>
+
+</Datatable>

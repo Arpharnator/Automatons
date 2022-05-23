@@ -12,6 +12,9 @@
     <Trait Name="FactionTraitAnarchist"/>
     <Trait Name="FactionTraitMinorSowers"/>
     <Trait Name="FactionTraitTechnologyDefinitionScienceAndExploration1"/>
+    <Trait Name="FactionTraitColonizationCapStandard1"/>
+    <Trait Name="FactionTraitVerticalTrading"/>
+    <Trait Name="FactionTraitStartingAnomalyInfernalScourges"/>
     
     
     <!-- AI -->

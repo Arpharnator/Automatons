@@ -70,8 +70,8 @@ Named for the number of guns it can mount.</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%CategoryTechnologyFactionAutomatonsTitle">Automatons Technology</LocalizationPair>
   <LocalizationPair Name="%AffinityGameplayAutomatonsTooltipEffect">You are able to store industry [industrycolored], to reuse it later, and gain interest on stored industry.
-Industry storage is equal to 4 times your industry. Gain an additional 1 time your industry storage for each system level development on the system.
-Stored industry gains interest at a rate of 5% interest per turn (it will be added directly to the system's industry production).</LocalizationPair>
++0.25 total stored industry capacity multiplier per system level on Systems.
++5% Industry Interest on Systems.</LocalizationPair>
   <LocalizationPair Name="%ClassPopulationEmpireAffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%ClassPopulationStarSystemAffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%PopulationAutomatonsTitle">Automatons</LocalizationPair>
@@ -120,23 +120,26 @@ Stored industry gains interest at a rate of 5% interest per turn (it will be add
   <LocalizationPair Name="%UniquePlanetAutomatonsDescription">The home of the Automatons and their creators, the Reyans. The Automatons were created by the Reyans as their planet was dying to leave a legacy to their civilisation.</LocalizationPair>
 
   <!-- Fleet Names -->
-  <!-- Fleet name will be Numeration + Adjective + Title, so 1st Automated Apparatus is one possibility -->
-  <!--<LocalizationPair Name="%FleetNameTitleApparatus">Apparatus</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus00">Automated</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus01">Derelict</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus02">Hydraulic</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus03">Clockwork</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus04">Complicated</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus05">Motorized</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus06">Contracticle</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus07">Rusting</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus08">Wrecked</LocalizationPair>
-  <LocalizationPair Name="%FleetNameAdjectiveApparatus09">Shambolic</LocalizationPair>-->
+  <LocalizationPair Name="%FleetNameTitleBulwark">Bulwark</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark00">Unyielding</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark01">Barricaded</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark02">Fortified</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark03">Dutiful</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark04">Undying</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark05">Bedrock</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark06">Mighty</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark07">Shining</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark08">Warding</LocalizationPair>
+  <LocalizationPair Name="%FleetNameAdjectiveBulwark09">Withstanding</LocalizationPair>
 
   <!-- Faction Trait -->
   <!-- Anarchists -->
   <LocalizationPair Name="%FactionTraitAnarchistTitle">Anarchists</LocalizationPair>
   <LocalizationPair Name="%FactionTraitAnarchistDescription">This society is unused to living under a centralized structure, leading to fleets being disorganized and harder to manoeuver.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitVerticalTradingTitle">Vertical Trading</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitVerticalTradingDescription">This society would much rather consolidate their gains in a few select locations than have multiple less profitable trading avenues.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitVerticalTradingTooltipEffect">-1 Maximum Trading Company HQ on Empire</LocalizationPair>
 
   <!-- Starting Automatons Population -->
   <LocalizationPair Name="%FactionTraitMinorAutomatonsTitle">Automatons Citizens</LocalizationPair>
@@ -166,8 +169,28 @@ If any of these do not appear, it is because they are 0.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionUnique10AutomatonsTitle">Dense Orbitals</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionUnique10AutomatonsDescription">The Automatons may not be the most driven explorers, they are efficient when it comes to using new technologies. The Automatons have managed to create vast orbital platforms using the technology and techniques of encountered species.</LocalizationPair>
 
-  <!-- > Minor Faction Automatons -->
+  <!-- Minor Faction Automatons -->
   <LocalizationPair Name="%MinorFactionAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%MinorFactionAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
+
+
+
+  <LocalizationPair Name="%FactionTraitStartingAnomalyInfernalScourgesTitle">Hellgourds</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitStartingAnomalyInfernalScourgesDescription">This Empire was cursed with bad luck and begins its story with Hellgourds on their home planet.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitStartingAnomalyInfernalScourgesEffectOverride">+4 [foodColored] per [population]
+-3 [happinessColored] per [population]</LocalizationPair>
+
+<LocalizationPair Name="%PlanetAnomalyInfernalScourgesTitle">Hellgourds</LocalizationPair>
+<LocalizationPair Name="%PlanetAnomalyInfernalScourgesDescription">An unfortunate side effect of Tan-Erbo's horticultural tampering, these large, carnivorous, orange plants will aggressively defend their territory. While they are potentially dangerous, they also have delicious fruit that can be used to make a wide variety of excellent candies. There are two risks when colonizing this planet, then; aggressive foliage and tooth decay.</LocalizationPair>
+
+<LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedTitle">Hellgourds</LocalizationPair>
+<LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
+
+<LocalizationPair Name="%AnomalyReductionInfernalScourgesTitle">Plant Bribery</LocalizationPair>
+<LocalizationPair Name="%AnomalyReductionInfernalScourgesDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
+
+<LocalizationPair Name="%SystemSupportModuleEffectSystemProductionAutomatons">Orbital Production Facilities</LocalizationPair>
+<LocalizationPair Name="%SystemSupportModuleEffectSystemGrowthAutomatons">Orbital Growth Facilities</LocalizationPair>
+
 </Datatable>

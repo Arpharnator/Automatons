@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <GuiElement Name="AnomalyReductionInfernalScourges">
+        <Title>%AnomalyReductionInfernalScourgesTitle</Title>
+        <Description>%AnomalyReductionInfernalScourgesDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/GUI/HellgourdsSmall.png" /> <!--This is simply the large jungle image made smaller-->
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeJungleLarge"/>
+            <Icon Size="Category" Path="CategoryAnomalyReductionSmall" />
+        </Icons>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="PlanetAnomalyInfernalScourges">
+        <Title>%PlanetAnomalyInfernalScourgesTitle</Title>
+        <Description>%PlanetAnomalyInfernalScourgesDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Anomaly"/>
+			<Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeJungleLarge"/>
+        </Icons>
+        <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    </ExtendedGuiElement>
+
+    <GuiElement Name="PlanetAnomalyInfernalScourgesReduced">
+        <Title>%PlanetAnomalyInfernalScourgesReducedTitle</Title>
+        <Description>%PlanetAnomalyInfernalScourgesReducedDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Anomaly"/>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeJungleLarge"/>
+        </Icons>
+    </GuiElement>
+
+</Datatable>

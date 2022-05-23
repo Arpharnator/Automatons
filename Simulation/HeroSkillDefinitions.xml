@@ -3,14 +3,14 @@
 
 	<HeroSkillDefinition Name="AutomatonSkill">
 		<SkillLevel Name="HeroSkillAutomaton">
-			<ShipSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_1"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_1"/>
 			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>
 
 	<HeroSkillDefinition Name="ErboSkill01">
 		<SkillLevel Name="HeroSkill01Erbo">
-			<ShipSimulationDescriptorReference Name="HeroSkillSystem2_BuildingCostReduction_Percent_0"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem2_BuildingCostReduction_Percent_0"/>
 			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>
@@ -31,14 +31,14 @@
 
 	<HeroSkillDefinition Name="OmnisSkill01">
 		<SkillLevel Name="HeroSkill01Omnis">
-			<ShipSimulationDescriptorReference Name="HeroSkillSystem57_Approval_PerSystemLevel_0"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem57_Approval_PerSystemLevel_0"/>
 			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>
 
 	<HeroSkillDefinition Name="OmnisSkill02">
 		<SkillLevel Name="HeroSkill02Omnis">
-			<ShipSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
 			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>

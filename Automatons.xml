@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
   <RuntimeModule Name="FactionMajorMavros" Type="Extension" Version="1.0.0">
     <Title>Major Faction - The Automatons</Title>
     <Description>The Automatons come back from ES1. ESG required. DLC4 (Awakening) required.
@@ -56,11 +57,16 @@
     <PreviewImageFile>ModIcon.png</PreviewImageFile>
     <ReleaseNotes>1.0 - Finishing stuff</ReleaseNotes>
     <Tags>MajorFactions</Tags>
-    
+
     <Plugins>
       <!-- Galaxy Generation -->
       <DatabasePlugin DataType="GalaxyGeneratorWeightTableDefinition, Assembly-CSharp">
         <FilePath>GalaxyGenerator/WeightTableDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Generator.Definitions.PlanetaryAnomalyDefinition, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/AnomalyDefinitions.xml</FilePath>
+        <FilePath>Simulation/AnomalyDefinitions[*].xml</FilePath>
       </DatabasePlugin>
 
       <!-- Diplomacy -->
@@ -113,6 +119,11 @@
         <FilePath>Simulation/PopulationCollectionBonusTraits.xml</FilePath>
       </DatabasePlugin>
 
+      <DatabasePlugin DataType="AnomalyDefinition, Assembly-CSharp">
+        <FilePath>Simulation/AnomalyDefinitions.xml</FilePath>
+        <FilePath>Simulation/AnomalyDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
       <!-- Ship Designs -->
       <DatabasePlugin DataType="ShipDesignDefinition, Assembly-CSharp">
         <FilePath>Simulation/Battles/ShipDesignDefinitions.xml</FilePath>
@@ -141,10 +152,17 @@
       <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
         <ExtraTypes>
           <ExtraType DataType="StarSystemImprovementDefinition, Assembly-CSharp" />
-		  <ExtraType DataType="PlanetTerraformationDefinition, Assembly-CSharp" />
+          <ExtraType DataType="PlanetTerraformationDefinition, Assembly-CSharp" />
           <ExtraType DataType="StarSystemPopulationTransformImprovementDefinition, Assembly-CSharp" />
         </ExtraTypes>
         <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- ANOMALY REDUCTIONS -->
+
+      <DatabasePlugin DataType="AnomalyReductionDefinition, Assembly-CSharp">
+        <FilePath>Simulation/ConstructibleElement_AnomalyReductions.xml</FilePath>
+        <FilePath>Simulation/ConstructibleElement_AnomalyReductions[*].xml</FilePath>
       </DatabasePlugin>
 
       <!-- Technologies -->
@@ -171,10 +189,10 @@
       <!-- GUI -->
       <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
         <ExtraTypes>
-          <ExtraType  DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+          <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
           <ExtraType DataType="AffinityGuiElement, Assembly-CSharp" />
-		  <ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
-		  <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />
+          <ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
+          <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />
           <!--<ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
           <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />-->
           <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
@@ -183,7 +201,7 @@
         </ExtraTypes>
         <FilePath>GUI/GUIElements[*].xml</FilePath>
       </DatabasePlugin>
-      
+
       <!-- Mapping -->
       <DatabasePlugin DataType="Amplitude.Unity.View.Mapping.Xml.XmlMapping, Assembly-CSharp-firstpass">
         <FilePath>Mapping/Mapping.xml</FilePath>
@@ -192,8 +210,8 @@
       <!-- Faction Traits -->
       <DatabasePlugin DataType="FactionTrait, Assembly-CSharp" Priority="20">
         <ExtraTypes>
-          <ExtraType  DataType="FactionAffinity, Assembly-CSharp" />
-          <ExtraType  DataType="FactionAffinityMapping, Assembly-CSharp" />
+          <ExtraType DataType="FactionAffinity, Assembly-CSharp" />
+          <ExtraType DataType="FactionAffinityMapping, Assembly-CSharp" />
         </ExtraTypes>
         <FilePath>Simulation/FactionTraits[*].xml</FilePath>
       </DatabasePlugin>
@@ -205,7 +223,7 @@
       <DatabasePlugin DataType="FactionAffinityMapping, Assembly-CSharp">
         <FilePath>Simulation/FactionTraits[AffinityMapping].xml</FilePath>
       </DatabasePlugin>
-      
+
       <!-- Personalities -->
       <DatabasePlugin DataType="PersonalityDefinition, Assembly-CSharp">
         <FilePath>Simulation/PersonalityDefinitions.xml</FilePath>
@@ -239,52 +257,83 @@
         </ExtraTypes>
         <FilePath>Simulation/Battles/BattleEffectDefinitions.xml</FilePath>
       </DatabasePlugin>
-	  
-	  
-	  <DatabasePlugin DataType="HeroAffinityDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroAffinityDefinitions.xml</FilePath>
-                <FilePath>Simulation/HeroAffinityDefinitions[*].xml</FilePath>
-            </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroClassDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroClassDefinitions.xml</FilePath>
-                <FilePath>Simulation/HeroClassDefinitions[*].xml</FilePath>
-            </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroPoliticsDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroPoliticsDefinitions.xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroAffinityDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroAffinityDefinitions.xml</FilePath>
+        <FilePath>Simulation/HeroAffinityDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroSkillTreeDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroSkillTreeDefinitions.xml</FilePath>
-                <FilePath>Simulation/HeroSkillTreeDefinitions[*].xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroClassDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroClassDefinitions.xml</FilePath>
+        <FilePath>Simulation/HeroClassDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroSkillDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroSkillDefinitions.xml</FilePath>
-                <FilePath>Simulation/HeroSkillDefinitions[*].xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroPoliticsDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroPoliticsDefinitions.xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroMasteryDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroMasteryDefinitions.xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroSkillTreeDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroSkillTreeDefinitions.xml</FilePath>
+        <FilePath>Simulation/HeroSkillTreeDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroUnlockGaugeDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroUnlockGaugeDefinitions.xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroSkillDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroSkillDefinitions.xml</FilePath>
+        <FilePath>Simulation/HeroSkillDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="ScoreProviderListDefinition, Assembly-CSharp">
-                <FilePath>Simulation/ScoreProviderListDefinitions.xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroMasteryDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroMasteryDefinitions.xml</FilePath>
+      </DatabasePlugin>
 
-            <DatabasePlugin DataType="HeroDefinition, Assembly-CSharp">
-                <FilePath>Simulation/HeroDefinitions.xml</FilePath>
-                <FilePath>Simulation/HeroDefinitions[*].xml</FilePath>
-            </DatabasePlugin>
+      <DatabasePlugin DataType="HeroUnlockGaugeDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroUnlockGaugeDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ScoreProviderListDefinition, Assembly-CSharp">
+        <FilePath>Simulation/ScoreProviderListDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="HeroDefinition, Assembly-CSharp">
+        <FilePath>Simulation/HeroDefinitions.xml</FilePath>
+        <FilePath>Simulation/HeroDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="QuestDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="TutorialDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Quest/QuestDefinitions.xml</FilePath>
+        <Overrides>
+          <Override Name="Prerequisites" DataType="Amplitude.Query.Xml.XmlQueryPrerequisites, Assembly-CSharp-firstpass">
+            <ExtraType Name="FilterConstellationByDistance" DataType="QuestFilterConstellationByDistance, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByStatus" DataType="QuestFilterSystemByStatus, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByDistance" DataType="QuestFilterSystemByDistance, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByCuriosity" DataType="QuestFilterSystemByCuriosity, Assembly-CSharp" />
+            <ExtraType Name="FilterPlanetByCuriosity" DataType="QuestFilterPlanetByCuriosity, Assembly-CSharp" />
+            <ExtraType Name="FilterShipDesignByModule" DataType="QuestFilterShipDesignByModule, Assembly-CSharp" />
+            <ExtraType Name="FilterByStringValue" DataType="QuestFilterByStringValue, Assembly-CSharp" />
+            <ExtraType Name="IsNot" DataType="QuestFilterDifferentEntity, Assembly-CSharp" />
+            <ExtraType Name="FilterColonizedStarSystemByTraitorPresence" DataType="QuestFilterByTraitorPresence, Assembly-CSharp" />
+          </Override>
+          <Override Name="Sorter" DataType="Amplitude.Query.Xml.XmlQuerySorter, Assembly-CSharp-firstpass">
+            <ExtraType Name="SortSystemByDistance" DataType="QuestSorterSystemByDistance, Assembly-CSharp" />
+            <ExtraType Name="SortSystemByQuestNodeRank" DataType="QuestSorterSystemByQuestNodeRank, Assembly-CSharp" />
+            <ExtraType Name="SortConstellationByDistance" DataType="QuestSorterConstellationByDistance, Assembly-CSharp" />
+            <ExtraType Name="SortRemovePlanetsOfSameSystem" DataType="QuestSorterRemovePlanetsOfSameSystem, Assembly-CSharp" />
+          </Override>
+        </Overrides>
+      </DatabasePlugin>
 
       <!-- Fleet Names -->
       <DatabasePlugin DataType="FleetNameMappingDefinition, Assembly-CSharp">
         <FilePath>Mapping/FleetNameMappingDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="CuriosityDefinition, Assembly-CSharp">
+        <FilePath>Simulation/CuriosityDefinitions.xml</FilePath>
+        <FilePath>Simulation/CuriosityDefinitions[*].xml</FilePath>
       </DatabasePlugin>
 
       <!-- Ground Battles -->

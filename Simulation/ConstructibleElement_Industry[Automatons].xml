@@ -41,35 +41,49 @@
         <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
     </StarSystemImprovementDefinition>
 
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry3Automatons" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Industry"/>
+    <Cost ResourceName="SystemProduction">1120</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry3Automatons,!FastForwardedImprovement</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndustry3Automatons</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementIndustry3Automatons"/>
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal"/>
+    <SimulationDescriptorReference Name="IsIndustryBuilding"/>
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
+  </StarSystemImprovementDefinition>
+
     <!--Arcological Administration-->
-  <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Food" Weight="0.25"/>
-    <SupervisorGain Name="Industry" Weight="0.25"/>
-    <SupervisorGain Name="Science" Weight="0.25"/>
-    <SupervisorGain Name="Dust" Weight="0.25"/>
-    <QueuedSimulationDescriptorReference Name="IncreaseArcologyBeingBuiltCount"/>
-    <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">2000 * (1 + Property(StockLocation,@'../ClassEmpire', ArcologicalAdministrationCount)) * (1 + Property(StockLocation,@ClassColonizedStarSystem, ArcologicalAdministrationCount)) * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
-    <Cost ResourceName="SystemProduction">1</Cost>
-    <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyInfluenceConversion</TechnologyPrerequisite>
-    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="false">../ClassEmpire,!AffinityGameplayUmbralChoir,!AffinityGameplayMajorHisshos,!AffinityGameplayTerrans,!AffinityGameplayTemplars</PathPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
-    <SimulationDescriptorReference Name="StarSystemImprovementInfluenceSink"/>
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
-  </StarSystemImprovementDefinition>
-  <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink_Alt" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Food" Weight="0.25"/>
-    <SupervisorGain Name="Industry" Weight="0.25"/>
-    <SupervisorGain Name="Science" Weight="0.25"/>
-    <SupervisorGain Name="Dust" Weight="0.25"/>
-    <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">2000 * (1 + Property(StockLocation,@'../ClassEmpire', ArcologicalAdministrationCount)) * (1 + Property(StockLocation,@ClassColonizedStarSystem, ArcologicalAdministrationCount))  * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyInfluenceConversion</TechnologyPrerequisite>
-    <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
-    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="false">../ClassEmpire,!AffinityGameplayCravers,!AffinityGameplayVenetians,!AffinityGameplayVampirilis,!AffinityGameplayTimeLords,!AffinityGameplayUnfallen,!AffinityGameplaySophons,!AffinityGameplayHoratio,!AffinityGameplayVaulters,!AffinityGameplayAutomatons</PathPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
-    <SimulationDescriptorReference Name="StarSystemImprovementInfluenceSink_Alt"/>
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
-  </StarSystemImprovementDefinition>
+    <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
+        <SupervisorGain Name="Food" Weight="0.25"/>
+        <SupervisorGain Name="Industry" Weight="0.25"/>
+        <SupervisorGain Name="Science" Weight="0.25"/>
+        <SupervisorGain Name="Dust" Weight="0.25"/>
+        <QueuedSimulationDescriptorReference Name="IncreaseArcologyBeingBuiltCount"/>
+        <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">2000 * (1 + Property(StockLocation,@'../ClassEmpire', ArcologicalAdministrationCount)) * (1 + Property(StockLocation,@ClassColonizedStarSystem, ArcologicalAdministrationCount)) * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
+        <Cost ResourceName="SystemProduction">1</Cost>
+        <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyInfluenceConversion</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="false">../ClassEmpire,!AffinityGameplayUmbralChoir,!AffinityGameplayMajorHisshos,!AffinityGameplayTerrans,!AffinityGameplayTemplars</PathPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
+        <SimulationDescriptorReference Name="StarSystemImprovementInfluenceSink"/>
+        <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+    </StarSystemImprovementDefinition>
+    <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink_Alt" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
+        <SupervisorGain Name="Food" Weight="0.25"/>
+        <SupervisorGain Name="Industry" Weight="0.25"/>
+        <SupervisorGain Name="Science" Weight="0.25"/>
+        <SupervisorGain Name="Dust" Weight="0.25"/>
+        <CustomCost ResourceName="EmpireEmpirePoint" Instant="true">2000 * (1 + Property(StockLocation,@'../ClassEmpire', ArcologicalAdministrationCount)) * (1 + Property(StockLocation,@ClassColonizedStarSystem, ArcologicalAdministrationCount))  * Property(StockLocation,@'../ClassEmpire', GameSpeedMultiplier)</CustomCost>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyInfluenceConversion</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Disable,RequiresSystemLevel4">ColonizedStarSystemStateColony,StarSystemImprovementLevel4</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="false">../ClassEmpire,!AffinityGameplayCravers,!AffinityGameplayVenetians,!AffinityGameplayVampirilis,!AffinityGameplayTimeLords,!AffinityGameplayUnfallen,!AffinityGameplaySophons,!AffinityGameplayHoratio,!AffinityGameplayVaulters,!AffinityGameplayAutomatons</PathPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementOnlyOnLevelMax"/>
+        <SimulationDescriptorReference Name="StarSystemImprovementInfluenceSink_Alt"/>
+        <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionApproval1"/>
+    </StarSystemImprovementDefinition>
 
 
     <PlanetTerraformationDefinition Name="PlanetTerraformationFromOceanToTerran" SubCategory="PlanetTerraformationDust">

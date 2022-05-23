@@ -2,7 +2,7 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FactionTrait.xsd">
 
   <FactionAffinityMapping Name="AffinityMappingAutomatons" SubCategory="MajorFactionAffinityMapping" Hidden="false" Custom="true" Cost="5">
-    <Command Name="RecruitHero"                     Arguments="Omnis" />
+    <Command Name="RecruitHero"                     Arguments="Erbo" />
 
     <SimulationDescriptorReference Name="AffinityMappingAutomatons" />
 

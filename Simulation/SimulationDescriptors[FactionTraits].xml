@@ -4,8 +4,9 @@
 
 
     <SimulationDescriptor Name="AffinityGameplayAutomatons" Type="AffinityGameplay">
-        <Modifier TargetProperty="TotalMult" Operation="Addition"  Value="3" Path="ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
-        <BinaryModifier TargetProperty="TotalMult" Operation="Addition" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="1" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
+        <!-- I think this is not a necessity anymore with the new way of storing ind
+        <Modifier TargetProperty="TotalMult" Operation="Addition"  Value="1" Path="ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <BinaryModifier TargetProperty="TotalMult" Operation="Addition" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="0.25" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
         <Modifier TargetProperty="InterestRate" Operation="Addition" Value="0.05" Path="ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
         
 
@@ -24,5 +25,12 @@
     <SimulationDescriptor Name="FactionTraitAnarchist" Type="FactionTrait">
         <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="-2" Path="ClassEmpire"/>
     </SimulationDescriptor>
+
+    <SimulationDescriptor Name="FactionTraitVerticalTrading" Type="FactionTrait">
+        <Modifier TargetProperty="TradingRoutesBonus_Growth" Operation="Percent" Value="10" Path="ClassEmpire,ClassColonizedStarSystem, BuildingStarSystemImprovementTradingCompanyHeadquarters"/>
+        <Modifier TargetProperty="TradingRoutesBonus_Production" Operation="Percent" Value="10" Path="ClassEmpire,ClassColonizedStarSystem, BuildingStarSystemImprovementTradingCompanyHeadquarters"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="FactionTraitStartingAnomalyInfernalScourges" Type="FactionTrait"/>
 
 </Datatable>

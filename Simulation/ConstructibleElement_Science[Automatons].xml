@@ -211,6 +211,29 @@
     <HelperFormula>10 * $(IndustryVariable) + 10 * $(TurnVariable)</HelperFormula>
   </TechnologyDefinition>
 
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade7Automatons" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade3" Category="CategoryTechnologyEconomyAndTrade" SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayUmbralChoir</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyIndustry3Automatons"/>
+    <SimulationDescriptorReference Name="TechnologyIndustry3Alt"/>
+    <SimulationDescriptorReference Name="TechnologyStrategicDeposit3"/>
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage3"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology"/>
+
+    <HelperVariable Name="AvailableDepositStrategic3"/>
+    <HelperVariable Name="OwnedPlanetsCount"/>
+    <HelperVariable Name="IndustryVariable"/>
+    <HelperVariable Name="IndustryPopulation"/>
+    <HelperVariable Name="AvailableHotPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperFormula>$(IndustryVariable) * $(OwnedPlanetsCount) * 20 + 1 * $(IndustryVariable) * $(AvailableHotPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
 
   <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration8" TechnologyStage="TechnologyStageDefinitionScienceAndExploration3" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
     <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier)   * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
@@ -240,6 +263,29 @@
     <HelperVariable Name="TurnVariable"/>
     <HelperVariable Name="IndustryVariable"/>
     <HelperFormula>10 * $(IndustryVariable) + 10 * $(TurnVariable)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEconomyAndTrade7" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade3" Category="CategoryTechnologyEconomyAndTrade" SubCategoryInQuests="TechnoMilitary" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
+
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyIndustry3"/>
+    <SimulationDescriptorReference Name="TechnologyIndustry3Alt"/>
+    <SimulationDescriptorReference Name="TechnologyStrategicDeposit3"/>
+    <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage3"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventIndustrialistTechnology"/>
+
+    <HelperVariable Name="AvailableDepositStrategic3"/>
+    <HelperVariable Name="OwnedPlanetsCount"/>
+    <HelperVariable Name="IndustryVariable"/>
+    <HelperVariable Name="IndustryPopulation"/>
+    <HelperVariable Name="AvailableHotPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperFormula>$(IndustryVariable) * $(OwnedPlanetsCount) * 20 + 1 * $(IndustryVariable) * $(AvailableHotPlanets)</HelperFormula>
   </TechnologyDefinition>
 
 </Datatable>

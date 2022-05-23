@@ -5,7 +5,7 @@
     <!-- Starting Resources -->
     <Command Name="TransferResources"               Arguments="EmpireManpower,1000" />
     <Command Name="TransferResources"               Arguments="EmpireMoney,100" />
-    <Command Name="TransferResources"               Arguments="SystemInfluence,15" />
+    <Command Name="TransferResources"               Arguments="EmpireEmpirePoint,15"/>
 
     <!-- Usable Battle Actions -->
     <Command Name="UnlockBattleAction"              Arguments="Group_ComputeShipExperience" />

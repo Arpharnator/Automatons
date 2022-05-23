@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatTitle">Self Contained Growth Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatTitle">Self Contained Industry Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentTitle">Superscale Industry Storage Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockFlatTitle">Industry Storage Section</LocalizationPair>
+</Datatable>

@@ -2,17 +2,17 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FleetNameMappingDefinition.xsd">
 
   <FleetNameMappingDefinition Name="AffinityMappingAutomatons">
-    <FleetNameTitle LocalizationKey="%FleetNameTitleApparatus">
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus00" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus01" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus02" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus03" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus04" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus05" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus06" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus07" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus08" />
-      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveApparatus09" />
+    <FleetNameTitle LocalizationKey="%FleetNameTitleBulwark">
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark00" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark01" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark02" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark03" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark04" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark05" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark06" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark07" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark08" />
+      <FleetNameAdjective LocalizationKey="%FleetNameAdjectiveBulwark09" />
     </FleetNameTitle>
   </FleetNameMappingDefinition>
 </Datatable>

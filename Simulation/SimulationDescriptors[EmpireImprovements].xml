@@ -44,6 +44,7 @@
   <SimulationDescriptor Name="TechnologyLimitedTeleportation" Type="Technology" IsSerializable="false" />
   <SimulationDescriptor Name="TechnologyUnique10Automatons" Type="Technology" IsSerializable="false" />
   <SimulationDescriptor Name="TechnologyIndustry6Automatons" Type="Technology" IsSerializable="false" />
+  <SimulationDescriptor Name="TechnologyIndustry3Automatons" Type="Technology" IsSerializable="false" />
   
 
 </Datatable>

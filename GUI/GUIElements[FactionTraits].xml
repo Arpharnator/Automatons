@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
   <ExtendedGuiElement Name="AffinityGameplayAutomatons">
     <Title>%AffinityGameplayAutomatonsTitle</Title>
     <Description>%AffinityGameplayAutomatonsDescription</Description>
@@ -10,7 +11,7 @@
       <EffectOverride>%AffinityGameplayAutomatonsTooltipEffect</EffectOverride>
     </TooltipElement>
   </ExtendedGuiElement>
-  
+
   <!-- Automatons Population -->
   <ExtendedGuiElement Name="FactionTraitMinorAutomatons">
     <Title>%FactionTraitMinorAutomatonsTitle</Title>
@@ -24,10 +25,32 @@
   </ExtendedGuiElement>
 
   <GuiElement Name="FactionTraitAnarchist">
-        <Title>%FactionTraitAnarchistTitle</Title>
-        <Description>%FactionTraitAnarchistDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Headers/HeaderTraits" />
-        </Icons>
-    </GuiElement>
+    <Title>%FactionTraitAnarchistTitle</Title>
+    <Description>%FactionTraitAnarchistDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Headers/HeaderTraits" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="FactionTraitVerticalTrading">
+    <Title>%FactionTraitVerticalTradingTitle</Title>
+    <Description>%FactionTraitVerticalTradingDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Headers/HeaderTraits" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitVerticalTradingTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="FactionTraitStartingAnomalyInfernalScourges">
+    <Title>%FactionTraitStartingAnomalyInfernalScourgesTitle</Title>
+    <Description>%FactionTraitStartingAnomalyInfernalScourgesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Textures/Traits/Anomaly.png" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitStartingAnomalyInfernalScourgesEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
 </Datatable>

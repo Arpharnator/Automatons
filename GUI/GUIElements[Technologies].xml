@@ -115,5 +115,13 @@
     </Icons>
   </TechnologyGuiElement2>
 
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade7Automatons" X="-1" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade7Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
 
 </Datatable>

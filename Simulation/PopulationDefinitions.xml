@@ -14,7 +14,8 @@
 
     <Trait Name="PopulationModifiersTraitPrimaryFIDSOnTerran"/>
     <Trait Name="PopulationModifiersTraitSecondaryApprovalOnTerran" />
-
+    <Trait Name="PopulationModifiersTraitSecondaryCustomIndustryOnTeeming01"/>
+    
     <Trait Name="PopulationCollectionBonusTraitAutomatons" />
 
     <Desires/>

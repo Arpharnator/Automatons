@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
   <!-- HULL IMPROVEMENT -->
   <SkinnedGuiElement Name="EmpireImprovementSlotsSmall01Automatons">
     <Title>%EmpireImprovementSlotsSmall01AutomatonsEra2Title</Title>
@@ -67,7 +68,7 @@
     </TooltipElement>
   </SkinnedGuiElement>
 
-   <ExtendedGuiElement Name="EmpireImprovementLimitedTeleportation">
+  <ExtendedGuiElement Name="EmpireImprovementLimitedTeleportation">
     <Title>%EmpireImprovementLimitedTeleportationTitle</Title>
     <Description>%EmpireImprovementLimitedTeleportationDescription</Description>
     <Icons>
@@ -92,5 +93,14 @@
       <EffectOverride>%EmpireImprovementPortalAutomatonsTooltipEffect</EffectOverride>
     </TooltipElement>
   </ExtendedGuiElement>
- 
+
+  <ExtendedGuiElement Name="EmpireImprovementDamageBonusTroop1Automatons">
+    <Title>%EmpireImprovementDamageBonusTroops1Title</Title>
+    <Description>%EmpireImprovementDamageBonusTroops1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementBattleSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementBattleLarge" />
+    </Icons>
+  </ExtendedGuiElement>
+
 </Datatable>
