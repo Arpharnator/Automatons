@@ -2,8 +2,38 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+    <!--FIDSI and Industry Storage modules-->
+    <!--Small versions-->
     <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatTitle">Self Contained Growth Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatDescription">
++2 [foodcolored] on System</LocalizationPair>
     <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatTitle">Self Contained Industry Section</LocalizationPair>
-    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentTitle">Superscale Industry Storage Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatDescription">
++2 [industrycolored] on System</LocalizationPair>
     <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockFlatTitle">Industry Storage Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockFlatDescription">
++40 Industry Storage Capacity on System</LocalizationPair>
+
+    <!--Medium version-->
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatMediumTitle">Superscale Self Contained Growth Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatMediumDescription">
++5 [foodcolored] on System</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatMediumTitle">Superscale Self Contained Industry Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatMediumDescription">
++5 [industrycolored] on System</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentTitle">Superscale Industry Storage Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentDescription">
++80 Industry Storage Capacity on System</LocalizationPair>
++1% Industry Storage Capacity on System
+    <!--Large versions-->
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatLargeTitle">Megascale Self Contained Growth Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemGrowthFlatLargeDescription">
++12 [foodcolored] on System</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatLargeTitle">Megascale Self Contained Industry Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsSystemProductionFlatLargeDescription">
++12 [industrycolored] on System</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentLargeTitle">Megascale Industry Storage Section</LocalizationPair>
+    <LocalizationPair Name="%ModuleSupportAutomatonsMaximumSystemProductionStockPercentLargeDescription">
++150 Industry Storage Capacity on System
++2% Industry Storage Capacity on System</LocalizationPair>
 </Datatable>

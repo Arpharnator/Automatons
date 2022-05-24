@@ -13,8 +13,10 @@
         </Sounds>
     </ExtendedGuiElement>
 
+    <!--System Production Stock modules-->
     <ExtendedGuiElement Name="ModuleSupportAutomatonsMaximumSystemProductionStockFlat">
         <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockFlatTitle</Title>
+        <Description>%ModuleSupportAutomatonsMaximumSystemProductionStockFlatDescription</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
         </Icons>
@@ -26,6 +28,7 @@
 
     <ExtendedGuiElement Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercent">
         <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentTitle</Title>
+        <Description>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentDescription</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
         </Icons>
@@ -35,8 +38,22 @@
         </Sounds>
     </ExtendedGuiElement>
 
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercentLarge">
+        <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentLargeTitle</Title>
+        <Description>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentLargeDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <!--Small versions-->
     <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemProductionFlat">
         <Title>%ModuleSupportAutomatonsSystemProductionFlatTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemProductionFlatDescription</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
         </Icons>
@@ -48,6 +65,7 @@
 
     <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemGrowthFlat">
         <Title>%ModuleSupportAutomatonsSystemGrowthFlatTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemGrowthFlatDescription</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
         </Icons>
@@ -57,4 +75,91 @@
         </Sounds>
     </ExtendedGuiElement>
 
+    <!--Medium versions-->
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemProductionFlatMedium">
+        <Title>%ModuleSupportAutomatonsSystemProductionFlatMediumTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemProductionFlatMediumDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemGrowthFlatMedium">
+        <Title>%ModuleSupportAutomatonsSystemGrowthFlatMediumTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemGrowthFlatMediumDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <!--Large versions-->
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemProductionFlatLarge">
+        <Title>%ModuleSupportAutomatonsSystemProductionFlatLargeTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemProductionFlatLargeDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportAutomatonsSystemGrowthFlatLarge">
+        <Title>%ModuleSupportAutomatonsSystemGrowthFlatLargeTitle</Title>
+        <Description>%ModuleSupportAutomatonsSystemGrowthFlatLargeDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportJuggernautFIDSDynamic" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAutomatons">
+        <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockFlatTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedAutomatons">
+        <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedLargeAutomatons">
+        <Title>%ModuleSupportAutomatonsMaximumSystemProductionStockPercentLargeTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemProductionAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemProductionFlatTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemGrowthAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemGrowthFlatTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemProductionMediumAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemProductionFlatMediumTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemGrowthMediumAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemGrowthFlatMediumTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemProductionLargeAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemProductionFlatLargeTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportSystemGrowthLargeAutomatons">
+        <Title>%ModuleSupportAutomatonsSystemGrowthFlatLargeTitle</Title>
+    </ExtendedGuiElement>
 </Datatable>

@@ -61,11 +61,17 @@ Named for the number of guns it can mount.</LocalizationPair>
 
   <!-- Affinity -->
   <LocalizationPair Name="%FactionAutomatonsTitle">Automatons</LocalizationPair>
-  <LocalizationPair Name="%FactionAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%FactionAutomatonsDescription">The Automatons were created by a long dead civilization known as the Reyans who perished many millennia ago due to the gradual self-destruction of their world. Decades of uncontrolled industrialization and technologies that relied on a highly toxic underground fuel caused irreversible damage to the ecosystem and atmosphere of their planet. Realizing that they were doomed, the Reyans attempted to build a massive fleet of migration ships to escape their planet, but most of the ships either exploded on launch, or stalled in the atmosphere and fell to the ground. The Reyans despaired… and so they decided to leave a legacy in the form of one of their greatest technological achievements, clockwork beings. Having a very old and proud history of clockwork, the Reyans had achieved the maximum potential of the technology in their creation of massive clockwork men to which they gifted all the traits of a young species. Within a year of the creation of the clockwork men, the Reyans committed mass suicide so as not to suffer through the effects of a dying planet, leaving their greatest creations behind, alone, and lost.
+
+Over time the clockwork creations of the Reyans developed a simple society of their own and began exploiting the technologies left behind by their creators. All was well for the young civilization of machines until one day a large Endless ship crashed into the planet spreading the dust it was transporting all over the surface. The dust modified the machines, gave them enhanced abilities and over time even sentience. The deadly and toxic fuel that used to power the machines was also replaced, but strangely the new fuel became dust. In only a few weeks, the clockwork machines had evolved, become truly sentient, and gained new purpose in existence which was unheard of in even the most advanced AI’s created by the Endless. They came to call themselves the Automatons. Using their newly gained freedom of dust they began learning... and advancing.
+
+The Automaton Civilization stayed on their planet, learning to live in a symbiotic relationship with nature as the planet healed over time. They used the knowledge of their creators and their new dust engines to produce massive floating ships on which they lived in order to protect the healing ecosystem on the planet from their involvement. Over the course of centuries the planet healed and the Automatons learned to live with and love nature while still developing immense industrial capacity and production within the hulls of their floating ships --which had also grown over time. But eventually the Automatons calculated that their dust supply would run out and their civilization would die, so they uncovered the old ruins of the crashed Endless ship and began developing their own vehicles for space flight.</LocalizationPair>
   <LocalizationPair Name="%AffinityGameplayAutomatonsTitle">Reasoned Builders</LocalizationPair>
-  <LocalizationPair Name="%AffinityGameplayAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
-  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionTitle">Automatons INTRODUCTION TITLE</LocalizationPair>
-  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsDescription">Efficiency is paramount to the Automatons. Waste must be reduced at all costs, and productivity maximized to achieve rapid growth. Therefore, the Automatons found ways to store industry very efficiently, aboard their ships, to gain interest on it, and to reuse it at later date.</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionTitle">THE PLANETS' SEPHERD</LocalizationPair>
+  <LocalizationPair Name="%AffinityGameplayAutomatonsIntroductionDescription">They were the lone children of an extinct race, tending their biospheres in silent homage to the departed Reyens. A nation of pacifists, interested only in advancing their knowledge of biology.
+Their sudden discovery of the greater galaxy left them even more withdrawn, and isolationist. It has not, however, made them lose their sense of duty, and any nation that confuses "pacifist" for "weak" will learn a harsh lesson.
+Humble and patient, the Automatons seek only to be left in peace.</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%CategoryTechnologyFactionAutomatonsTitle">Automatons Technology</LocalizationPair>
@@ -75,7 +81,7 @@ Named for the number of guns it can mount.</LocalizationPair>
   <LocalizationPair Name="%ClassPopulationEmpireAffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%ClassPopulationStarSystemAffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%PopulationAutomatonsTitle">Automatons</LocalizationPair>
-  <LocalizationPair Name="%PopulationAutomatonsDescription">TO BE WRITTEN</LocalizationPair>
+  <LocalizationPair Name="%PopulationAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%SuperAffinityAutomatonsTitle">Automatons Shadows</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsTitle">Caretaker Collection</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusTraitCustomFactionAutomatonsDescription">This collection focuses on Food and Terrans.</LocalizationPair>
@@ -181,16 +187,24 @@ If any of these do not appear, it is because they are 0.</LocalizationPair>
   <LocalizationPair Name="%FactionTraitStartingAnomalyInfernalScourgesEffectOverride">+4 [foodColored] per [population]
 -3 [happinessColored] per [population]</LocalizationPair>
 
-<LocalizationPair Name="%PlanetAnomalyInfernalScourgesTitle">Hellgourds</LocalizationPair>
-<LocalizationPair Name="%PlanetAnomalyInfernalScourgesDescription">An unfortunate side effect of Tan-Erbo's horticultural tampering, these large, carnivorous, orange plants will aggressively defend their territory. While they are potentially dangerous, they also have delicious fruit that can be used to make a wide variety of excellent candies. There are two risks when colonizing this planet, then; aggressive foliage and tooth decay.</LocalizationPair>
+  <LocalizationPair Name="%PlanetAnomalyInfernalScourgesTitle">Hellgourds</LocalizationPair>
+  <LocalizationPair Name="%PlanetAnomalyInfernalScourgesDescription">An unfortunate side effect of Tan-Erbo's horticultural tampering, these large, carnivorous, orange plants will aggressively defend their territory. While they are potentially dangerous, they also have delicious fruit that can be used to make a wide variety of excellent candies. There are two risks when colonizing this planet, then; aggressive foliage and tooth decay.</LocalizationPair>
 
-<LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedTitle">Hellgourds</LocalizationPair>
-<LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
+  <LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedTitle">Hellgourds</LocalizationPair>
+  <LocalizationPair Name="%PlanetAnomalyInfernalScourgesReducedDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
 
-<LocalizationPair Name="%AnomalyReductionInfernalScourgesTitle">Plant Bribery</LocalizationPair>
-<LocalizationPair Name="%AnomalyReductionInfernalScourgesDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
+  <LocalizationPair Name="%AnomalyReductionInfernalScourgesTitle">Plant Bribery</LocalizationPair>
+  <LocalizationPair Name="%AnomalyReductionInfernalScourgesDescription">Experiments with certain behavior-controlling luxury resources has produced an interesting side effect. When applied planet-wide, the compound nicknamed "Trikker Treats" has the effect of reducing aggressivity in both plant and animal species. As part of an anomaly reduction process, Hellgourds, while still territorial, can be rendered merely "annoying" instead of "murderous."</LocalizationPair>
 
-<LocalizationPair Name="%SystemSupportModuleEffectSystemProductionAutomatons">Orbital Production Facilities</LocalizationPair>
-<LocalizationPair Name="%SystemSupportModuleEffectSystemGrowthAutomatons">Orbital Growth Facilities</LocalizationPair>
+  <!--Small version-->
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemProductionAutomatons">Orbital Production Facilities</LocalizationPair>
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemGrowthAutomatons">Orbital Growth Facilities</LocalizationPair>
 
+  <!--Medium versions-->
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemProductionMediumAutomatons">Superscale Orbital Production Facilities</LocalizationPair>
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemGrowthMediumAutomatons">Superscale Orbital Growth Facilities</LocalizationPair>
+
+  <!--Large versions-->
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemProductionLargeAutomatons">Megascale Orbital Production Facilities</LocalizationPair>
+  <LocalizationPair Name="%SystemSupportModuleEffectSystemGrowthLargeAutomatons">Megascale Orbital Growth Facilities</LocalizationPair>
 </Datatable>

@@ -2,9 +2,9 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
 
-    <!--Automatons jugg module-->
+    <!--Automatons Juggernaut module-->
     <SystemSupportModule Name="ModuleSupportAutomatonsFIDSPercent" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">90</Cost>
+        <Cost ResourceName="SystemProduction">150</Cost>
         <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautFactionModule</TechnologyPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
@@ -21,12 +21,16 @@
         <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSAutomatons"/>
     </SystemSupportModule>
 
+    <!--System Production Stock capacity modules-->
+    <!--Small version-->
     <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockFlat" Family="SystemSupportFIDS" Level="4">
         <Cost ResourceName="SystemProduction">80</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
             <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAutomatons"/>
         </CategorizedSimulationDescriptors>
 
@@ -34,13 +38,17 @@
         <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectMaximumSystemProductionStockAutomatons"/>
     </SystemSupportModule>
 
-    <!--We need to hide this one behind tech-->
+    <!--Medium version-->
     <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercent" Family="SystemSupportFIDS" Level="4">
         <Cost ResourceName="SystemProduction">200</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyIndustry3Automatons</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
         <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
             <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedAutomatons"/>
         </CategorizedSimulationDescriptors>
 
@@ -48,13 +56,35 @@
         <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectMaximumSystemProductionStockAdvancedAutomatons"/>
     </SystemSupportModule>
 
-    <!--No % version of the FIDSI modules-->
+    <!--Large version-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercentLarge" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">400</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyIndustry6Automatons</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleCarrierJuggernautBattleshipOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedLargeAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectMaximumSystemProductionStockAdvancedLargeAutomatons"/>
+    </SystemSupportModule>
+
+    <!--Flat Growth and Production modules-->
+    <!--Small versions-->
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlat" Family="SystemSupportFIDS" Level="4">
         <Cost ResourceName="SystemProduction">80</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
         <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
             <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemProductionAutomatons"/>
         </CategorizedSimulationDescriptors>
 
@@ -65,9 +95,12 @@
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlat" Family="SystemSupportFIDS" Level="4">
         <Cost ResourceName="SystemProduction">80</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
         <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
             <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemGrowthAutomatons"/>
         </CategorizedSimulationDescriptors>
 
@@ -75,4 +108,73 @@
         <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemGrowthAutomatons"/>
     </SystemSupportModule>
 
+    <!--Medium Versions-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlatMedium" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">200</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStrategicDeposit4</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemProductionMediumAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemProductionMediumAutomatons"/>
+    </SystemSupportModule>
+
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlatMedium" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">200</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyPopulation1Alt</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemGrowthMediumAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemGrowthMediumAutomatons"/>
+    </SystemSupportModule>
+
+    <!--Large versions-->
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlatLarge" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">400</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStrategicDeposit5</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleCarrierJuggernautBattleshipOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemProductionLargeAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemProductionLargeAutomatons"/>
+    </SystemSupportModule>
+
+    <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlatLarge" Family="SystemSupportFIDS" Level="4">
+        <Cost ResourceName="SystemProduction">400</Cost>
+        <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyFood6</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleCarrierJuggernautBattleshipOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportSystemGrowthLargeAutomatons"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectSystemGrowthLargeAutomatons"/>
+    </SystemSupportModule>
 </Datatable>

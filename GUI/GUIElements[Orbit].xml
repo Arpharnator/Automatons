@@ -2,12 +2,31 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
 
+    <!--Small version-->
     <GuiElement Name="SystemSupportModuleEffectSystemProductionAutomatons">
         <Title>%SystemSupportModuleEffectSystemProductionAutomatons</Title>
     </GuiElement>
 
     <GuiElement Name="SystemSupportModuleEffectSystemGrowthAutomatons">
         <Title>%SystemSupportModuleEffectSystemGrowthAutomatons</Title>
+    </GuiElement>
+
+    <!--Medium version-->
+    <GuiElement Name="SystemSupportModuleEffectSystemProductionMediumAutomatons">
+        <Title>%SystemSupportModuleEffectSystemProductionMediumAutomatons</Title>
+    </GuiElement>
+
+    <GuiElement Name="SystemSupportModuleEffectSystemGrowthMediumAutomatons">
+        <Title>%SystemSupportModuleEffectSystemGrowthMediumAutomatons</Title>
+    </GuiElement>
+
+    <!--Large version-->
+    <GuiElement Name="SystemSupportModuleEffectSystemProductionLargeAutomatons">
+        <Title>%SystemSupportModuleEffectSystemProductionLargeAutomatons</Title>
+    </GuiElement>
+
+    <GuiElement Name="SystemSupportModuleEffectSystemGrowthLargeAutomatons">
+        <Title>%SystemSupportModuleEffectSystemGrowthLargeAutomatons</Title>
     </GuiElement>
 
 </Datatable>
