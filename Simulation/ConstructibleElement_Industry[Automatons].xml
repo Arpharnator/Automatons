@@ -42,18 +42,18 @@
     </StarSystemImprovementDefinition>
 
     <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry3Automatons" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Industry"/>
-    <Cost ResourceName="SystemProduction">1120</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
-    <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
-    <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry3Automatons,!FastForwardedImprovement</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndustry3Automatons</TechnologyPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementIndustry3Automatons"/>
-    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal"/>
-    <SimulationDescriptorReference Name="IsIndustryBuilding"/>
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
-  </StarSystemImprovementDefinition>
+        <SupervisorGain Name="Industry"/>
+        <Cost ResourceName="SystemProduction">1120</Cost>
+        <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementIndustry3Automatons,!FastForwardedImprovement</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndustry3Automatons</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustry3Automatons"/>
+        <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal"/>
+        <SimulationDescriptorReference Name="IsIndustryBuilding"/>
+        <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionIndustry1"/>
+    </StarSystemImprovementDefinition>
 
     <!--Arcological Administration-->
     <StarSystemImprovementDefinition Name="StarSystemImprovementInfluenceSink" SubCategory="SubCategoryInfluence" ScoreProvider="StarSystemImprovementBuilt">
@@ -184,4 +184,163 @@
         <RemovedType>PlanetType</RemovedType>
         <RemovedType>PlanetGameplayType</RemovedType>
     </PlanetTerraformationDefinition>
+
+
+    <!--Resource converters-->
+
+    <!--Science converters-->
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToScience" SubCategory="SubCategoryInfiniteScience">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="ScienceGain"/>
+        <SupervisorGain Name="Science" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScienceEffect" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToScience2</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToScience2Sophons</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToScience</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToScience"/>
+        <NextUpgradeName>StarSystemImprovementIndustryToScience2</NextUpgradeName>
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToScience2" SubCategory="SubCategoryInfiniteScience">
+
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+        <AIGain RessourceName="ScienceGain"/>
+
+        <SupervisorGain Name="Industry" Weight="-1" />
+        <SupervisorGain Name="Science" Weight="1" />
+
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScience2Effect" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToScience2</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToScience2"/>
+    </StarSystemImprovementDefinition>
+
+    <!--Science converter Automatons version-->
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToScienceAutomatons" SubCategory="SubCategoryInfiniteScience">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="ScienceGain"/>
+        <SupervisorGain Name="Science" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScienceEffectAutomatons" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToScience2</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToScience</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToScienceAutomatons"/>
+        <NextUpgradeName>StarSystemImprovementIndustryToScience2Automatons</NextUpgradeName>
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToScience2Automatons" SubCategory="SubCategoryInfiniteScience">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="ScienceGain"/>
+        <SupervisorGain Name="Science" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScience2EffectAutomatons" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToScience2</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToScience2Automatons"/>
+    </StarSystemImprovementDefinition>
+
+    <!--Dust Converters-->
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToDust" SubCategory="SubCategoryInfiniteDust">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="DustGain"/>
+        <SupervisorGain Name="Dust" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDustEffect" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToDust2</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToDust2Venetians</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToDust"/>
+        <NextUpgradeName>StarSystemImprovementIndustryToDust2</NextUpgradeName>
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToDust2" SubCategory="SubCategoryInfiniteDust">
+
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+        <AIGain RessourceName="DustGain"/>
+
+        <SupervisorGain Name="Industry" Weight="-1" />
+        <SupervisorGain Name="Dust" Weight="1" />
+
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDust2Effect" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust2</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToDust2"/>
+    </StarSystemImprovementDefinition>
+
+    <!--Dust Converter Automatons version-->
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToDustAutomatons" SubCategory="SubCategoryInfiniteDust">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="DustGain"/>
+        <SupervisorGain Name="Dust" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDustEffectAutomatons" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToDust2</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToDustAutomatons"/>
+        <NextUpgradeName>StarSystemImprovementIndustryToDust2Automatons</NextUpgradeName>
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryToDust2Automatons" SubCategory="SubCategoryInfiniteDust">
+        <AIGain RessourceName="ResourceConverter">
+            <Tag>IndustryConverter</Tag>
+        </AIGain>
+
+        <AIGain RessourceName="DustGain"/>
+        <SupervisorGain Name="Dust" />
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDust2EffectAutomatons" />
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust2</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="StarSystemImprovementIndustryToDust2Automatons"/>
+    </StarSystemImprovementDefinition>
 </Datatable>

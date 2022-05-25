@@ -55,7 +55,7 @@
         <Title>%ModuleSupportAutomatonsSystemProductionFlatTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemProductionFlatDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Textures/GUI/module__growth_" />
+            <Icon Size="Small" Path="Textures/GUI/module__industry_" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
@@ -67,7 +67,7 @@
         <Title>%ModuleSupportAutomatonsSystemGrowthFlatTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemGrowthFlatDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Textures/GUI/module__industry_" />
+            <Icon Size="Small" Path="Textures/GUI/module__growth_" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
@@ -80,7 +80,7 @@
         <Title>%ModuleSupportAutomatonsSystemProductionFlatMediumTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemProductionFlatMediumDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Textures/GUI/module__growth_t3" />
+            <Icon Size="Small" Path="Textures/GUI/module__industry__t3" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
@@ -92,7 +92,7 @@
         <Title>%ModuleSupportAutomatonsSystemGrowthFlatMediumTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemGrowthFlatMediumDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Textures/GUI/module__industry_t3" />
+            <Icon Size="Small" Path="Textures/GUI/module__growth__t3" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
@@ -105,7 +105,7 @@
         <Title>%ModuleSupportAutomatonsSystemProductionFlatLargeTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemProductionFlatLargeDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Textures/GUI/module__growth_t4" />
+            <Icon Size="Small" Path="Textures/GUI/module__industry__t4" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
@@ -117,14 +117,13 @@
         <Title>%ModuleSupportAutomatonsSystemGrowthFlatLargeTitle</Title>
         <Description>%ModuleSupportAutomatonsSystemGrowthFlatLargeDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/module__industry_t4" />
+            <Icon Size="Small" Path="Textures/GUI/module__growth__t4" />
         </Icons>
         <Sounds>
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
             <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
         </Sounds>
     </ExtendedGuiElement>
-
 
 
     <ExtendedGuiElement Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAutomatons">

@@ -27,8 +27,8 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="FactionTraitVerticalTrading" Type="FactionTrait">
-        <Modifier TargetProperty="TradingRoutesBonus_Growth" Operation="Percent" Value="10" Path="ClassEmpire,ClassColonizedStarSystem, BuildingStarSystemImprovementTradingCompanyHeadquarters"/>
-        <Modifier TargetProperty="TradingRoutesBonus_Production" Operation="Percent" Value="10" Path="ClassEmpire,ClassColonizedStarSystem, BuildingStarSystemImprovementTradingCompanyHeadquarters"/>
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Growth" Operation="Percent" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="2" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Production" Operation="Percent" Left="$(SystemLevel)" BinaryOperation="Multiplication" Right="2" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="FactionTraitStartingAnomalyInfernalScourges" Type="FactionTrait"/>

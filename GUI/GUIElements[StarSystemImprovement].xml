@@ -38,4 +38,69 @@
         </Icons>
     </GuiElement>
 
+    <GuiElement Name="StarSystemImprovementIndustryToScienceAutomatons">
+        <Title>%StarSystemImprovementIndustryToScienceTitle</Title>
+        <Description>%StarSystemImprovementIndustryToScienceDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToScienceSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToScienceLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="StarSystemImprovementIndustryToScience2Automatons">
+        <Title>%StarSystemImprovementIndustryToScience2Title</Title>
+        <Description>%StarSystemImprovementIndustryToScience2Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToScience2Small" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToScience2Large" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="StarSystemImprovementIndustryToDustAutomatons">
+        <Title>%StarSystemImprovementIndustryToDustTitle</Title>
+        <Description>%StarSystemImprovementIndustryToDustDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToDustSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToDustLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="StarSystemImprovementIndustryToDust2Automatons">
+        <Title>%StarSystemImprovementIndustryToDust2Title</Title>
+        <Description>%StarSystemImprovementIndustryToDust2Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToDust2Small" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementIndustryToDust2Large" />
+        </Icons>
+    </GuiElement>
+
+
+    <ExtendedGuiElement Name="StarSystemImprovementIndustryToScienceEffectAutomatons">
+        <Title>%StarSystemImprovementIndustryToScienceEffectTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%StarSystemImprovementIndustryToScienceTooltipEffectAutomatons</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="StarSystemImprovementIndustryToScience2EffectAutomatons">
+        <Title>%StarSystemImprovementIndustryToScienceEffectTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%StarSystemImprovementIndustryToScience2TooltipEffectAutomatons</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="StarSystemImprovementIndustryToDustEffectAutomatons">
+        <Title>%StarSystemImprovementIndustryToDustEffectTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%StarSystemImprovementIndustryToDustTooltipEffectAutomatons</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="StarSystemImprovementIndustryToDust2EffectAutomatons">
+        <Title>%StarSystemImprovementIndustryToDustEffectTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%StarSystemImprovementIndustryToDust2TooltipEffectAutomatons</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
 </Datatable>

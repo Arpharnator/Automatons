@@ -16,8 +16,28 @@
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementIndustry3Automatons" Type="StarSystemImprovement">
-    <BinaryModifier TargetProperty="SystemProduction"		Operation="Addition"	Left="20"   BinaryOperation="Multiplication"    Right="$(OwnedPlanets)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+    <BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(OwnedPlanets)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     <Modifier TargetProperty="InterestRate" Operation="Addition" Value="0.05" Path="./ClassColonizedStarSystem"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToScienceAutomatons" Type="StarSystemImprovement"/>
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToScienceEffectAutomatons" Type="StarSystemImprovement">
+    <BinaryModifier TargetProperty="SystemResearchFromStockIndustry" Operation="Addition" Left="0.1" BinaryOperation="Multiplication" Right="$(SystemProductionStock)" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToScience2Automatons" Type="StarSystemImprovement"/>
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToScience2EffectAutomatons" Type="StarSystemImprovement">
+    <BinaryModifier TargetProperty="SystemResearchFromStockIndustry" Operation="Addition" Left="0.2" BinaryOperation="Multiplication" Right="$(SystemProductionStock)" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToDustAutomatons" Type="StarSystemImprovement"/>
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToDustEffectAutomatons" Type="StarSystemImprovement">
+    <BinaryModifier TargetProperty="SystemMoneyFromStockIndustry" Operation="Addition" Left="0.1" BinaryOperation="Multiplication" Right="$(SystemProductionStock)" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToDust2Automatons" Type="StarSystemImprovement"/>
+  <SimulationDescriptor Name="StarSystemImprovementIndustryToDust2EffectAutomatons" Type="StarSystemImprovement">
+    <BinaryModifier TargetProperty="SystemMoneyFromStockIndustry" Operation="Addition" Left="0.2" BinaryOperation="Multiplication" Right="$(SystemProductionStock)" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
   </SimulationDescriptor>
 
 </Datatable>

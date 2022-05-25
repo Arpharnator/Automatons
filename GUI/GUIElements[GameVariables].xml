@@ -72,4 +72,12 @@
     <TooltipElement Percent="true"/>
   </ExtendedGuiElement>
 
+  <GuiElement Name="SystemResearchFromStockIndustry">
+    <Title>%SystemResearchFromStockIndustryTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="SystemMoneyFromStockIndustry">
+    <Title>%SystemMoneyFromStockIndustryTitle</Title>
+  </GuiElement>
+
 </Datatable>
