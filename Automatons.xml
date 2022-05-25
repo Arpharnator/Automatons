@@ -7,8 +7,8 @@
 
     Faction Specifics : 
     - Store Industry and receive Interest on it.
+    - Build ships to help your economy, giving industry and food.
     - Multiple techs that have similar effects to ES1 Automatons' techs.
-    - Minor bugs (eyyy)
     - Automatons heroes (made by Tat and generously gifted by him).
     - G0d3l Builder.87 as the temporary faction leader until the actual Automatons' leader finds that annoying bug preventing him from existing (if it's possible to fix).
     - Bonuses on Terran as the pop boon.
@@ -19,21 +19,20 @@
     Coming :
     - Unique Automaton Skill Tree.
     - Automatons' quest.
-    - More balance and a refinement of the faction's mechanics.
+    - More balance and perhaps refinement of the faction's mechanics.
     - Less bugs.
     - Compat with Endless References.
-    - More unique modules and building I believe.
 
     Credits :
     - Captain Cobbs for making me learn ES2 modding and being helpful. Also being a gigachad.
-    - Wakystuff for being a great person in general.
+    - Wakystuff for being a great person in general. Is also a gigachad.
     - Tat011
     - Mermixer
-    - Chad Mermixer
+    - Chad Mermixer for not being banned yet. The OG gigachad.
     - Kwishkalqualmo
     - Globglogabgalab
     - PieLinux
-    - DEFINITELY NOT THE IMPOSTER
+    - DEFINITELY NOT THE IMPOSTER for not being the impostor.
     - Provolonage
     - Zlngybird
     - Forge10 for giving me motivation
@@ -46,9 +45,12 @@
     - CockBallTortureLord
     - Horatio
     - Activate Windows, Mark Of The Beast
+    - stygma (male) for icons
+    - ES2's plugins (jk)
 
+    Note : The % FIDS Module unlocked at juggernaut tech can give up to 20% FIDS on a single system. Attempting to stack more will do nothing.
 
-    Note : The % FIDS Module unlocked at juggernaut tech can give up to 20% FIDS on a single ssytem. Attempting to stack more will do nothing.
+    I don't suggest making a custom faction with only one of the 2 elements of faction, as som techs are tied to the gameplay affinity which shouldn't be the case, and vice-versa.
 
     https://github.com/Arpharnator/Automatons
     </Description>

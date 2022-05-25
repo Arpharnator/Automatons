@@ -75,7 +75,7 @@ Humble and patient, the Automatons seek only to be left in peace.</LocalizationP
   <LocalizationPair Name="%AffinityAutomatonsTitle">Automatons</LocalizationPair>
   <LocalizationPair Name="%AffinityAutomatonsDescription">The Automatons are the sepherd of nature, doing it's best to preserve it according to their mission. They prefer living inside spaceships that orbit the planets to allow for more industrialisation but to also leave the planet clean of polluants.</LocalizationPair>
   <LocalizationPair Name="%CategoryTechnologyFactionAutomatonsTitle">Automatons Technology</LocalizationPair>
-  <LocalizationPair Name="%AffinityGameplayAutomatonsTooltipEffect">You are able to store industry [industrycolored], to reuse it later, and gain interest on stored industry. You can also build ships with modules for industry and growth.
+  <LocalizationPair Name="%AffinityGameplayAutomatonsTooltipEffect">You are able to store industry [industrycolored], to reuse it later, and gain interest on stored industry, up to 50% of your industry production. You can also build ships with modules for industry and growth.
 +0.25 total stored industry capacity multiplier per system level on Systems.
 +5% Industry Interest on Systems.
 Start with the small industry and growth modules unlocked, with you needing to research Efficient Shielding to be able to use them.</LocalizationPair>
