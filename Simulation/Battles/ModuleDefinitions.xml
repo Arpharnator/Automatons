@@ -77,7 +77,7 @@
     <!--Flat Growth and Production modules-->
     <!--Small versions-->
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlat" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">80</Cost>
+        <Cost ResourceName="SystemProduction">72</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -93,7 +93,7 @@
     </SystemSupportModule>
 
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlat" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">80</Cost>
+        <Cost ResourceName="SystemProduction">72</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -110,7 +110,7 @@
 
     <!--Medium Versions-->
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlatMedium" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">200</Cost>
+        <Cost ResourceName="SystemProduction">140</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyStrategicDeposit4</TechnologyPrerequisite>
@@ -127,7 +127,7 @@
     </SystemSupportModule>
 
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlatMedium" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">200</Cost>
+        <Cost ResourceName="SystemProduction">140</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyPopulation1Alt</TechnologyPrerequisite>
@@ -145,7 +145,7 @@
 
     <!--Large versions-->
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlatLarge" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">400</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyStrategicDeposit5</TechnologyPrerequisite>
@@ -162,7 +162,7 @@
     </SystemSupportModule>
 
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlatLarge" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">400</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyFood6</TechnologyPrerequisite>

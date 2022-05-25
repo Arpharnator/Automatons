@@ -53,7 +53,7 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemProductionAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemProduction" Operation="Addition" Value="2" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="80" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="72" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthAutomatons" Type="ModuleSupportJuggernautSystemSupport">
@@ -62,7 +62,7 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemGrowthAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemGrowth" Operation="Addition" Value="2" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="80" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="72" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Medium versions-->
@@ -72,7 +72,7 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemProductionMediumAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemProduction" Operation="Addition" Value="5" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="140" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthMediumAutomatons" Type="ModuleSupportJuggernautSystemSupport">
@@ -81,7 +81,7 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemGrowthMediumAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemGrowth" Operation="Addition" Value="5" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="200" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="140" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Large versions-->
@@ -91,7 +91,7 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemProductionLargeAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemProduction" Operation="Addition" Value="12" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="400" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="240" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthLargeAutomatons" Type="ModuleSupportJuggernautSystemSupport">
@@ -100,6 +100,6 @@
 
     <SimulationDescriptor Name="SystemSupportModuleEffectSystemGrowthLargeAutomatons" Type="SystemSupportModuleEffect">
         <Modifier TargetProperty="SystemGrowth" Operation="Addition" Value="12" TooltipHidden="false"/>
-        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="400" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="TotalIndustryCost" Operation="Addition" Left="240" BinaryOperation="Multiplication" Right="$(Multiplier)" Path="../ClassShip" TooltipHidden="true"/>
     </SimulationDescriptor>
 </Datatable>
