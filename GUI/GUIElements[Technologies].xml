@@ -100,8 +100,8 @@
   </TechnologyGuiElement2>
 
   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration8Automatons" X="2.10" Y="0">
-    <Title>%TechnologyDefinition8AutomatonsTitle</Title>
-    <Description>%TechnologyDefinition8AutomatonsDescription</Description>
+    <Title>%TechnologyDefinition8Title</Title>
+    <Description>%TechnologyDefinition8Description</Description>
     <Icons>
       <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration8Small" />
     </Icons>
