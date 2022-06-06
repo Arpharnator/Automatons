@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/MajorFaction.xsd">
-  <MajorFaction Name="FactionAutomatons" Standard="true" Author="Arphar" Priority="10"  Difficulty="Normal" DifficultyAgainst="Advanced">
+  <MajorFaction Name="FactionAutomatons" Standard="true" Author="Arphar" Priority="10"  Difficulty="Expert" DifficultyAgainst="Normal">
     <Affinity Name="AffinityGameplayAutomatons"/>
 
     <Trait Name="IsMajorFaction"/>
