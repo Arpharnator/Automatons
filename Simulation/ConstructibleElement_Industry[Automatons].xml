@@ -239,7 +239,6 @@
         <SupervisorGain Name="Science" />
         <Tags>NoBuyout</Tags>
         <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScienceEffectAutomatons" />
-        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
         <InfiniteCost ResourceName="SystemTurnBased"/>
         <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
@@ -258,7 +257,6 @@
         <SupervisorGain Name="Science" />
         <Tags>NoBuyout</Tags>
         <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToScience2EffectAutomatons" />
-        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
         <InfiniteCost ResourceName="SystemTurnBased"/>
         <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
@@ -317,7 +315,6 @@
         <SupervisorGain Name="Dust" />
         <Tags>NoBuyout</Tags>
         <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDustEffectAutomatons" />
-        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
         <InfiniteCost ResourceName="SystemTurnBased"/>
         <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
@@ -336,7 +333,6 @@
         <SupervisorGain Name="Dust" />
         <Tags>NoBuyout</Tags>
         <InProgressSimulationDescriptorReference Name="StarSystemImprovementIndustryToDust2EffectAutomatons" />
-        <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
         <InfiniteCost ResourceName="SystemTurnBased"/>
         <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyAutomatons">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>

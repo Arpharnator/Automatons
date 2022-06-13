@@ -3,9 +3,10 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="./Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
   <RuntimeModule Name="FactionMajorAutomatons" Type="Extension" Version="1.0.0">
     <Title>Automatons Major Faction</Title>
-    <Description>The Automatons come back from ES1. ESG required. DLC4 (Awakening) required.
+    <Description>The Automatons come back from ES1. ESG required. DLC4 (Awakening) required. Load AFTER ESG.
 
-    Faction Specifics : 
+[img]https://media.discordapp.net/attachments/750057680646701086/979135696260452352/Details_Header.png[/img]   
+ Faction Specifics : 
     - Store Industry and receive Interest on it.
     - Build ships to help your economy, giving industry and food.
     - Multiple techs that have similar effects to ES1 Automatons' techs.
@@ -23,7 +24,7 @@
     - Less bugs.
     - Compat with Endless References.
 
-    Credits :
+[img]https://media.discordapp.net/attachments/750057680646701086/979135693555130378/Credits.png[/img]
     - Captain Cobbs for making me learn ES2 modding and being helpful. Also being a gigachad.
     - Wakystuff for being a great person in general. Is also a gigachad.
     - Tat011
@@ -49,10 +50,14 @@
     - ES2's plugins (jk)
 
     Note : The % FIDS Module unlocked at juggernaut tech can give up to 20% FIDS on a single system. Attempting to stack more will do nothing.
+In order to store industry simply do nothing at the end of your turn, or have excess industry when finishing a building or ship.
 
+[img]https://media.discordapp.net/attachments/750057680646701086/979135695400628255/Known_Issues.png[/img]
     I don't suggest making a custom faction with only one of the 2 elements of faction, as som techs are tied to the gameplay affinity which shouldn't be the case, and vice-versa.
-
+[img]https://media.discordapp.net/attachments/750057680646701086/979135694842789988/Links.png[/img]
     https://github.com/Arpharnator/Automatons
+    
+[url=http://discord.gg/eAfNtB3][img]https://media.discordapp.net/attachments/750057680646701086/979135693970354196/rsz_discord_small_rounded.png[/img][/url]
     </Description>
     <Author>Arphar</Author>
     <Homepage></Homepage>
