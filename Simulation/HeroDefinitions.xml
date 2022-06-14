@@ -7,14 +7,14 @@
         <Skill Name="AutomatonSkill"/>
 
         <Affinity Name="HeroAffinityAdvanced"/>
-        <Class Name="HeroClassCorporate"/>
+        <Class Name="HeroClassAdministrator"/>
         <Politics Name="HeroPolitics04"/>
 
         <ShipDesign Name="ShipDesignHeroSmall03Supporter"/>
 
         <SkillTree Name="HeroSkillTreeGeneric"/>
-        <SkillTree Name="HeroSkillTreeMinorFaction03"/>
-        <SkillTree Name="HeroSkillTreeCorporate"/>
+        <SkillTree Name="HeroSkillTreeAutomatons"/>
+        <SkillTree Name="HeroSkillTreeAdministrator"/>
         
         <LevelUpRuleReference Name="HeroLevelUpRule"/>
     </HeroDefinition>
@@ -32,7 +32,7 @@
         <ShipDesign Name="ShipDesignHeroSmall01Attacker"/>
 
         <SkillTree Name="HeroSkillTreeGeneric"/>
-        <SkillTree Name="HeroSkillTreeMinorFaction03"/>
+        <SkillTree Name="HeroSkillTreeAutomatons"/>
         <SkillTree Name="HeroSkillTreeAdmiral"/>
         
         <LevelUpRuleReference Name="HeroLevelUpRule"/>
@@ -45,14 +45,14 @@
         <Skill Name="AutomatonSkill"/>
 
         <Affinity Name="HeroAffinityAdvanced"/>
-        <Class Name="HeroClassAdministrator"/>
+        <Class Name="HeroClassCorporate"/>
         <Politics Name="HeroPolitics03"/>
 
         <ShipDesign Name="ShipDesignHeroSmall04Defender"/>
 
         <SkillTree Name="HeroSkillTreeGeneric"/>
-        <SkillTree Name="HeroSkillTreeMinorFaction03"/>
-        <SkillTree Name="HeroSkillTreeAdministrator"/>
+        <SkillTree Name="HeroSkillTreeAutomatons"/>
+        <SkillTree Name="HeroSkillTreeCorporate"/>
         
         <LevelUpRuleReference Name="HeroLevelUpRule"/>
     </HeroDefinition>

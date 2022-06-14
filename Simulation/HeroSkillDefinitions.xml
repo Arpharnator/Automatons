@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
 
 	<HeroSkillDefinition Name="AutomatonSkill">
 		<SkillLevel Name="HeroSkillAutomaton">
@@ -40,6 +41,84 @@
 		<SkillLevel Name="HeroSkill02Omnis">
 			<SystemSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
 			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+
+
+
+	<!--Automatons BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchAutomatons">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchAutomatons_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchAutomatons_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchAutomatons">
+		<SkillLevel Name="HeroSkill02BranchAutomatons_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons02_FleetXP_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchAutomatons_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons02_FleetXP_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchAutomatons">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchAutomatons_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons03_TradeGrowthIndustryBonus_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchAutomatons_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons03_TradeGrowthIndustryBonus_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchAutomatons">
+		<SkillLevel Name="HeroSkill04BranchAutomatons_01">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons04_ShipLevelStatsBonus_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchAutomatons">
+		<SkillLevel Name="HeroSkill05BranchAutomatons_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons05_DefenseUpkeepFood_1" />
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchAutomatons_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons05_DefenseUpkeepFood_2" />
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchAutomatons">
+		<SkillLevel Name="HeroSkill06BranchGeneric_01">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons06_FleetDamagePercent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill07BranchAutomatons">
+		<SkillLevel Name="HeroSkill07BranchAutomatons_01">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons07_TerranFIDS_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>
 

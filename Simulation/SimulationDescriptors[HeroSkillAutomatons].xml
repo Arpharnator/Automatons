@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_1" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawIndustry" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_2" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawIndustry" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="HeroSkillAutomatons02_FleetXP_Flat_1" Type="HeroSkillShip" IsSerializable="false">
+        <Modifier TargetProperty="ExperiencePerTurn" Operation="Addition" Value="8" Path="./ClassGarrisonFleet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillAutomatons02_FleetXP_Flat_2" Type="HeroSkillShip" IsSerializable="false">
+        <Modifier TargetProperty="ExperiencePerTurn" Operation="Addition" Value="16" Path="./ClassGarrisonFleet"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="HeroSkillAutomatons03_TradeGrowthIndustryBonus_1" Type="HeroSkillSystem" IsSerializable="false">
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Growth" Operation="Percent" Left="$(TradingRouteIncomeModifier)" BinaryOperation="Multiplication" Right="0.02" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Production" Operation="Percent" Left="$(TradingRouteIncomeModifier)" BinaryOperation="Multiplication" Right="0.02" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent" Value="0.15" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillAutomatons03_TradeGrowthIndustryBonus_2" Type="HeroSkillSystem" IsSerializable="false">
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Growth" Operation="Percent" Left="$(TradingRouteIncomeModifier)" BinaryOperation="Multiplication" Right="0.04" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="TradingRoutesBonus_Production" Operation="Percent" Left="$(TradingRouteIncomeModifier)" BinaryOperation="Multiplication" Right="0.04" Path="ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent" Value="0.30" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="HeroSkillAutomatons04_ShipLevelStatsBonus_1" Type="HeroSkillShip" IsSerializable="false">
+        <Modifier TargetProperty="AutomatonsSkillBonus" Operation="Addition" Value="0.03" Path="./ClassGarrisonFleet/ClassShip"/>
+        <BinaryModifier TargetProperty="MaximumShield" Operation="Percent" Left="$(Level)" BinaryOperation="Multiplication" Right="0.03" Path="./ClassGarrisonFleet/ClassShip" SearchValueFromPath="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="HeroSkillAutomatons05_DefenseUpkeepFood_1" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="1000" Path="ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="100" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillAutomatons05_DefenseUpkeepFood_2" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="8" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="2000" Path="ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="200" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="HeroSkillAutomatons06_FleetDamagePercent_1" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="1000" Path="ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="100" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="HeroSkillAutomatons07_TerranFIDS_1" Type="HeroSkillSystem" IsSerializable="false">
+        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="8" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="2000" Path="ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="200" Path="ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    
+
+</Datatable>

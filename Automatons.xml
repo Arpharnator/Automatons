@@ -76,6 +76,12 @@ In order to store industry simply do nothing at the end of your turn, or have ex
         <FilePath>Simulation/AnomalyDefinitions[*].xml</FilePath>
       </DatabasePlugin>
 
+      <!-- Star Systems -->
+			<DatabasePlugin DataType="StarSystemNodeDefinition, Assembly-CSharp">
+				<FilePath>Simulation/StarSystemNodeDefinitions.xml</FilePath>
+				<FilePath>Simulation/StarSystemNodeDefinitions[*].xml</FilePath>
+			</DatabasePlugin>
+
       <!-- Diplomacy -->
       <DatabasePlugin DataType="DiplomaticFactionPactEffectDefinition, Assembly-CSharp">
         <FilePath>Diplomacy/DiplomaticFactionPactEffectDefinitions.xml</FilePath>
@@ -200,8 +206,6 @@ In order to store industry simply do nothing at the end of your turn, or have ex
           <ExtraType DataType="AffinityGuiElement, Assembly-CSharp" />
           <ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
           <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />
-          <!--<ExtraType DataType="HeroGuiElement, Assembly-CSharp" />
-          <ExtraType DataType="HeroClassGuiElement, Assembly-CSharp" />-->
           <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
           <!--<ExtraType DataType="QuestGuiElement, Assembly-CSharp" />-->
           <ExtraType DataType="SkinnedGuiElement, Assembly-CSharp" />
@@ -311,7 +315,7 @@ In order to store industry simply do nothing at the end of your turn, or have ex
         <ExtraTypes>
           <ExtraType DataType="TutorialDefinition, Assembly-CSharp" />
         </ExtraTypes>
-        <FilePath>Quest/QuestDefinitions.xml</FilePath>
+        <FilePath>Quest/QuestDefinitions[*].xml</FilePath>
         <Overrides>
           <Override Name="Prerequisites" DataType="Amplitude.Query.Xml.XmlQueryPrerequisites, Assembly-CSharp-firstpass">
             <ExtraType Name="FilterConstellationByDistance" DataType="QuestFilterConstellationByDistance, Assembly-CSharp" />

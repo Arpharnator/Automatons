@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/StarSystemNodeDefinition.xsd">
+
+  <!-- Automatons -->
+  <StarSystemNodeDefinition Name="BalancedStartAutomatons">
+    <SimulationDescriptorReference Name="StarTypeBlue"/>
+    <PlanetDefinition>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+      <SimulationDescriptorReference Name="PlanetSizeMedium"/>
+      <SimulationDescriptorReference Name="HomePlanet"/>
+      <SimulationDescriptorReference Name="IsUniquePlanet"/>
+      <SimulationDescriptorReference Name="PlanetTypeJungle"/>
+      <SimulationDescriptorReference Name="UniquePlanetAutomatons"/>
+      <AnomalyReference Name="PlanetAnomalyInfernalScourges"/>
+    </PlanetDefinition>
+    <PlanetDefinition>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+      <SimulationDescriptorReference Name="PlanetSizeMedium"/>
+      <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+      <CuriosityReference Name="Curiosity_PlanetAnomaly19"/>
+      <CuriosityReference Name="Curiosity_Loot_Underground_Era3"/>
+    </PlanetDefinition>
+    <PlanetDefinition>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+      <SimulationDescriptorReference Name="PlanetSizeMedium"/>
+      <SimulationDescriptorReference Name="PlanetTypeAsh"/>
+      <CuriosityReference Name="Curiosity_Loot_Underground_Era3"/>
+    </PlanetDefinition>
+    <PlanetDefinition>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+      <SimulationDescriptorReference Name="PlanetSizeMedium"/>
+      <SimulationDescriptorReference Name="PlanetTypeArctic"/>
+      <CuriosityReference Name="Curiosity_Loot_Lifeform_Era3"/>
+    </PlanetDefinition>
+  </StarSystemNodeDefinition>
+
+
+</Datatable>
