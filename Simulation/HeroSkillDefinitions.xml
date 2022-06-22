@@ -109,7 +109,7 @@
 	<HeroSkillDefinition Name="HeroSkill06BranchAutomatons">
 		<SkillLevel Name="HeroSkill06BranchGeneric_01">
 			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
-			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons06_FleetDamagePercent_1"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons06_FleetUpkeepVision_1"/>
 			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>
@@ -117,7 +117,7 @@
 	<HeroSkillDefinition Name="HeroSkill07BranchAutomatons">
 		<SkillLevel Name="HeroSkill07BranchAutomatons_01">
 			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
-			<ShipSimulationDescriptorReference Name="HeroSkillAutomatons07_TerranFIDS_1"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillAutomatons07_TerranFIDS_1"/>
 			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
 		</SkillLevel>
 	</HeroSkillDefinition>

@@ -217,4 +217,24 @@ If any of these do not appear, it is because they are 0.</LocalizationPair>
 
   <LocalizationPair Name="%SystemResearchFromStockIndustryTitle">Stored Industry Investment</LocalizationPair>
   <LocalizationPair Name="%SystemMoneyFromStockIndustryTitle">Stored Industry Investment</LocalizationPair>
+
+  <LocalizationPair Name="%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Title">Biofuel Industry</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Description">The hero invests in the exploitation of atypical fuel found on fertile planets, using organic matters as the main component. The now cheap fuel fuels industry and transportation.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons02_FleetXP_Flat_Title">Space O'Clock</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons02_FleetXP_Flat_Description">Using the Automatons knowledge to make sure there is no need to dock to get food or repair the ship, time can be spent educating the crew and optimizing ship systems instead of doing maintenance.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Title">Orbi tal Trading Facilities</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Description">Setting up orbital trading beacons and stations might be costly, but it's a good and profitable way to ensure that necessary resources are aquired and traded for less useful resources. Furthermore, pirates appear less often, due to the increased orbital presence of the military, leading to an increase in revenue.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons04_ShipLevelStatsBonus_Title">Redundant Systems</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons04_ShipLevelStatsBonus_Description">For a ship to be able to sail the stars for a long time, critical systems that ensure ship operatibility need to remain active all the time. This philosophy becomes reality through the minutious modifications the hero makes to the ship's systems over time, ensuring the ship a long stay in the stars.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons05_DefenseUpkeepFood_Title">Perfected Hellgourds</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons05_DefenseUpkeepFood_Description">Tan-Erbo's mistakes when creating hellgourds still has a positive effect on studies of xenology and behavioral patterns. Now that science has progressed enough, it is possible for these plants to be controlled to not attack designated populations, making it possible to harvest their delicious fruit without danger. Of course, their ferocious nature still remains and they will defend the system against attackers. This does come at a cost however.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons06_FleetUpkeepVision_Title">Self Sufficient Ships</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons06_FleetUpkeepVision_Description">A dust supply is critical for maintaining the ship's structure and paying the crew, lest the hull breaks or the crew leaves. Now the dust supply can be obtained by locating pockets of dust scattered acrros space, depp or not. To locate these pockets it is necessary to have cutting edge scanners, which the hero promptly developped following the realisation of the potential benefits.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons07_TerranFIDS_1_Title">Terranical Expertise</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons07_TerranFIDS_1_Description">The Automatons expertise lies in living abroad the planetside and the study of "Terran" planets. The hero deploys it's tremendous skill in exploiting the resources of such a planet without damaging it's ecosystem, greatly increasing yields on such planets. Of course, this only applies to such "Terran" planets.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillTreeAutomatonsDescription">This branch contains Automaton specific skills</LocalizationPair>
+  <LocalizationPair Name="%CategoryHeroSkillTreeAutomatonsTitle">Automaton Skill</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillAutomatons04_ShipLevelStatsBonus_1TooltipOverride">+3% Shield Capcity per Ship Level on Fleet
++3% Ship Health per Ship Level on Fleet</LocalizationPair>
+  
 </Datatable>

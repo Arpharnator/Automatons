@@ -24,7 +24,7 @@
     <!--System Production Stock capacity modules-->
     <!--Small version-->
     <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockFlat" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">80</Cost>
+        <Cost ResourceName="SystemProduction">30</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSmallSupport</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -40,7 +40,7 @@
 
     <!--Medium version-->
     <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercent" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">200</Cost>
+        <Cost ResourceName="SystemProduction">50</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleMediumSupport</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyIndustry3Automatons</TechnologyPrerequisite>
@@ -58,7 +58,7 @@
 
     <!--Large version-->
     <SystemSupportModule Name="ModuleSupportAutomatonsMaximumSystemProductionStockPercentLarge" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">400</Cost>
+        <Cost ResourceName="SystemProduction">100</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyIndustry6Automatons</TechnologyPrerequisite>
