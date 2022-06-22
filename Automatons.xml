@@ -16,9 +16,9 @@
     - Special terraformation to allow an Atoll/Forest/Ocean planet to be converted to Terran, after all we wouldn't want to miss on the bonuses.
     - Starting Sowers minor for the joint venture.
     - Almost full English localisation for the faction.
+    - Unique Automaton Skill Tree.
 
     Coming :
-    - Unique Automaton Skill Tree.
     - Automatons' quest.
     - More balance and perhaps refinement of the faction's mechanics.
     - Less bugs.
@@ -62,7 +62,7 @@ In order to store industry simply do nothing at the end of your turn, or have ex
     <Author>Arphar</Author>
     <Homepage></Homepage>
     <PreviewImageFile>ModIcon.jpg</PreviewImageFile>
-    <ReleaseNotes>1.0 - Finishing stuff</ReleaseNotes>
+    <ReleaseNotes>1.1 - Automatons heroes now have their own skill tree !</ReleaseNotes>
     <Tags>MajorFactions</Tags>
 
     <Plugins>
