@@ -1,63 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
 
-    <ExtendedGuiElement Name="HeroSkillTreeAutomatons">
-        <Title>%HeroSkillTreeAutomatonsTitle</Title>
-        <Description>%HeroSkillTreeAutomatonsDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="/Atlased/Affinities/AffinitySophonsSmall" />
-        </Icons>
-        <Color Red="231" Green="103" Blue="0" Alpha="255"/>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill01BranchAutomatons">
-      <Title>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Title</Title>
-      <Description>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill66_Food_Perpop_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill02BranchAutomatons">
-      <Title>%HeroSkillAutomatons02_FleetXP_Flat_Title</Title>
-      <Description>%HeroSkillAutomatons02_FleetXP_Flat_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill20_FleetDamage_Percent_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill03BranchAutomatons">
-      <Title>%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Title</Title>
-      <Description>%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill105_FIDSI_PerHeroLevel_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill04BranchAutomatons">
-      <Title>%HeroSkillAutomatons04_ShipLevelStatsBonus_Title</Title>
-      <Description>%HeroSkillAutomatons04_ShipLevelStatsBonus_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill23_FleetDefense_Percent_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill05BranchAutomatons">
-      <Title>%HeroSkillAutomatons05_DefenseUpkeepFood_Title</Title>
-      <Description>%HeroSkillAutomatons05_DefenseUpkeepFood_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill68_Food_Percent_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill06BranchAutomatons">
-      <Title>%HeroSkillAutomatons06_FleetUpkeepVision_Title</Title>
-      <Description>%HeroSkillAutomatons06_FleetUpkeepVision_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill35_FleetExploration_Flat_Small" />
-      </Icons>
-    </ExtendedGuiElement>
-    <ExtendedGuiElement Name="HeroSkill07BranchAutomatons">
-      <Title>%HeroSkillAutomatons07_TerranFIDS_1_Title</Title>
-      <Description>%HeroSkillAutomatons07_TerranFIDS_1_Description</Description>
-      <Icons>
-        <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill103_FID_Percent_Small" />
-      </Icons>
-    </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkillTreeAutomatons">
+    <Title>%HeroSkillTreeAutomatonsTitle</Title>
+    <Description>%HeroSkillTreeAutomatonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="/Atlased/Affinities/AffinitySophonsSmall" />
+    </Icons>
+    <Color Red="231" Green="103" Blue="0" Alpha="255"/>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill01BranchAutomatons">
+    <Title>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Title</Title>
+    <Description>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill66_Food_Perpop_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill02BranchAutomatons">
+    <Title>%HeroSkillAutomatons02_FleetXP_Flat_Title</Title>
+    <Description>%HeroSkillAutomatons02_FleetXP_Flat_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill20_FleetDamage_Percent_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill03BranchAutomatons">
+    <Title>%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Title</Title>
+    <Description>%HeroSkillAutomatons03_TradeGrowthIndustryBonus_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill105_FIDSI_PerHeroLevel_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill04BranchAutomatons">
+    <Title>%HeroSkillAutomatons04_ShipLevelStatsBonus_Title</Title>
+    <Description>%HeroSkillAutomatons04_ShipLevelStatsBonus_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill23_FleetDefense_Percent_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill05BranchAutomatons">
+    <Title>%HeroSkillAutomatons05_DefenseUpkeepFood_Title</Title>
+    <Description>%HeroSkillAutomatons05_DefenseUpkeepFood_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill68_Food_Percent_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill06BranchAutomatons">
+    <Title>%HeroSkillAutomatons06_FleetUpkeepVision_Title</Title>
+    <Description>%HeroSkillAutomatons06_FleetUpkeepVision_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill35_FleetExploration_Flat_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroSkill07BranchAutomatons">
+    <Title>%HeroSkillAutomatons07_TerranFIDS_1_Title</Title>
+    <Description>%HeroSkillAutomatons07_TerranFIDS_1_Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill103_FID_Percent_Small" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="HeroSkillAutomatons05_DefenseUpkeepFood_1">
+    <Title>%HeroSkillAutomatons05_DefenseUpkeepFood_Title</Title>
+  </GuiElement>
+
 
 </Datatable>

@@ -236,5 +236,6 @@ If any of these do not appear, it is because they are 0.</LocalizationPair>
   <LocalizationPair Name="%CategoryHeroSkillTreeAutomatonsTitle">Automaton Skill</LocalizationPair>
   <LocalizationPair Name="%HeroSkillAutomatons04_ShipLevelStatsBonus_1TooltipOverride">+3% Shield Capcity per Ship Level on Fleet
 +3% Ship Health per Ship Level on Fleet</LocalizationPair>
+
   
 </Datatable>
