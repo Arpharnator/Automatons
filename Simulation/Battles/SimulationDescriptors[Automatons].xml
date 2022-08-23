@@ -15,6 +15,9 @@
     <!--System Production Stock modules-->
     <!--Small versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="MaximumSystemProductionStockFlat" Operation="Addition" Value="40"/>
     </SimulationDescriptor>
 
@@ -25,6 +28,9 @@
 
     <!--Medium versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="MaximumSystemProductionStockFlat" Operation="Addition" Value="120"/>
         <Modifier TargetProperty="MaximumSystemProductionStockDynamic" Operation="Addition" Value="0.01"/>
     </SimulationDescriptor>
@@ -37,6 +43,9 @@
 
     <!--Large versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportMaximumSystemProductionStockAdvancedLargeAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="MaximumSystemProductionStockFlat" Operation="Addition" Value="300"/>
         <Modifier TargetProperty="MaximumSystemProductionStockDynamic" Operation="Addition" Value="0.02"/>
     </SimulationDescriptor>
@@ -48,6 +57,9 @@
     </SimulationDescriptor>
     <!--Small versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemProductionAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemProductionJuggernautFlat" Operation="Addition" Value="4"/>
     </SimulationDescriptor>
 
@@ -57,6 +69,9 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemGrowthJuggernautFlat" Operation="Addition" Value="4"/>
     </SimulationDescriptor>
 
@@ -67,6 +82,9 @@
 
     <!--Medium versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemProductionMediumAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemProductionJuggernautFlat" Operation="Addition" Value="12"/>
     </SimulationDescriptor>
 
@@ -76,6 +94,9 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthMediumAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemGrowthJuggernautFlat" Operation="Addition" Value="12"/>
     </SimulationDescriptor>
 
@@ -86,6 +107,9 @@
 
     <!--Large versions-->
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemProductionLargeAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemProductionJuggernautFlat" Operation="Addition" Value="30"/>
     </SimulationDescriptor>
 
@@ -95,6 +119,9 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportSystemGrowthLargeAutomatons" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="MaximumMovement" BaseValue="0"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3"/>
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="$(MaximumMovement)" Path="../ClassShip"/>
         <Modifier TargetProperty="SystemGrowthJuggernautFlat" Operation="Addition" Value="30"/>
     </SimulationDescriptor>
 
