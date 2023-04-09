@@ -145,7 +145,7 @@
 
     <!--Large versions-->
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemProductionFlatLarge" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyStrategicDeposit5</TechnologyPrerequisite>
@@ -162,7 +162,7 @@
     </SystemSupportModule>
 
     <SystemSupportModule Name="ModuleSupportAutomatonsSystemGrowthFlatLarge" Family="SystemSupportFIDS" Level="4">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayTechnologyAutomatons" Inverted="false">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyFood6</TechnologyPrerequisite>
