@@ -6,13 +6,13 @@
     <!--Note that I have not made curiosity definitions for this one, thus it'll only appear on the Automatons homeworld-->
 
     <SimulationDescriptor Name="PlanetAnomalyInfernalScourges" Type="PlanetAnomaly">
-        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="4" Path="ClassPlanet" />
+        <Modifier TargetProperty="PlanetInitialFoodPerPopulation" Operation="Addition" Value="4" Path="ClassPlanet" />
         <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)"      />
         <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-3" TooltipHidden="true" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomalyInfernalScourgesReduced" Type="PlanetAnomaly">
-        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="4" Path="ClassPlanet" />
+        <Modifier TargetProperty="PlanetInitialFoodPerPopulation" Operation="Addition" Value="4" Path="ClassPlanet" />
         <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 

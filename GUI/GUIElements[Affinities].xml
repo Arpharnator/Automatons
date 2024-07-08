@@ -44,9 +44,11 @@
   </GuiElement>
   <ExtendedGuiElement Name="PopulationCollectionBonusAutomatons3">
     <Title>%PopulationCollectionBonusAutomatons3</Title>
+    <!--
     <TooltipElement>
       <EffectOverride>%BonusFIDSOnTerranEffect</EffectOverride>
     </TooltipElement>
+    -->
   </ExtendedGuiElement>
 
   <GuiElement Name="FactionPactEffectAutomatons">

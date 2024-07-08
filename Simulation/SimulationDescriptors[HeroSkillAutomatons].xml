@@ -3,10 +3,14 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
 
     <SimulationDescriptor Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_1" Type="HeroSkillSystem" IsSerializable="false">
-        <Modifier TargetProperty="PlanetRawIndustry" Operation="Addition" Value="2" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming" SearchValueFromPath="true"/>
+        <!-- FEEDBACK FOR SCAN VIEW -->
+        <BinaryModifier TargetProperty="BonusHeroPlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming" SearchValueFromPath="true" TooltipHidden="true"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_2" Type="HeroSkillSystem" IsSerializable="false">
-        <Modifier TargetProperty="PlanetRawIndustry" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming" SearchValueFromPath="true"/>
+        <!-- FEEDBACK FOR SCAN VIEW -->
+        <BinaryModifier TargetProperty="BonusHeroPlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming" SearchValueFromPath="true" TooltipHidden="true"/>
     </SimulationDescriptor>
 
 
@@ -34,12 +38,12 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="HeroSkillAutomatons05_DefenseUpkeepFood_1" Type="HeroSkillSystem" IsSerializable="false">
-        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <BinaryModifier TargetProperty="PlanetFood" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet" SearchValueFromPath="true"/>
         <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="1000" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="100" Path="ClassColonizedStarSystem"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="HeroSkillAutomatons05_DefenseUpkeepFood_2" Type="HeroSkillSystem" IsSerializable="false">
-        <Modifier TargetProperty="PlanetRawFood" Operation="Addition" Value="8" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <BinaryModifier TargetProperty="PlanetFood" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet" SearchValueFromPath="true"/>
         <Modifier TargetProperty="MaximumSystemManpower" Operation="Addition" Value="2000" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="SystemMoneyUpkeep" Operation="Addition" Value="200" Path="ClassColonizedStarSystem"/>
     </SimulationDescriptor>
@@ -50,7 +54,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="HeroSkillAutomatons07_TerranFIDS_1" Type="HeroSkillSystem" IsSerializable="false">
-        <Modifier TargetProperty="PlanetRawFIDS" Operation="Addition" Value="4" Path="ClassColonizedStarSystem/ClassColonizedPlanet, PlanetTypeTerran"/>
+            <BinaryModifier TargetProperty="PlanetFIDS" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassColonizedStarSystem/ClassColonizedPlanet,PlanetTypeTerran" SearchValueFromPath="true"/>
     </SimulationDescriptor>
 
     

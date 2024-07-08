@@ -41,6 +41,6 @@
   
   <!-- 3 -->
   <SimulationDescriptor Name="PopulationCollectionBonusAutomatons3" Type="PopulationCollectionBonus">
-    <BinaryModifier TargetProperty="BonusPopulationFIDS" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetIsTerran)" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet/ClassPopulation" SearchValueFromPath="true" TooltipHidden="true"/> 
+        <BinaryModifier TargetProperty="PlanetFIDS" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTerran" SearchValueFromPath="true"/>
   </SimulationDescriptor>
 </Datatable>

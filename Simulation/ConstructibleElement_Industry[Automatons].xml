@@ -19,6 +19,9 @@
         <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionPopulationSlot1"/>
     </StarSystemImprovementDefinition>
 
+    <!--
+    Not needed anymore afaik
+
     <StarSystemImprovementDefinition Name="StarSystemImprovementIndustryTotal">
         <CustomCost ResourceName="SystemProduction">Property(StockLocation,@ClassColonizedStarSystem, SystemProductionStock) / Property(StockLocation, @../ClassEmpire, GameSpeedMultiplier, true)</CustomCost>
         <CustomCost ResourceName="EmpireMoney">Property(StockLocation,@ClassColonizedStarSystem, MaximumSystemProductionStock)</CustomCost>
@@ -27,6 +30,7 @@
         <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard,UnlockAvailability,Faction">../ClassEmpire,AffinityGameplayAutomatons</PathPrerequisite>
         <SimulationDescriptorReference Name="StarSystemImprovementIndustryTotal" />
     </StarSystemImprovementDefinition>
+    -->
 
     <StarSystemImprovementDefinition Name="StarSystemImprovementIndustry6Automatons" SubCategory="SubCategoryIndustry" ScoreProvider="StarSystemImprovementBuilt">
         <SupervisorGain Name="Industry"/>

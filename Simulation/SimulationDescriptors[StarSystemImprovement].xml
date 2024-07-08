@@ -7,10 +7,13 @@
     <Modifier TargetProperty="RawMaximumPopulation" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassPlanet"/>
   </SimulationDescriptor>
 
+  <!--
   <SimulationDescriptor Name="StarSystemImprovementIndustryTotal" Type="StarSystemImprovement"/>
+  -->
 
   <SimulationDescriptor Name="StarSystemImprovementIndustry6Automatons" Type="StarSystemImprovement">
-    <Modifier TargetProperty="PlanetRawIndustry" Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" SearchValueFromPath="true"/>
+
     <Modifier TargetProperty="SystemProduction" Operation="Percent" Value="0.15" Path="./ClassColonizedStarSystem"/>
     <Modifier TargetProperty="InterestRate" Operation="Addition" Value="0.05" Path="./ClassColonizedStarSystem"/>
   </SimulationDescriptor>

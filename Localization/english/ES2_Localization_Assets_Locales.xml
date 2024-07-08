@@ -89,7 +89,9 @@ Start with the small industry and growth modules unlocked, with you needing to r
   <LocalizationPair Name="%PopulationCollectionBonusAutomatons1">Automatons Collection Bonus I</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusAutomatons2">Automatons Collection Bonus II</LocalizationPair>
   <LocalizationPair Name="%PopulationCollectionBonusAutomatons3">Automatons Collection Bonus III</LocalizationPair>
+  <!--
   <LocalizationPair Name="%BonusFIDSOnTerranEffect">+2 [fids] on Terran</LocalizationPair>
+  -->
   <LocalizationPair Name="%PopulationPoliticalFlatAffinityAutomatonsTitle">Automatons Population</LocalizationPair>
 
   <!-- Research -->
@@ -154,12 +156,13 @@ Start with the small industry and growth modules unlocked, with you needing to r
   <LocalizationPair Name="%FactionTraitMinorAutomatonsTooltipEffect">+1 Automatons on your home system</LocalizationPair>
 
 
-
+  <!--
   <LocalizationPair Name="%StarSystemImprovementIndustryTotalTitle">Industry Storage Denominator</LocalizationPair>
   <LocalizationPair Name="%StarSystemImprovementIndustryTotalDescription">The total amount of [industrycolored] you have is listed as the cost in industry for this improvement.
 The Maximum storable industry is listed as the cost in [dustcolored]
 
 If any of these do not appear, it is because they are 0.</LocalizationPair>
+ -->
 
   <LocalizationPair Name="%IndustryInterestTitle">Industry Interest</LocalizationPair>
 

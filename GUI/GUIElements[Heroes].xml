@@ -75,4 +75,11 @@
       <Icon Size="Mood" Path="Textures/GUI/OmnisLarge.png"/>
     </Icons>
   </HeroGuiElement>
+
+  <GuiElement Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_1">
+    <Title>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkillAutomatons01_Industry_Perpop_On_Teeming_2">
+    <Title>%HeroSkillAutomatons01_Industry_Perpop_On_Teeming_Title</Title>
+  </GuiElement>
 </Datatable>

@@ -11,6 +11,7 @@
         </Icons>
     </ExtendedGuiElement>
 
+    <!--
     <GuiElement Name="StarSystemImprovementIndustryTotal">
         <Title>%StarSystemImprovementIndustryTotalTitle</Title>
         <Description>%StarSystemImprovementIndustryTotalDescription</Description>
@@ -19,7 +20,8 @@
             <Icon Size="Large" Path="Textures/GUI/IndustryLarge.png" />
         </Icons>
     </GuiElement>
-
+    -->
+    
     <GuiElement Name="StarSystemImprovementIndustry6Automatons">
         <Title>%StarSystemImprovementIndustry6AutomatonsTitle</Title>
         <Description>%StarSystemImprovementIndustry6AutomatonsDescription</Description>
